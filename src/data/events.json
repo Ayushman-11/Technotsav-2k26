@@ -1,0 +1,302 @@
+[
+    {
+        "id": "orbit-injection",
+        "title": "Orbital Injection Challenge",
+        "summary": "Calculate burn sequences for stable orbit placement and payload optimization.",
+        "date": "Oct 24, 2026",
+        "prize": "INR 50,000",
+        "department": "Engineering",
+        "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?q=80&w=1600&auto=format&fit=crop",
+        "location": "Main Deck Auditorium",
+        "teamSize": "2 - 4 members",
+        "duration": "6 hours",
+        "difficulty": "Advanced",
+        "tags": ["Astrodynamics", "Simulation", "Optimization"],
+        "about": "Teams design and simulate orbital burn sequences to place payloads into stable trajectories with minimal fuel use. Missions include geosynchronous alignment, gravity assists, and redundancy planning.",
+        "rules": [
+            "All simulations must be run during the live event window.",
+            "Only open-source tools and provided datasets are permitted.",
+            "Final submission must include burn tables and validation plots."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Briefing + Dataset Release",
+                "detail": "Mission parameters and datasets distributed.",
+                "time": "10:00 AM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Simulation Build",
+                "detail": "Teams craft and test orbital models.",
+                "time": "12:00 PM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Final Review",
+                "detail": "Present burn sequences and validation results.",
+                "time": "4:30 PM"
+            }
+        ],
+        "contact": {
+            "name": "Prof. N. Kulkarni",
+            "email": "orbitals@dypcoet.ac.in",
+            "phone": "+91 231 221 4001"
+        },
+        "registration": {
+            "fee": "Free Entry",
+            "deadline": "Oct 20, 2026",
+            "formUrl": "#"
+        }
+    },
+    {
+        "id": "lunar-docking",
+        "title": "Lunar Docking Protocol",
+        "summary": "Simulated precision docking maneuvers under communication latency.",
+        "date": "Nov 12, 2026",
+        "prize": "INR 35,000",
+        "department": "Operations",
+        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600&auto=format&fit=crop",
+        "location": "Mission Control Lab",
+        "teamSize": "3 members",
+        "duration": "4 hours",
+        "difficulty": "Intermediate",
+        "tags": ["Navigation", "Controls", "Latency"],
+        "about": "Pilot autonomous docking protocols using a simulated lunar gateway. Teams must account for latency, sensor drift, and backup maneuvers.",
+        "rules": [
+            "Manual overrides are limited to one per mission.",
+            "Docking sequence must be logged with time-stamped checkpoints.",
+            "Safety compliance checklist is mandatory."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Systems Check",
+                "detail": "Hardware and simulation calibration.",
+                "time": "1:00 PM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Docking Run",
+                "detail": "Execute docking procedures with latency constraints.",
+                "time": "2:00 PM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Mission Debrief",
+                "detail": "Submit telemetry logs and review performance.",
+                "time": "4:15 PM"
+            }
+        ],
+        "contact": {
+            "name": "Dr. S. Deshmukh",
+            "email": "docking@dypcoet.ac.in",
+            "phone": "+91 231 221 4002"
+        },
+        "registration": {
+            "fee": "INR 200",
+            "deadline": "Nov 08, 2026",
+            "formUrl": "#"
+        }
+    },
+    {
+        "id": "deep-space-telemetry",
+        "title": "Deep Space Telemetry",
+        "summary": "Decode high-frequency signals and generate mission insights.",
+        "date": "Dec 05, 2026",
+        "prize": "INR 75,000",
+        "department": "Research",
+        "image": "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?q=80&w=1600&auto=format&fit=crop",
+        "location": "Data Science Hub",
+        "teamSize": "2 - 5 members",
+        "duration": "8 hours",
+        "difficulty": "Advanced",
+        "tags": ["Signal Processing", "AI", "Analytics"],
+        "about": "Analyze deep-space telemetry packets to extract mission insights. Teams must clean data, detect anomalies, and build a concise mission report.",
+        "rules": [
+            "Use only provided datasets and open-source tooling.",
+            "Reports must include anomaly detection and corrective actions.",
+            "All code must be submitted with reproducible notebooks."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Dataset Release",
+                "detail": "Access telemetry archives and mission logs.",
+                "time": "9:00 AM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Modeling Sprint",
+                "detail": "Train and validate anomaly models.",
+                "time": "1:30 PM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Mission Review",
+                "detail": "Present insights to judges.",
+                "time": "6:00 PM"
+            }
+        ],
+        "contact": {
+            "name": "Prof. R. Patil",
+            "email": "telemetry@dypcoet.ac.in",
+            "phone": "+91 231 221 4003"
+        },
+        "registration": {
+            "fee": "INR 300",
+            "deadline": "Dec 01, 2026",
+            "formUrl": "#"
+        }
+    },
+    {
+        "id": "eva-navigation",
+        "title": "EVA Navigation Sprint",
+        "summary": "Optimize extra-vehicular activity paths with limited resources.",
+        "date": "Jan 18, 2027",
+        "prize": "INR 20,000",
+        "department": "Operations",
+        "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1600&auto=format&fit=crop",
+        "location": "Robotics Arena",
+        "teamSize": "3 - 4 members",
+        "duration": "3 hours",
+        "difficulty": "Intermediate",
+        "tags": ["Robotics", "Pathfinding", "Operations"],
+        "about": "Plan EVA routes for multi-point repairs while managing energy reserves, oxygen, and time constraints.",
+        "rules": [
+            "All repairs must be completed within the mission clock.",
+            "Teams must submit route optimization logs.",
+            "Safety checks are mandatory before final submission."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Mission Briefing",
+                "detail": "EVA tasks and constraints released.",
+                "time": "11:00 AM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Route Planning",
+                "detail": "Optimize EVA sequence with limited resources.",
+                "time": "12:00 PM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Execution",
+                "detail": "Test and validate navigation path.",
+                "time": "2:30 PM"
+            }
+        ],
+        "contact": {
+            "name": "Ms. A. Kale",
+            "email": "eva@dypcoet.ac.in",
+            "phone": "+91 231 221 4004"
+        },
+        "registration": {
+            "fee": "INR 150",
+            "deadline": "Jan 15, 2027",
+            "formUrl": "#"
+        }
+    },
+    {
+        "id": "cosmic-design-lab",
+        "title": "Cosmic Design Lab",
+        "summary": "Design mission control interfaces with clarity and urgency.",
+        "date": "Jan 24, 2027",
+        "prize": "INR 25,000",
+        "department": "Design",
+        "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600&auto=format&fit=crop",
+        "location": "Design Studio",
+        "teamSize": "2 members",
+        "duration": "5 hours",
+        "difficulty": "Beginner",
+        "tags": ["UI/UX", "Visual Systems", "Prototyping"],
+        "about": "Create mission control dashboards that prioritize clarity and safety. Teams design critical alert states, data layers, and action-ready UI flows.",
+        "rules": [
+            "Deliverables include a clickable prototype and design rationale.",
+            "All UI elements must follow accessibility standards.",
+            "Teams must present a design walkthrough."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Design Brief",
+                "detail": "Receive mission control scenario and constraints.",
+                "time": "10:30 AM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Prototype Sprint",
+                "detail": "Build UI flows and interaction states.",
+                "time": "12:00 PM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Review",
+                "detail": "Present prototypes to the panel.",
+                "time": "4:00 PM"
+            }
+        ],
+        "contact": {
+            "name": "Ms. R. Joshi",
+            "email": "designlab@dypcoet.ac.in",
+            "phone": "+91 231 221 4005"
+        },
+        "registration": {
+            "fee": "INR 100",
+            "deadline": "Jan 20, 2027",
+            "formUrl": "#"
+        }
+    },
+    {
+        "id": "propulsion-workshop",
+        "title": "Propulsion Systems Workshop",
+        "summary": "Hands-on build of power delivery and control circuits.",
+        "date": "Feb 02, 2027",
+        "prize": "INR 15,000",
+        "department": "Workshop",
+        "image": "https://images.unsplash.com/photo-1447433819943-74a20887a81e?q=80&w=1600&auto=format&fit=crop",
+        "location": "Electronics Lab",
+        "teamSize": "2 - 3 members",
+        "duration": "4 hours",
+        "difficulty": "Beginner",
+        "tags": ["Hardware", "Control Systems", "Prototyping"],
+        "about": "Build a propulsion control module with sensors, feedback loops, and safety switches. Participants build and test circuits with guidance.",
+        "rules": [
+            "Safety gear is mandatory throughout the workshop.",
+            "Participants must test circuits before demo.",
+            "All components must be returned after the session."
+        ],
+        "timeline": [
+            {
+                "phase": "Phase 01",
+                "title": "Hardware Orientation",
+                "detail": "Intro to modules and safety setup.",
+                "time": "9:30 AM"
+            },
+            {
+                "phase": "Phase 02",
+                "title": "Build Session",
+                "detail": "Assemble and test propulsion circuitry.",
+                "time": "11:00 AM"
+            },
+            {
+                "phase": "Phase 03",
+                "title": "Demo",
+                "detail": "Showcase circuit behavior and metrics.",
+                "time": "1:30 PM"
+            }
+        ],
+        "contact": {
+            "name": "Mr. S. Naik",
+            "email": "propulsion@dypcoet.ac.in",
+            "phone": "+91 231 221 4006"
+        },
+        "registration": {
+            "fee": "INR 150",
+            "deadline": "Jan 30, 2027",
+            "formUrl": "#"
+        }
+    }
+]
