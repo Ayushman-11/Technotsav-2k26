@@ -877,21 +877,26 @@ main {
 
 
 .timeline {
+    --timeline-card-pad-inline: 22px;
+    --timeline-marker-col: 28px;
     position: relative;
     display: grid;
     gap: 24px;
-    padding-left: 28px;
+    padding-left: 0;
     margin-top: 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 10px;
-    top: 6px;
-    bottom: 6px;
+    left: calc(var(--timeline-card-pad-inline) + (var(--timeline-marker-col) / 2));
+    top: 0;
+    bottom: 0;
     width: 2px;
+    transform: translateX(-50%);
     background: linear-gradient(180deg, rgba(164, 201, 255, 0.12), rgba(164, 201, 255, 0.65));
+    z-index: 2;
+    pointer-events: none;
 }
 
 .timeline-card {
@@ -904,6 +909,7 @@ main {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
+    z-index: 1;
 }
 
 .timeline-marker {
@@ -919,6 +925,26 @@ main {
     background: var(--accent);
     box-shadow: 0 0 12px rgba(164, 201, 255, 0.55);
     margin-top: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-body {
+    position: relative;
+}
+
+.timeline-body::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 18px;
+    width: 32px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
 .timeline-body h3 {
@@ -2254,12 +2280,18 @@ main {
     }
 
     .timeline {
-        padding-left: 20px;
+        --timeline-card-pad-inline: 18px;
+        --timeline-marker-col: 20px;
+        padding-left: 0;
     }
 
     .timeline-card {
         grid-template-columns: 20px 1fr;
         padding: 18px;
+    }
+
+    .timeline-body::before {
+        top: 14px;
     }
 
     .timeline-index {
