@@ -18,9 +18,7 @@ function EventCard({ event }) {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.45 }}
         >
-            <div className="event-image" style={imageStyle}>
-                <span className="event-tag">{event.department}</span>
-            </div>
+            <div className="event-image" style={imageStyle} />
             <div className="event-card-body">
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>

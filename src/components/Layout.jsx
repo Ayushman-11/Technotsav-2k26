@@ -53,7 +53,6 @@ function Layout() {
             <footer className="site-footer">
                 <div className="container footer-inner">
                     <div className="footer-brand">
-                        <span className="footer-kicker">Tech Fest 2026</span>
                         <div className="footer-title">TECHNOTSAV'26</div>
                         <p className="footer-subtitle">
                             D Y Patil College of Engineering and Technology, Kolhapur.

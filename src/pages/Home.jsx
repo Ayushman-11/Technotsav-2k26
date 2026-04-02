@@ -112,7 +112,12 @@ function Home() {
                         animate="visible"
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="eyebrow">Aerospace Editorial Vol. 01</span>
+                        <img
+                            src="/dypcet.png"
+                            alt="Technotsav"
+                            className="hero-eyebrow-image"
+                            loading="eager"
+                        />
                         <h1 className="hero-title-stack">
                             <DecryptedText
                                 text={`Enter the

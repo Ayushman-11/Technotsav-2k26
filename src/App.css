@@ -77,8 +77,8 @@ main {
 }
 
 .brand-mark {
-    font-family: var(--font-display);
-    letter-spacing: 0.28em;
+    font-family: 'Space Crusaders', var(--font-display);
+    letter-spacing: 0.14em;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -233,13 +233,14 @@ main {
 
 .hero-title {
     display: block;
+    font-family: var(--font-display);
     font-size: clamp(2.8rem, 7vw, 5.4rem);
     line-height: 1;
 }
 
 .hero-title-stack .decrypt-container {
     line-height: 1;
-    min-height: 3.2em;
+    min-height: 3.05em;
 }
 
 .decrypt-text {
@@ -262,6 +263,13 @@ main {
     letter-spacing: 0.35em;
     text-transform: uppercase;
     color: var(--text-muted);
+}
+
+.hero-eyebrow-image {
+    display: block;
+    width: min(260px, 62vw);
+    height: auto;
+    margin-bottom: 12px;
 }
 
 .accent {
@@ -622,18 +630,6 @@ main {
     background-size: cover;
     background-position: center;
     position: relative;
-}
-
-.event-tag {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: rgba(15, 18, 22, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 6px 10px;
-    font-size: 10px;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
 }
 
 .event-card-body {
@@ -1990,17 +1986,10 @@ main {
     gap: 14px;
 }
 
-.footer-kicker {
-    font-size: 10px;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-}
-
 .footer-title {
-    font-family: var(--font-display);
+    font-family: 'Space Crusaders', var(--font-display);
     font-size: clamp(1.8rem, 3vw, 2.4rem);
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
 }
 
 .footer-subtitle {
