@@ -5,9 +5,50 @@ const EVENT_IMAGES = {
     'CSE-02': 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop',
     'CSE-03': 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop',
     'CSE-04': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop',
+    'ETC-01': 'https://unsplash.com/photos/oEZV7HYCIOc/download?force=true&w=1400',
+    'ETC-02': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1400&auto=format&fit=crop',
+    'ETC-03': 'https://unsplash.com/photos/afZVP8xbbw0/download?force=true&w=1400',
+    'AIML-01': 'https://unsplash.com/photos/QckxruozjRg/download?force=true&w=1400',
+    'AIML-02': 'https://unsplash.com/photos/kytBIDKXc2w/download?force=true&w=1400',
+    'AIML-03': 'https://unsplash.com/photos/cQ90QkreiPQ/download?force=true&w=1400',
+    'CIV-01': 'https://unsplash.com/photos/X1P1_EDNnok/download?force=true&w=1400',
+    'CIV-02': 'https://unsplash.com/photos/on4nRkHfSIg/download?force=true&w=1400',
+    'CIV-03': 'https://unsplash.com/photos/VFMhqkiL6E4/download?force=true&w=1400',
+    'ARCH-01': 'https://unsplash.com/photos/n1LIveUPls4/download?force=true&w=1400',
+    'ARCH-02': 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop',
+    'CHEM-01': 'https://unsplash.com/photos/ehbR49Wo_NY/download?force=true&w=1400',
+    'CHEM-02': 'https://unsplash.com/photos/XknuBmnjbKg/download?force=true&w=1400',
 }
 
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop'
+
+const DEPARTMENT_FILTER_ORDER = ['CSE', 'AIML', 'MECHANICAL', 'CIVIL', 'ARCHITECTURE', 'CHEMICAL', 'ENTC']
+
+function normalizeDepartmentName(name) {
+    return String(name || '')
+        .toLowerCase()
+        .replace(/&/g, 'and')
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim()
+}
+
+function getDepartmentCode(departmentName) {
+    const normalized = normalizeDepartmentName(departmentName)
+
+    if (normalized.includes('artificial intelligence') || normalized.includes('machine learning') || normalized.includes('aiml')) {
+        return 'AIML'
+    }
+    if (normalized.includes('computer science')) return 'CSE'
+    if (normalized.includes('mechanical')) return 'MECHANICAL'
+    if (normalized.includes('civil')) return 'CIVIL'
+    if (normalized.includes('architecture')) return 'ARCHITECTURE'
+    if (normalized.includes('chemical')) return 'CHEMICAL'
+    if (normalized.includes('electronics') && (normalized.includes('telecommunication') || normalized.includes('entc'))) {
+        return 'ENTC'
+    }
+
+    return String(departmentName || 'GENERAL').trim().toUpperCase()
+}
 
 function formatDate(isoDate) {
     if (!isoDate) return 'Date TBA'
@@ -45,6 +86,7 @@ function normalizeDepartmentData(source) {
 
     return departments.flatMap((department) => {
         const departmentName = department.department_name || 'General'
+        const departmentCode = getDepartmentCode(departmentName)
         const events = Array.isArray(department.events) ? department.events : []
 
         return events.map((event) => {
@@ -79,6 +121,7 @@ function normalizeDepartmentData(source) {
                 date: formatDate(scheduleDate),
                 prize: formatTopPrize(event.prizes),
                 department: departmentName,
+                departmentCode,
                 image: event.image || EVENT_IMAGES[event.event_id] || DEFAULT_IMAGE,
                 location: event.venue || 'Venue TBA',
                 teamSize: formatTeamSize(event.participation),
@@ -113,14 +156,24 @@ function normalizeDepartmentData(source) {
 
 function normalizeLegacyData(source) {
     if (!Array.isArray(source)) return []
-    return source
+    return source.map((event) => ({
+        ...event,
+        departmentCode: event.departmentCode || getDepartmentCode(event.department),
+    }))
 }
 
 export const events = Array.isArray(rawEventData)
     ? normalizeLegacyData(rawEventData)
     : normalizeDepartmentData(rawEventData)
 
-export const departmentFilters = ['All', ...new Set(events.map((event) => event.department))]
+const availableDepartmentCodes = [...new Set(events.map((event) => event.departmentCode || getDepartmentCode(event.department)))]
+
+const orderedDepartmentCodes = [
+    ...DEPARTMENT_FILTER_ORDER.filter((code) => availableDepartmentCodes.includes(code)),
+    ...availableDepartmentCodes.filter((code) => !DEPARTMENT_FILTER_ORDER.includes(code)),
+]
+
+export const departmentFilters = ['All', ...orderedDepartmentCodes]
 
 export function getEventById(eventId) {
     if (!eventId) return null

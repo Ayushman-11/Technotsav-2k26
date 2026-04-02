@@ -67,7 +67,9 @@ function Home() {
         seconds: '00',
     })
     const filteredEvents = events.filter((event) =>
-        activeDepartment === 'All' ? true : event.department === activeDepartment,
+        activeDepartment === 'All'
+            ? true
+            : (event.departmentCode || event.department) === activeDepartment,
     )
 
     useEffect(() => {

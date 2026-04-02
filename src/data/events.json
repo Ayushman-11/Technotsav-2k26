@@ -511,6 +511,1562 @@
                     }
                 }
             ]
+        },
+        {
+            "department_name": "Electronics and Telecommunication Engineering",
+            "events": [
+                {
+                    "event_id": "ETC-01",
+                    "event_name": "Project Competition",
+                    "description": "Project presentation and demonstration competition for E&TC domain projects.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "E&TC Dept. Labs",
+                    "participation": {
+                        "eligibility": "Any project from Electronics and Telecommunication field",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 5
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/w5Ku7kv9fKdtxBSb6",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Project Presentation and Demonstration",
+                            "subtitle": "Single evaluation round",
+                            "description": "Teams present and demonstrate their E&TC project solution to the judges.",
+                            "steps": [
+                                "Project setup and readiness check",
+                                "Presentation of idea and implementation",
+                                "Live demonstration",
+                                "Judges' questions and final scoring"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Certificates"
+                    ],
+                    "details": {
+                        "primary_overview": "Project Competition is a technical showcase where participants present and demonstrate Electronics and Telecommunication projects before a judging panel.",
+                        "what_is": "The event evaluates project quality, implementation clarity, and presentation effectiveness for E&TC-focused ideas.",
+                        "who_can_participate": [
+                            "Participants with projects from Electronics and Telecommunication field",
+                            "Registered participants only",
+                            "Maximum 5 participants per team"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Venue: E&TC Dept. Labs",
+                            "Registration Fee: INR 100 (individual), INR 400 (group of 4)"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Project Competition Rules",
+                                "points": [
+                                    "Maximum 5 participants per team are allowed",
+                                    "Only registered participants will be allowed",
+                                    "Participants must bring their own laptop/systems for presentation and demonstration",
+                                    "Participants should carry required hardware/software for their project",
+                                    "Every participant will receive a certificate",
+                                    "Judges' decision will be final"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual and team participation allowed, with up to 5 members per team.",
+                        "additional_information": [
+                            "Registration link: https://forms.gle/w5Ku7kv9fKdtxBSb6"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "ETC-02",
+                    "event_name": "Robo Soccer",
+                    "description": "Robotics soccer competition with goal-based qualification rounds.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "College Lawn",
+                    "participation": {
+                        "eligibility": "First year to final year students",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 2,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 200,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/7GoNhnzDiRx5kU1i6",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 2000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Match Qualifier",
+                            "subtitle": "Goal-based qualification",
+                            "description": "Teams compete in two halves of a 3-minute match and highest goal count qualifies for next round.",
+                            "steps": [
+                                "Team check-in and robot inspection",
+                                "Two halves of 3-minute gameplay",
+                                "Goal count and qualification decision"
+                            ]
+                        },
+                        {
+                            "name": "Knockout Rounds",
+                            "subtitle": "Final elimination matches",
+                            "description": "Qualified teams compete in elimination matches to determine final standings.",
+                            "steps": [
+                                "Round match assignments",
+                                "Referee-monitored gameplay",
+                                "Winner progression and final rank"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Certificates"
+                    ],
+                    "details": {
+                        "primary_overview": "Robo Soccer is a team robotics challenge where bots compete in soccer-style matches and teams qualify based on goals scored.",
+                        "what_is": "The event tests robot control, strategy, and mechanical compliance under timed match conditions.",
+                        "who_can_participate": [
+                            "Open for first year to final year students",
+                            "Team participation only",
+                            "Team size: minimum 2 and maximum 4 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Venue: College Lawn",
+                            "Registration Fee: INR 200 (individual reference), team fee range INR 400 to INR 600"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Robo Soccer Rules",
+                                "points": [
+                                    "Each team must have minimum 2 and maximum 4 members",
+                                    "Each robot is allowed only one attachment for hitting or controlling the ball",
+                                    "Team scoring maximum goals within two halves of a 3-minute match qualifies for next round",
+                                    "Judges' decisions regarding results, robot specifications, and event issues are final and binding",
+                                    "Robot size limit: 30 x 30 x 30 and weight between 3 kg and 5 kg"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Team participation only with 2 to 4 members.",
+                        "additional_information": [
+                            "Team fee can vary between INR 400 and INR 600 based on team format",
+                            "Registration link: https://forms.gle/7GoNhnzDiRx5kU1i6"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "ETC-03",
+                    "event_name": "Circuit Nexus",
+                    "description": "Circuit design and simulation competition under time constraints.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "10:00",
+                        "end_time": "17:00"
+                    },
+                    "venue": "E&TC Dept. Labs",
+                    "participation": {
+                        "eligibility": "First year to final year students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 150
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/QxBGefaSThqyVtGk8",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Circuit Design and Simulation",
+                            "subtitle": "Timed technical challenge",
+                            "description": "Participants design and simulate circuits within the allotted time and are evaluated on correctness and efficiency.",
+                            "steps": [
+                                "Problem statement briefing",
+                                "Circuit design and implementation",
+                                "Simulation and validation",
+                                "Evaluation and result declaration"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Certificates"
+                    ],
+                    "details": {
+                        "primary_overview": "Circuit Nexus is a circuit design and simulation event that evaluates technical accuracy, logic, and speed.",
+                        "what_is": "Participants solve a design problem by creating and simulating circuits within a fixed time window.",
+                        "who_can_participate": [
+                            "Open for first year to final year students",
+                            "Individual and team participation allowed",
+                            "Maximum 2 participants per team"
+                        ],
+                        "event_timeline": [
+                            "Date: 16 Apr 2026",
+                            "Time: 10:00 AM to 05:00 PM",
+                            "Venue: E&TC Dept. Labs",
+                            "Registration Fee: INR 100 (individual), INR 150 (group of 2)"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Circuit Nexus Rules",
+                                "points": [
+                                    "Maximum 2 participants per team are allowed",
+                                    "Only registered participants will be allowed to participate",
+                                    "Participants must carry their own laptops if required by organizers",
+                                    "The circuit must be designed and simulated within the given time limit",
+                                    "Use of pre-designed circuits, external files, or internet resources is strictly prohibited",
+                                    "Any malfunction, software crash, or system issue must be immediately reported to coordinators",
+                                    "Evaluation is based on circuit accuracy, simulation results, innovation/logic, and time efficiency",
+                                    "Judges' decision is final and binding"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual and team participation allowed, with a maximum of 2 members per team.",
+                        "additional_information": [
+                            "Registration link: https://forms.gle/QxBGefaSThqyVtGk8"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "Computer Science and Engineering (Artificial Intelligence - Machine Learning)",
+            "events": [
+                {
+                    "event_id": "AIML-01",
+                    "event_name": "VIBETHON (AI-Powered Coding Event)",
+                    "description": "Fast-paced AI-assisted coding competition focused on rapid prototyping and creative problem-solving.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "AIML Department",
+                    "participation": {
+                        "eligibility": "Students from all departments (Diploma and UG)",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {}
+                    },
+                    "fees": {
+                        "individual": 120,
+                        "team": null
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/vese5XxZndzcG4YE6",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 4000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Development Phase",
+                            "subtitle": "Round 1",
+                            "description": "Participants build a working prototype using AI tools and submit a public GitHub repository before deadline.",
+                            "steps": [
+                                "Problem statement release at 10:00 AM",
+                                "4-hour development sprint",
+                                "Build functional prototype using AI tools",
+                                "Mandatory GitHub submission with README and source code"
+                            ]
+                        },
+                        {
+                            "name": "Evaluation and Presentation",
+                            "subtitle": "Round 2",
+                            "description": "Shortlisted teams present and demo their solution with AI usage and real-world relevance.",
+                            "steps": [
+                                "Top 8 to 10 teams shortlisted",
+                                "5 to 7 minute presentation",
+                                "Live prototype demonstration",
+                                "Result declaration at 4:00 PM"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Ayush Mane",
+                            "phone": "7798475645"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "VIBETHON is an AI-powered coding event that simulates a real-world hackathon environment through rapid prototyping and practical implementation.",
+                        "what_is": "The event emphasizes creative problem-solving, effective use of AI tools, and original implementation under strict time limits.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate programs",
+                            "Students from all departments are eligible",
+                            "Special encouragement for first year participation"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 1 (15 Apr 2026)",
+                            "Time: 10:00 AM to 04:00 PM (including evaluation and result)",
+                            "Registration Fee: INR 120 (General), INR 100 for first-year participants valid for first 36 entries",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "VIBETHON Rules and Guidelines",
+                                "points": [
+                                    "Use of AI tools such as ChatGPT and Copilot is allowed",
+                                    "GitHub submission is compulsory",
+                                    "Repository must be public and include README plus source code",
+                                    "Pre-built or previously developed projects are strictly prohibited",
+                                    "Idea and logic must be original",
+                                    "Internet usage is allowed during event",
+                                    "Teams must complete development within given timeframe",
+                                    "Late submissions will not be considered",
+                                    "Any plagiarism or malpractice leads to disqualification"
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Innovation and Idea: 20%",
+                                    "Implementation and Functionality: 30%",
+                                    "Effective Use of AI Tools: 20%",
+                                    "Presentation and Communication: 15%",
+                                    "Real-world Applicability: 15%"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Participation format can be individual or team as per event flow.",
+                        "additional_information": [
+                            "Refreshment break: 1:00 PM to 1:30 PM",
+                            "Top 8 to 10 teams are shortlisted for final presentation",
+                            "Venue details inside DYPCET campus will be shared before event"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "AIML-02",
+                    "event_name": "Killer Mystery (Case-Solving Event)",
+                    "description": "Investigation-style case-solving challenge with quiz, observation, and final mystery rounds.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "AIML Department",
+                    "participation": {
+                        "eligibility": "Open to all students (Diploma and UG)",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 100
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/ct8hLrP28qeoHy9G7",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Quiz Round",
+                            "subtitle": "Round 1",
+                            "description": "Offline quiz to test logical reasoning and general awareness.",
+                            "steps": [
+                                "Offline quiz challenge",
+                                "Top 80 teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "Observation Round",
+                            "subtitle": "Round 2",
+                            "description": "Teams analyze images, clues, and scenarios for two hours.",
+                            "steps": [
+                                "Duration: 2 hours",
+                                "Top 10 teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "Final Case-Solving Round",
+                            "subtitle": "Round 3",
+                            "description": "Teams solve a complete mystery case using provided clues.",
+                            "steps": [
+                                "Duration: 2 hours",
+                                "Top 3 teams declared winners"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Shivani",
+                            "phone": "9096445240"
+                        },
+                        {
+                            "name": "Devika",
+                            "phone": "7161947555"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Killer Mystery is a team-based problem-solving event that tests observation, logic, and decision-making through progressive investigative rounds.",
+                        "what_is": "Participants move through quiz and clue-analysis stages before solving a final complete mystery case.",
+                        "who_can_participate": [
+                            "Open to all undergraduate and diploma students",
+                            "Individual or team participation allowed",
+                            "Maximum 2 members per team"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 2 (16 Apr 2026)",
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Registration Fee: INR 100 per participant or team",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Event Structure and Workflow",
+                                "points": [
+                                    "Workflow: Registration -> Round 1 -> Refreshment Break -> Round 2 -> Round 3 -> Result Declaration",
+                                    "Screening is based on performance in each round",
+                                    "Accuracy and speed are key evaluation factors",
+                                    "Top teams are shortlisted after each stage"
+                                ]
+                            },
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Participants must follow coordinators' instructions",
+                                    "Time limits must be strictly maintained",
+                                    "Unfair means are strictly prohibited",
+                                    "Teams must rely on their own observation and logic",
+                                    "Judges' decision is final and binding",
+                                    "Misconduct or malpractice leads to disqualification"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual participation or team of up to 2 members.",
+                        "additional_information": [
+                            "Venue details inside DYPCET campus will be shared before event"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "AIML-03",
+                    "event_name": "Dare to Battle 3.0",
+                    "description": "Electrifying esports showdown featuring Free Fire and PES / eFootball formats.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Classroom 306 and 307",
+                    "participation": {
+                        "eligibility": "Open to all college students (Diploma and UG)",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/mM4K6mfmDF8sHxE87",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        },
+                        {
+                            "position": "MVP",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Free Fire Competitive Round",
+                            "subtitle": "Points-based stage",
+                            "description": "Teams compete in Free Fire rounds with placement points and kill points.",
+                            "steps": [
+                                "Custom lobby instructions shared on WhatsApp group",
+                                "Placement points based on rank",
+                                "1 kill equals 1 point",
+                                "One online round included"
+                            ]
+                        },
+                        {
+                            "name": "PES / eFootball Knockout",
+                            "subtitle": "Elimination stage",
+                            "description": "PES / eFootball participants compete in knockout matches.",
+                            "steps": [
+                                "Knockout bracket setup",
+                                "Head-to-head elimination",
+                                "Final winner declaration"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Kunal",
+                            "phone": "9322872759"
+                        },
+                        {
+                            "name": "Yashraj",
+                            "phone": "9356097721"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Dare to Battle 3.0 is an esports event testing reflexes, strategy, and teamwork through Free Fire and PES / eFootball matches.",
+                        "what_is": "Participants battle through ranked and knockout formats for cash prizes, MVP recognition, and event glory.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate programs",
+                            "Open to all college students"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 1 (15 Apr 2026)",
+                            "Time: 10:00 AM to 04:00 PM (qualifiers and finals)",
+                            "Registration Fee: INR 400 per squad (Free Fire), INR 100 per head (PES)",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Game Instructions",
+                                "points": [
+                                    "Game will be played in offline mode",
+                                    "Any cheating or hacking leads to immediate disqualification",
+                                    "Custom match instructions are communicated through designated WhatsApp group",
+                                    "Coordinators' decisions on rules and disputes are final",
+                                    "No refunds will be provided",
+                                    "Participants can join only one game: Free Fire or PES"
+                                ]
+                            },
+                            {
+                                "title": "Free Fire Points Table",
+                                "points": [
+                                    "#1 = 12, #2 = 9, #3 = 8, #4 = 7, #5 = 6",
+                                    "#6 = 5, #7 = 4, #8 = 3, #9 = 2, #10 = 1",
+                                    "#11 and #12 = 0",
+                                    "Each kill = 1 point"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Format includes squad-based and individual participation depending on game mode.",
+                        "additional_information": [
+                            "Venue: Classroom 306 and 307 at DYPCET",
+                            "PES is played in knockout format"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "Civil Engineering",
+            "events": [
+                {
+                    "event_id": "CIV-01",
+                    "event_name": "TOWERQUEST: 150",
+                    "description": "Tower-building challenge using up to 150 popsicle sticks, judged by structural efficiency ratio.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:30",
+                        "end_time": "14:00"
+                    },
+                    "venue": "Geo-Technical Engineering Lab, Civil Engineering Department",
+                    "participation": {
+                        "eligibility": "Degree and Diploma students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": null,
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Design and Build",
+                            "subtitle": "Single structural challenge",
+                            "description": "Teams construct a popsicle-stick tower meeting dimensional constraints, followed by centralized load testing.",
+                            "steps": [
+                                "Construct tower with maximum 150 popsicle sticks",
+                                "Maintain cross-section limit of 150 mm x 150 mm",
+                                "Achieve minimum tower height of 600 mm",
+                                "Central vertical load test and efficiency ratio evaluation"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mr. Y. D. Kumbhar",
+                            "phone": "9552594509"
+                        },
+                        {
+                            "name": "Mr. Atharva Sambhaji Mali",
+                            "phone": "9970914926"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "TowerQuest challenges participants to build a lightweight but strong tower and maximize load-carrying efficiency.",
+                        "what_is": "Participants design and construct a tower using popsicle sticks and adhesive, then compete on load-to-weight performance.",
+                        "who_can_participate": [
+                            "Open to Degree and Diploma students",
+                            "Individual or team participation allowed",
+                            "Maximum 2 participants per team"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 1 (15 Apr 2026)",
+                            "Time: 09:30 AM to 02:00 PM",
+                            "Entry Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "TowerQuest Rules",
+                                "points": [
+                                    "Maximum 2 participants per team",
+                                    "Only ice-cream sticks and Fevicol are allowed",
+                                    "Total truss cross section should be limited to 150 mm x 150 mm",
+                                    "Load will be applied at the center of the structure",
+                                    "Strength-to-weight or load-to-weight ratio will decide the winner",
+                                    "Shape profile is final; internal stick arrangement can vary",
+                                    "Judges' decision is final"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual participation or team of up to 2 members.",
+                        "additional_information": [
+                            "Tower must reach minimum height of 600 mm",
+                            "Event is judged by efficiency ratio (load held vs structural weight)"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CIV-02",
+                    "event_name": "CUBE CRUSH CHALLENGE",
+                    "description": "Concrete mix design event targeting 40 N/mm2 compressive strength after 7-day curing.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "15:30"
+                    },
+                    "venue": "Material Testing Lab, Civil Engineering Department",
+                    "participation": {
+                        "eligibility": "Degree and Diploma students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": null,
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Mix Design and Casting",
+                            "subtitle": "Single practical round",
+                            "description": "Participants prepare one concrete cube and target compressive strength close to 40 N/mm2 at 7 days.",
+                            "steps": [
+                                "Submit HOD-signed mix design report",
+                                "Prepare one concrete cube of size 150 mm x 150 mm x 150 mm",
+                                "Allow 7-day curing period",
+                                "Evaluate compressive strength and ratio criteria"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mr. K. R. Patil",
+                            "phone": "9604501311"
+                        },
+                        {
+                            "name": "Miss Rajnandini Sampat Dinde",
+                            "phone": "9730352296"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "Cube Crush Challenge tests practical concrete mix design skills by targeting a specified compressive strength within a fixed curing timeline.",
+                        "what_is": "Participants cast a single concrete cube and are evaluated based on strength accuracy and efficiency.",
+                        "who_can_participate": [
+                            "Open to Degree and Diploma students",
+                            "Individual or team participation allowed",
+                            "Maximum 2 participants per team"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 1 (15 Apr 2026)",
+                            "Time: 10:00 AM to 03:30 PM",
+                            "Entry Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Cube Crush Rules",
+                                "points": [
+                                    "Prepare only one concrete cube targeting 40 N/mm2 at 7-day curing",
+                                    "Mix design report must be signed by HOD of respective institute",
+                                    "Cube size must be 150 mm x 150 mm x 150 mm",
+                                    "Use of chemical admixture is allowed",
+                                    "Use of fiber, mesh, or reinforcement is not allowed",
+                                    "Cube strength nearest to plus or minus 40 N/mm2 will be preferred",
+                                    "Strength-to-weight ratio will be considered for final result"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual participation or team of up to 2 members.",
+                        "additional_information": [
+                            "Target compressive strength is checked after 7-day curing period"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CIV-03",
+                    "event_name": "THE DESIGNER",
+                    "description": "CAD competition to test digital design precision, speed, and presentation quality.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:30",
+                        "end_time": "15:00"
+                    },
+                    "venue": "Computer Lab, Civil Engineering Department",
+                    "participation": {
+                        "eligibility": "Degree and Diploma students",
+                        "mode": [
+                            "individual"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 100
+                    },
+                    "registration": {
+                        "link": null,
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Scrutiny Round",
+                            "subtitle": "Round 1 - MCQ",
+                            "description": "MCQ screening round with negative marking.",
+                            "steps": [
+                                "25 questions, 2 marks per correct answer",
+                                "Negative marking of 1 mark per wrong answer",
+                                "Time limit: 15 minutes"
+                            ]
+                        },
+                        {
+                            "name": "AutoCAD Design Round",
+                            "subtitle": "Round 2",
+                            "description": "Participants prepare a plan on AutoCAD using college-provided computers.",
+                            "steps": [
+                                "Time limit: 1.5 hours",
+                                "No personal laptops allowed",
+                                "Plan must include all required details",
+                                "Time limit is strictly enforced"
+                            ]
+                        },
+                        {
+                            "name": "Tie-Breaker Round",
+                            "subtitle": "Round 3 (if required)",
+                            "description": "Additional half-hour round conducted only in case of tie.",
+                            "steps": [
+                                "Time limit: 30 minutes"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mr. A. R. Patil",
+                            "phone": "9890908666"
+                        },
+                        {
+                            "name": "Mr. Kaisar Akhalakahmed Desai",
+                            "phone": "9325268181"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "The Designer is a CAD-focused competition that evaluates participants on technical drawing accuracy, speed, and presentation quality.",
+                        "what_is": "Participants solve a design problem by converting technical concepts into detailed digital CAD representations.",
+                        "who_can_participate": [
+                            "Open to Degree and Diploma students",
+                            "Individual participation only"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 1 (15 Apr 2026)",
+                            "Time: 09:30 AM to 03:00 PM",
+                            "Entry Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Round Rules",
+                                "points": [
+                                    "Round 1 is MCQ-based scrutiny round",
+                                    "Round 2 is AutoCAD plan design round",
+                                    "Round 3 is tie-breaker only if needed",
+                                    "College computers will be provided",
+                                    "Personal laptops are not allowed"
+                                ]
+                            },
+                            {
+                                "title": "General Rules and Evaluation",
+                                "points": [
+                                    "Cheating leads to immediate elimination",
+                                    "Mobile phones and electronic devices are not allowed",
+                                    "Evaluation includes timely completion, orientation, presentation, and technical factors such as scale, text, accuracy, dimensions, hatching, and file size",
+                                    "Judges' decision is final"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Only single-participant entries are allowed.",
+                        "additional_information": [
+                            "AutoCAD round file should satisfy minimum size requirement as per event instructions"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "School of Architecture",
+            "events": [
+                {
+                    "event_id": "ARCH-01",
+                    "event_name": "MindMesh Quiz",
+                    "description": "Cross-disciplinary team quiz with MCQ, visual, and rapid-fire rounds focused on logic, awareness, and problem-solving.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "11:00",
+                        "end_time": "13:00"
+                    },
+                    "venue": "Classroom 401, School of Architecture (4th Floor), DYPSEM, Kasba Bawada, Kolhapur",
+                    "participation": {
+                        "eligibility": "Open to all students from any department and year",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/GDrKN4T7tj2hwExcA",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000,
+                            "reward": "INR 3000 and certificate"
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000,
+                            "reward": "INR 2000 and certificate"
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000,
+                            "reward": "INR 1000 and certificate"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "General Knowledge Round",
+                            "subtitle": "Round 1 - MCQ",
+                            "description": "Multiple-choice round scored by answer accuracy.",
+                            "steps": [
+                                "MCQ quiz round",
+                                "Top 10 highest-scoring teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "Visual and Scenario Round",
+                            "subtitle": "Round 2",
+                            "description": "Teams identify displayed visuals and answer scenario-based clues with limited response time.",
+                            "steps": [
+                                "Visual clues displayed on screen",
+                                "15 seconds response per clue",
+                                "Top 5 highest-scoring teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "Rapid Fire Final",
+                            "subtitle": "Round 3 - Head to Head",
+                            "description": "Final one-on-one rapid-fire battle between shortlisted top teams.",
+                            "steps": [
+                                "Head-to-head final challenge",
+                                "Final score-based winner declaration"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Ar. Tilottama A. Padale",
+                            "phone": "8446301000"
+                        },
+                        {
+                            "name": "Dr. Madhugandha A. Mithari",
+                            "phone": "9765783199"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments",
+                        "Certificates"
+                    ],
+                    "details": {
+                        "primary_overview": "MindMesh Quiz is a cross-disciplinary challenge that combines knowledge, speed, teamwork, and real-world thinking in a dynamic competition format.",
+                        "what_is": "The event includes multiple rounds such as MCQ, visual/scenario analysis, and rapid-fire finals to test interdisciplinary awareness and collaborative problem-solving.",
+                        "who_can_participate": [
+                            "Open to all students irrespective of department",
+                            "Individual participation allowed",
+                            "Teams of 2 members allowed"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 11:00 AM to 01:00 PM (approx)",
+                            "Registration Fee: INR 100 per participant",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Registration and Attendance",
+                                "points": [
+                                    "Each team must register through the Google form",
+                                    "Registration closes on 14 Apr 2026 at 12:00 noon",
+                                    "No on-the-spot entries are allowed",
+                                    "Participants must report 30 minutes before event start",
+                                    "Late participants will not be allowed"
+                                ]
+                            },
+                            {
+                                "title": "Conduct and Fair Play",
+                                "points": [
+                                    "Each group can have only two members",
+                                    "Participants must maintain respect toward hosts and other competitors",
+                                    "No disputes regarding scores or decisions will be entertained",
+                                    "Any cheating, disruptive behavior, or unauthorized material use leads to disqualification"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual participation or team of 2 members.",
+                        "additional_information": [
+                            "Venue block and room details may be shared again before event",
+                            "Prize winners receive cash and certificates"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "ARCH-02",
+                    "event_name": "Modular partition unit from Trash to Treasure",
+                    "description": "Sustainable design challenge to build modular partition systems from recycled or waste materials.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "13:00"
+                    },
+                    "venue": "School of Architecture (4th Floor), DYPSEM, Kasba Bawada, Kolhapur",
+                    "participation": {
+                        "eligibility": "Architecture and design students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 3
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 300
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/GDrKN4T7tj2hwExcA",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000,
+                            "reward": "INR 3000 and certificate"
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000,
+                            "reward": "INR 2000 and certificate"
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000,
+                            "reward": "INR 1000 and certificate"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Design and Build Module",
+                            "subtitle": "Main competition round",
+                            "description": "Participants design and construct a modular partition unit using primarily waste and recycled materials.",
+                            "steps": [
+                                "Use at least 70 percent waste or recycled materials",
+                                "Create lightweight and structurally stable repeatable module",
+                                "Allow light, ventilation, and visual permeability",
+                                "Complete assembly within competition timeline"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Prof. Neela D. Jirge",
+                            "phone": "9881494969"
+                        },
+                        {
+                            "name": "Ar. Pooja P. Jirge",
+                            "phone": "8855865573"
+                        },
+                        {
+                            "name": "Ar. Manjett J. Jadhav",
+                            "phone": "9021554738"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments",
+                        "Certificates"
+                    ],
+                    "details": {
+                        "primary_overview": "This competition transforms waste into functional architecture by creating modular partition units suitable for indoor or outdoor use.",
+                        "what_is": "Participants design and fabricate a repeatable partition system balancing sustainability, aesthetics, and structural stability.",
+                        "who_can_participate": [
+                            "Architecture and design students",
+                            "Individual participation allowed",
+                            "Teams of 2 to 3 students allowed",
+                            "Each team can submit only one entry"
+                        ],
+                        "event_timeline": [
+                            "Date: Wednesday, 15 Apr 2026",
+                            "Time: 10:00 AM to 01:00 PM",
+                            "Registration Fee: INR 100 per participant",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Design Requirements",
+                                "points": [
+                                    "Use minimum 70 percent waste or recycled materials",
+                                    "Module should function as screen, divider, facade element, or shading device",
+                                    "Design must be modular and repeatable horizontally or vertically",
+                                    "Partition should be lightweight yet structurally stable",
+                                    "Design should allow light, ventilation, and visual permeability"
+                                ]
+                            },
+                            {
+                                "title": "Participation and Conduct",
+                                "points": [
+                                    "Participation can be individual or teams of 2 to 3 students",
+                                    "Each team can submit one entry only",
+                                    "Model must be constructed by participants",
+                                    "Market-ready decorative panels are not allowed",
+                                    "Plagiarized content, designs, or ideas lead to disqualification",
+                                    "Safety precautions must be followed during fabrication",
+                                    "Each group gets 3 hours to complete design",
+                                    "Teams should report 30 minutes before start",
+                                    "No late or on-the-spot entries are allowed"
+                                ]
+                            },
+                            {
+                                "title": "Evaluation Criteria",
+                                "points": [
+                                    "Innovation in waste material: 25%",
+                                    "Structural stability: 20%",
+                                    "Aesthetic quality: 20%",
+                                    "Modular repeatability: 15%",
+                                    "Sustainability: 10%",
+                                    "Ease of fabrication: 10%"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual entries or teams of 2 to 3 students.",
+                        "additional_information": [
+                            "Recommended module frame size is 2 feet x 4 feet",
+                            "Optional constraints may include max 3 waste materials and budget cap of INR 1000",
+                            "Selected designs may be displayed on campus"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "Chemical Engineering",
+            "events": [
+                {
+                    "event_id": "CHEM-01",
+                    "event_name": "Mock Placement Drive",
+                    "description": "National-level mock recruitment simulation with aptitude test, group discussion, and personal interview rounds.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "DY Patil College of Engineering and Technology, Kolhapur",
+                    "participation": {
+                        "eligibility": "Open to engineering students from all departments across India",
+                        "mode": [
+                            "individual"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": null
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/efZUchKSw2KHfp9i9",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "Top Performers",
+                            "reward": "Cash prizes and certificates"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "General Aptitude Test (GAT)",
+                            "subtitle": "Round 1",
+                            "description": "All participants appear for aptitude, logical reasoning, and verbal ability assessment.",
+                            "steps": [
+                                "Mandatory for all participants",
+                                "Covers quantitative aptitude, logical reasoning, and verbal ability",
+                                "Shortlisting based on test score"
+                            ]
+                        },
+                        {
+                            "name": "Group Discussion (GD)",
+                            "subtitle": "Round 2",
+                            "description": "Shortlisted participants discuss current affairs and general topics.",
+                            "steps": [
+                                "Only Round 1 shortlisted candidates are eligible",
+                                "Evaluated on communication, confidence, leadership, and analytical skills"
+                            ]
+                        },
+                        {
+                            "name": "Personal Interview (PI)",
+                            "subtitle": "Round 3",
+                            "description": "Final interview round conducted by professional HR panel.",
+                            "steps": [
+                                "Only GD shortlisted candidates are eligible",
+                                "Assessment on technical knowledge, HR skills, personality, and presentation",
+                                "Results announced after interview completion"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Lt. (Dr.) Rahul D. Mahajan",
+                            "phone": "8669116943"
+                        },
+                        {
+                            "name": "Mrs. Poonam R. Mandale",
+                            "phone": "8485824122"
+                        },
+                        {
+                            "name": "Mr. Sumit Potdar",
+                            "phone": "9529303734"
+                        },
+                        {
+                            "name": "Mr. Digvijay Bhogavkar",
+                            "phone": "7040015519"
+                        },
+                        {
+                            "name": "Rupesh Nimbalkar",
+                            "phone": "9075179696"
+                        },
+                        {
+                            "name": "Mr. Kiran Dhere",
+                            "phone": "8767979556"
+                        },
+                        {
+                            "name": "Sai Dhakate",
+                            "phone": "8208195735"
+                        },
+                        {
+                            "name": "Neha Jadhav",
+                            "phone": "8605565573"
+                        },
+                        {
+                            "name": "Shravani Powar",
+                            "phone": "8010140745"
+                        },
+                        {
+                            "name": "Kapil Pawar",
+                            "phone": "8390847253"
+                        },
+                        {
+                            "name": "Sanket Gorule",
+                            "phone": "8208157568"
+                        },
+                        {
+                            "name": "Sudharm Mali",
+                            "phone": "7709252416"
+                        }
+                    ],
+                    "benefits": [
+                        "Participation certificates",
+                        "Winning certificates",
+                        "Cash prizes"
+                    ],
+                    "details": {
+                        "primary_overview": "Mock Placement Drive simulates real campus recruitment procedures to prepare students for aptitude tests, group discussions, and personal interviews.",
+                        "what_is": "Participants progress through three structured rounds based on shortlisting and performance to experience an end-to-end hiring process.",
+                        "who_can_participate": [
+                            "Open to engineering students from all departments across India",
+                            "Individual participation only"
+                        ],
+                        "event_timeline": [
+                            "Date: 16 Apr 2026",
+                            "Time: 10:00 AM to 04:00 PM (tentative)",
+                            "Entry Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Participation Rules",
+                                "points": [
+                                    "All participants must appear for Round 1",
+                                    "Only shortlisted candidates can proceed to further rounds",
+                                    "Participants should attend in formal attire",
+                                    "Participants should carry resume and supporting document folder for interview round"
+                                ]
+                            },
+                            {
+                                "title": "Round-wise Evaluation",
+                                "points": [
+                                    "Round 1 evaluates aptitude, logic, and verbal skills",
+                                    "Round 2 evaluates communication, confidence, leadership, and analysis",
+                                    "Round 3 evaluates technical knowledge, HR skills, and presentation"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Only individual or solo participation allowed.",
+                        "additional_information": [
+                            "Professional HR panel conducts interviews in final round",
+                            "Certificates issued for participation and winners"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CHEM-02",
+                    "event_name": "Product Development Competition",
+                    "description": "Innovation challenge to design, develop, and present a novel product addressing real-world needs.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Department of Chemical Engineering",
+                    "participation": {
+                        "eligibility": "All Diploma and UG students",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 3,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/GuVewe2fn7DQKEP3A",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Presentation and Evaluation",
+                            "subtitle": "Main round",
+                            "description": "Teams present product sample and concept for judging based on utility, innovation, cost, and feasibility.",
+                            "steps": [
+                                "Showcase product sample with complete information",
+                                "Present using PPT or poster format",
+                                "5 to 10 minute presentation window",
+                                "Evaluation on usefulness, innovation, cost-effectiveness, feasibility, and concept clarity"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Ashish Nayar",
+                            "phone": "7218657519"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Product Development Competition encourages participants to ideate, build, and present innovative products that solve real-world challenges.",
+                        "what_is": "Teams move through ideation and prototyping with final presentation before judges for recognition and prizes.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate programs",
+                            "Team format with minimum 3 and maximum 4 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Registration Fee: INR 100 per participant",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Participation Rules",
+                                "points": [
+                                    "Each team must have minimum 3 and maximum 4 members",
+                                    "Teams should bring sample product for showcase",
+                                    "PPT or poster presentation is allowed",
+                                    "Only original product ideas are allowed; copied ideas are not allowed",
+                                    "Presentation time limit is 5 to 10 minutes"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Team participation only with 3 to 4 members.",
+                        "additional_information": [
+                            "Block and room details will be shared before event",
+                            "Finalists present before judging panel"
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }
