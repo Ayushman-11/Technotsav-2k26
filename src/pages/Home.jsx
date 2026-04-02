@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import events from '../data/events.json'
+import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
 import EventCard from '../components/EventCard.jsx'
 import PixelSnow from '../components/PixelSnow.jsx'
@@ -59,7 +59,6 @@ const stagger = {
 }
 
 function Home() {
-    const departments = ['All', ...new Set(events.map((event) => event.department))]
     const [activeDepartment, setActiveDepartment] = useState('All')
     const [countdown, setCountdown] = useState({
         days: '00',
@@ -185,7 +184,7 @@ Of Innovation`}
                         description="Filter by department and explore the full technical roster."
                     />
                     <div className="dept-filter" role="tablist" aria-label="Filter events by department">
-                        {departments.map((dept) => (
+                        {departmentFilters.map((dept) => (
                             <button
                                 key={dept}
                                 type="button"

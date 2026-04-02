@@ -1,302 +1,516 @@
-[
-    {
-        "id": "orbit-injection",
-        "title": "Orbital Injection Challenge",
-        "summary": "Calculate burn sequences for stable orbit placement and payload optimization.",
-        "date": "Oct 24, 2026",
-        "prize": "INR 50,000",
-        "department": "Engineering",
-        "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?q=80&w=1600&auto=format&fit=crop",
-        "location": "Main Deck Auditorium",
-        "teamSize": "2 - 4 members",
-        "duration": "6 hours",
-        "difficulty": "Advanced",
-        "tags": ["Astrodynamics", "Simulation", "Optimization"],
-        "about": "Teams design and simulate orbital burn sequences to place payloads into stable trajectories with minimal fuel use. Missions include geosynchronous alignment, gravity assists, and redundancy planning.",
-        "rules": [
-            "All simulations must be run during the live event window.",
-            "Only open-source tools and provided datasets are permitted.",
-            "Final submission must include burn tables and validation plots."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Briefing + Dataset Release",
-                "detail": "Mission parameters and datasets distributed.",
-                "time": "10:00 AM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Simulation Build",
-                "detail": "Teams craft and test orbital models.",
-                "time": "12:00 PM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Final Review",
-                "detail": "Present burn sequences and validation results.",
-                "time": "4:30 PM"
-            }
-        ],
-        "contact": {
-            "name": "Prof. N. Kulkarni",
-            "email": "orbitals@dypcoet.ac.in",
-            "phone": "+91 231 221 4001"
-        },
-        "registration": {
-            "fee": "Free Entry",
-            "deadline": "Oct 20, 2026",
-            "formUrl": "#"
+{
+    "departments": [
+        {
+            "department_name": "Computer Science and Engineering",
+            "events": [
+                {
+                    "event_id": "CSE-01",
+                    "event_name": "Webathon",
+                    "description": "6-hour website development competition",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "First Floor Labs",
+                    "participation": {
+                        "eligibility": "All students from any department or year",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/ZDk7saKFrxWFt9o5A",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Development & Presentation",
+                            "subtitle": "Build, pitch, and defend your web solution",
+                            "description": "Participants build a complete website under time constraints and present the concept, impact, and technical implementation to judges.",
+                            "steps": [
+                                "Website Development (6 Hours)",
+                                "Presentation (5 Minutes)",
+                                "Website Demonstration (3 Minutes)",
+                                "Question and Answer Session (5 Minutes)"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Sarthi Patil",
+                            "phone": "8446639066"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Webathon is a 6-hour fast-paced competition where participants design and develop innovative websites based on a given theme or problem statement. It is a platform to showcase technical skills, creativity, and problem-solving under time constraints while presenting real-world impact.",
+                        "what_is": "The Webathon gives aspiring web developers a stage to design and build innovative website solutions. Participants work in a time-bound environment and present their ideas and implementations before judges.",
+                        "who_can_participate": [
+                            "Open to all students from any department and year",
+                            "Individual or team participation allowed",
+                            "Team size: 1 to 2 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Registration Fee: INR 100 per participant (team fee INR 200)",
+                            "Includes: Refreshment and participation certificate"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Participation Guidelines",
+                                "points": [
+                                    "Participants can compete individually or in teams",
+                                    "All team members must be registered before the event begins",
+                                    "Participants must carry their own laptops and required accessories"
+                                ]
+                            },
+                            {
+                                "title": "Development Rules",
+                                "points": [
+                                    "Competition duration is strictly 6 hours",
+                                    "Problem statement or theme will be shared at the start",
+                                    "The website must be developed during event hours only",
+                                    "Open-source libraries, frameworks, and APIs are allowed",
+                                    "Pre-built templates or previously developed projects are not allowed",
+                                    "Internet usage is permitted for development only; plagiarism is prohibited"
+                                ]
+                            },
+                            {
+                                "title": "Submission Guidelines",
+                                "points": [
+                                    "Final project must be submitted before the deadline",
+                                    "Submission must include source code and a working demo",
+                                    "Late submissions are not accepted"
+                                ]
+                            },
+                            {
+                                "title": "Presentation and Demonstration",
+                                "points": [
+                                    "5 minutes for idea presentation and relevance",
+                                    "3 to 4 minutes for live website demonstration",
+                                    "2 to 3 minutes for Q&A with judges"
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Innovation and creativity",
+                                    "UI/UX design and responsiveness",
+                                    "Functionality and technical implementation",
+                                    "Relevance to problem statement",
+                                    "Presentation clarity"
+                                ]
+                            },
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Any form of plagiarism or unfair means leads to disqualification",
+                                    "Teams must maintain discipline and follow event guidelines",
+                                    "Judges' decisions are final and binding"
+                                ]
+                            }
+                        ],
+                        "team_structure": "The competition is open to individuals or teams consisting of up to two members.",
+                        "additional_information": [
+                            "Participation includes certificates and refreshments",
+                            "For queries, contact Sarthi Patil at 8446639066"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CSE-02",
+                    "event_name": "Idea Carnival",
+                    "description": "Innovation and idea pitching competition",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": null,
+                    "participation": {
+                        "eligibility": "All departments",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 2,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": null
+                    },
+                    "registration": {
+                        "link": "https://tinyurl.com/ideacarnival2026",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Idea Presentation",
+                            "subtitle": "Pitch your problem-solution concept",
+                            "description": "Teams present an innovative app idea, explain the core problem-solution flow, and respond to expert questions.",
+                            "steps": [
+                                "Idea Presentation (8 Minutes)",
+                                "Concept Explanation (Problem plus Solution)",
+                                "Question and Answer Session (5 Minutes)"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Suraj Munde",
+                            "phone": "7741007540"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Idea Carnival provides a platform for students to present innovative mobile application solutions while demonstrating technical skills, creativity, and business acumen in front of experts.",
+                        "what_is": "Open Innovation Ideathon Carnival allows students to propose practical solutions to real-world problems and showcase structured problem-solving and innovation thinking.",
+                        "who_can_participate": [
+                            "Open to all students from any department and year",
+                            "Team participation only",
+                            "Team size: 2 or 4 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 15 Apr 2026",
+                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Registration Fee: INR 100 per participant",
+                            "Includes: Refreshment and participation certificate"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Presentation and Demonstration",
+                                "points": [
+                                    "Each team gets 15 minutes total",
+                                    "8 minutes for presentation of concept and significance",
+                                    "2 minutes for optional prototype demonstration",
+                                    "5 minutes for Q&A with judging panel"
+                                ]
+                            },
+                            {
+                                "title": "Evaluation Focus",
+                                "points": [
+                                    "Innovation and originality",
+                                    "Clarity of problem and solution framing",
+                                    "Feasibility and impact",
+                                    "Quality of presentation and communication"
+                                ]
+                            }
+                        ],
+                        "team_structure": "The competition is open to teams of two or four members.",
+                        "additional_information": [
+                            "Participation includes certificates and refreshments",
+                            "For queries, contact Suraj Munde at 7741007540"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CSE-03",
+                    "event_name": "Infinity Hunt",
+                    "description": "Treasure hunt with coding and aptitude challenges",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "CSE Labs + Classrooms",
+                    "participation": {
+                        "eligibility": "All students from any department",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 4,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/zwC5WHDdJGCVVs4EA",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Aptitude and Coding Quiz",
+                            "subtitle": "Round 1",
+                            "description": "Teams solve aptitude and coding questions to qualify for the hunt phase.",
+                            "steps": [
+                                "Aptitude problem set",
+                                "Coding challenge set",
+                                "Qualification scoring"
+                            ]
+                        },
+                        {
+                            "name": "Treasure Hunt",
+                            "subtitle": "Round 2",
+                            "description": "Qualified teams solve clue chains and location-based puzzles across campus.",
+                            "steps": [
+                                "Clue decoding",
+                                "Checkpoint validation",
+                                "Time-based progress scoring"
+                            ]
+                        },
+                        {
+                            "name": "Buzzer Round",
+                            "subtitle": "Round 3",
+                            "description": "Final shortlisted teams compete in a rapid buzzer format to decide winners.",
+                            "steps": [
+                                "Rapid-fire question response",
+                                "Penalty and bonus scoring",
+                                "Final rank decision"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Atharva Bhasme",
+                            "phone": "9322142632"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Infinity Hunt is a treasure hunt-style competition blending aptitude, coding, puzzles, and clue-solving where teams race against time to reach the final destination.",
+                        "what_is": "Infinity Hunt combines discovery, mental agility, and technical thinking. Participants crack clues, solve coding and aptitude challenges, and move through progressive rounds.",
+                        "who_can_participate": [
+                            "Open to all students from any department and year",
+                            "Team participation only",
+                            "Team size: exactly 4 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 16 Apr 2026",
+                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Registration Fee: INR 100 per participant (team fee INR 400)",
+                            "Includes: Refreshment and participation certificate"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Mandatory Attendance",
+                                "points": [
+                                    "All participants must report on time and attend the full event duration",
+                                    "Late entry or early exit may lead to disqualification"
+                                ]
+                            },
+                            {
+                                "title": "Group Participation Etiquette",
+                                "points": [
+                                    "Group members must stay together during the hunt",
+                                    "Splitting up to solve clues individually is not allowed"
+                                ]
+                            },
+                            {
+                                "title": "Venue Conduct",
+                                "points": [
+                                    "Do not damage property or tamper with infrastructure",
+                                    "Any such behavior leads to immediate disqualification"
+                                ]
+                            },
+                            {
+                                "title": "No External Help",
+                                "points": [
+                                    "Use of mobile phones, internet, or outsider help is prohibited unless explicitly allowed",
+                                    "All answers must be solved independently by the team"
+                                ]
+                            },
+                            {
+                                "title": "Clue Integrity",
+                                "points": [
+                                    "Do not remove, hide, or alter clues",
+                                    "If a clue for another team is found, report it to coordinators"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Infinity Hunt is open to teams of four members.",
+                        "additional_information": [
+                            "Participation includes certificates and refreshments",
+                            "For queries, contact Atharva Bhasme at 9322142632"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CSE-04",
+                    "event_name": "PlaceX - National Hiring Simulation Challenge",
+                    "description": "Placement simulation competition",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "1 Classroom + 2 Labs",
+                    "participation": {
+                        "eligibility": "All India",
+                        "mode": [
+                            "individual"
+                        ]
+                    },
+                    "fees": {
+                        "individual": 100
+                    },
+                    "registration": {
+                        "link": null,
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "reward": "Trophy + HackerRank Infinity Plan"
+                        },
+                        {
+                            "position": "2nd",
+                            "reward": "Trophy + HackerRank Infinity Plan"
+                        },
+                        {
+                            "position": "3rd",
+                            "reward": "Trophy + HackerRank Infinity Plan"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Aptitude Test",
+                            "subtitle": "Round 1",
+                            "description": "Candidates face placement-style screening with quantitative, reasoning, and technical MCQ sections.",
+                            "steps": [
+                                "Quantitative Aptitude",
+                                "Logical Reasoning",
+                                "Technical MCQs"
+                            ]
+                        },
+                        {
+                            "name": "Coding Round",
+                            "subtitle": "Round 2",
+                            "description": "Shortlisted participants solve coding problems on HackerRank under strict evaluation constraints.",
+                            "steps": [
+                                "HackerRank platform coding assessment",
+                                "Time-bound implementation",
+                                "Automated test evaluation"
+                            ]
+                        },
+                        {
+                            "name": "Debugging Round",
+                            "subtitle": "Round 3",
+                            "description": "Participants identify and fix errors in provided code to complete the hiring simulation journey.",
+                            "steps": [
+                                "Bug identification",
+                                "Fix implementation",
+                                "Correctness validation"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Saniya Mane",
+                            "phone": "8799879400"
+                        },
+                        {
+                            "name": "Viraj Potdar",
+                            "phone": "9764482435"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "PlaceX is a national-level hiring simulation challenge that replicates company placement processes across aptitude, coding, and debugging rounds.",
+                        "what_is": "PlaceX helps students practice a real placement journey under time pressure and assessment conditions similar to corporate hiring pipelines.",
+                        "who_can_participate": [
+                            "Open to students across India",
+                            "Individual participation only"
+                        ],
+                        "event_timeline": [
+                            "Date Window: 15 Apr to 16 Apr 2026",
+                            "Time: 09:00 AM to 04:00 PM",
+                            "Registration Fee: INR 100",
+                            "Includes: Refreshments and certificate"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Competition Conduct",
+                                "points": [
+                                    "Participants must follow all round instructions",
+                                    "Any unfair means results in disqualification",
+                                    "Judges' decisions are final",
+                                    "Round-wise time limits must be strictly followed"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Only individual participation is allowed.",
+                        "additional_information": [
+                            "All participants receive certificates",
+                            "For queries, contact Saniya Mane (8799879400) or Viraj Potdar (9764482435)"
+                        ]
+                    }
+                }
+            ]
         }
-    },
-    {
-        "id": "lunar-docking",
-        "title": "Lunar Docking Protocol",
-        "summary": "Simulated precision docking maneuvers under communication latency.",
-        "date": "Nov 12, 2026",
-        "prize": "INR 35,000",
-        "department": "Operations",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600&auto=format&fit=crop",
-        "location": "Mission Control Lab",
-        "teamSize": "3 members",
-        "duration": "4 hours",
-        "difficulty": "Intermediate",
-        "tags": ["Navigation", "Controls", "Latency"],
-        "about": "Pilot autonomous docking protocols using a simulated lunar gateway. Teams must account for latency, sensor drift, and backup maneuvers.",
-        "rules": [
-            "Manual overrides are limited to one per mission.",
-            "Docking sequence must be logged with time-stamped checkpoints.",
-            "Safety compliance checklist is mandatory."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Systems Check",
-                "detail": "Hardware and simulation calibration.",
-                "time": "1:00 PM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Docking Run",
-                "detail": "Execute docking procedures with latency constraints.",
-                "time": "2:00 PM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Mission Debrief",
-                "detail": "Submit telemetry logs and review performance.",
-                "time": "4:15 PM"
-            }
-        ],
-        "contact": {
-            "name": "Dr. S. Deshmukh",
-            "email": "docking@dypcoet.ac.in",
-            "phone": "+91 231 221 4002"
-        },
-        "registration": {
-            "fee": "INR 200",
-            "deadline": "Nov 08, 2026",
-            "formUrl": "#"
-        }
-    },
-    {
-        "id": "deep-space-telemetry",
-        "title": "Deep Space Telemetry",
-        "summary": "Decode high-frequency signals and generate mission insights.",
-        "date": "Dec 05, 2026",
-        "prize": "INR 75,000",
-        "department": "Research",
-        "image": "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?q=80&w=1600&auto=format&fit=crop",
-        "location": "Data Science Hub",
-        "teamSize": "2 - 5 members",
-        "duration": "8 hours",
-        "difficulty": "Advanced",
-        "tags": ["Signal Processing", "AI", "Analytics"],
-        "about": "Analyze deep-space telemetry packets to extract mission insights. Teams must clean data, detect anomalies, and build a concise mission report.",
-        "rules": [
-            "Use only provided datasets and open-source tooling.",
-            "Reports must include anomaly detection and corrective actions.",
-            "All code must be submitted with reproducible notebooks."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Dataset Release",
-                "detail": "Access telemetry archives and mission logs.",
-                "time": "9:00 AM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Modeling Sprint",
-                "detail": "Train and validate anomaly models.",
-                "time": "1:30 PM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Mission Review",
-                "detail": "Present insights to judges.",
-                "time": "6:00 PM"
-            }
-        ],
-        "contact": {
-            "name": "Prof. R. Patil",
-            "email": "telemetry@dypcoet.ac.in",
-            "phone": "+91 231 221 4003"
-        },
-        "registration": {
-            "fee": "INR 300",
-            "deadline": "Dec 01, 2026",
-            "formUrl": "#"
-        }
-    },
-    {
-        "id": "eva-navigation",
-        "title": "EVA Navigation Sprint",
-        "summary": "Optimize extra-vehicular activity paths with limited resources.",
-        "date": "Jan 18, 2027",
-        "prize": "INR 20,000",
-        "department": "Operations",
-        "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1600&auto=format&fit=crop",
-        "location": "Robotics Arena",
-        "teamSize": "3 - 4 members",
-        "duration": "3 hours",
-        "difficulty": "Intermediate",
-        "tags": ["Robotics", "Pathfinding", "Operations"],
-        "about": "Plan EVA routes for multi-point repairs while managing energy reserves, oxygen, and time constraints.",
-        "rules": [
-            "All repairs must be completed within the mission clock.",
-            "Teams must submit route optimization logs.",
-            "Safety checks are mandatory before final submission."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Mission Briefing",
-                "detail": "EVA tasks and constraints released.",
-                "time": "11:00 AM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Route Planning",
-                "detail": "Optimize EVA sequence with limited resources.",
-                "time": "12:00 PM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Execution",
-                "detail": "Test and validate navigation path.",
-                "time": "2:30 PM"
-            }
-        ],
-        "contact": {
-            "name": "Ms. A. Kale",
-            "email": "eva@dypcoet.ac.in",
-            "phone": "+91 231 221 4004"
-        },
-        "registration": {
-            "fee": "INR 150",
-            "deadline": "Jan 15, 2027",
-            "formUrl": "#"
-        }
-    },
-    {
-        "id": "cosmic-design-lab",
-        "title": "Cosmic Design Lab",
-        "summary": "Design mission control interfaces with clarity and urgency.",
-        "date": "Jan 24, 2027",
-        "prize": "INR 25,000",
-        "department": "Design",
-        "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600&auto=format&fit=crop",
-        "location": "Design Studio",
-        "teamSize": "2 members",
-        "duration": "5 hours",
-        "difficulty": "Beginner",
-        "tags": ["UI/UX", "Visual Systems", "Prototyping"],
-        "about": "Create mission control dashboards that prioritize clarity and safety. Teams design critical alert states, data layers, and action-ready UI flows.",
-        "rules": [
-            "Deliverables include a clickable prototype and design rationale.",
-            "All UI elements must follow accessibility standards.",
-            "Teams must present a design walkthrough."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Design Brief",
-                "detail": "Receive mission control scenario and constraints.",
-                "time": "10:30 AM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Prototype Sprint",
-                "detail": "Build UI flows and interaction states.",
-                "time": "12:00 PM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Review",
-                "detail": "Present prototypes to the panel.",
-                "time": "4:00 PM"
-            }
-        ],
-        "contact": {
-            "name": "Ms. R. Joshi",
-            "email": "designlab@dypcoet.ac.in",
-            "phone": "+91 231 221 4005"
-        },
-        "registration": {
-            "fee": "INR 100",
-            "deadline": "Jan 20, 2027",
-            "formUrl": "#"
-        }
-    },
-    {
-        "id": "propulsion-workshop",
-        "title": "Propulsion Systems Workshop",
-        "summary": "Hands-on build of power delivery and control circuits.",
-        "date": "Feb 02, 2027",
-        "prize": "INR 15,000",
-        "department": "Workshop",
-        "image": "https://images.unsplash.com/photo-1447433819943-74a20887a81e?q=80&w=1600&auto=format&fit=crop",
-        "location": "Electronics Lab",
-        "teamSize": "2 - 3 members",
-        "duration": "4 hours",
-        "difficulty": "Beginner",
-        "tags": ["Hardware", "Control Systems", "Prototyping"],
-        "about": "Build a propulsion control module with sensors, feedback loops, and safety switches. Participants build and test circuits with guidance.",
-        "rules": [
-            "Safety gear is mandatory throughout the workshop.",
-            "Participants must test circuits before demo.",
-            "All components must be returned after the session."
-        ],
-        "timeline": [
-            {
-                "phase": "Phase 01",
-                "title": "Hardware Orientation",
-                "detail": "Intro to modules and safety setup.",
-                "time": "9:30 AM"
-            },
-            {
-                "phase": "Phase 02",
-                "title": "Build Session",
-                "detail": "Assemble and test propulsion circuitry.",
-                "time": "11:00 AM"
-            },
-            {
-                "phase": "Phase 03",
-                "title": "Demo",
-                "detail": "Showcase circuit behavior and metrics.",
-                "time": "1:30 PM"
-            }
-        ],
-        "contact": {
-            "name": "Mr. S. Naik",
-            "email": "propulsion@dypcoet.ac.in",
-            "phone": "+91 231 221 4006"
-        },
-        "registration": {
-            "fee": "INR 150",
-            "deadline": "Jan 30, 2027",
-            "formUrl": "#"
-        }
-    }
-]
+    ]
+}
