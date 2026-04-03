@@ -611,6 +611,31 @@ main {
     scroll-snap-align: start;
 }
 
+.event-scroll.is-grid {
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+}
+
+.event-scroll.is-grid .event-scroll-track {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    will-change: auto;
+}
+
+.event-scroll.is-grid .event-scroll-track>div {
+    min-width: 0;
+}
+
+.event-scroll.is-grid .event-card {
+    width: 100%;
+    min-width: 0;
+}
+
 .event-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2092,6 +2117,10 @@ main {
     .event-detail-side {
         position: static;
     }
+
+    .event-scroll.is-grid .event-scroll-track {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 760px) {
@@ -2248,6 +2277,10 @@ main {
 
     .event-detail-panel {
         padding: 18px;
+    }
+
+    .event-scroll.is-grid .event-scroll-track {
+        grid-template-columns: 1fr;
     }
 
     .dept-bento {

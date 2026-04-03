@@ -58,8 +58,11 @@ const stagger = {
     },
 }
 
+const HERO_BADGE_SRC = `${import.meta.env.BASE_URL}dypcet.png`
+
 function Home() {
     const [activeDepartment, setActiveDepartment] = useState('All')
+    const isAllDepartmentsView = activeDepartment === 'All'
     const [countdown, setCountdown] = useState({
         days: '00',
         hours: '00',
@@ -113,7 +116,7 @@ function Home() {
                         transition={{ duration: 0.6 }}
                     >
                         <img
-                            src="/dypcet.png"
+                            src={HERO_BADGE_SRC}
                             alt="Technotsav"
                             className="hero-eyebrow-image"
                             loading="eager"
@@ -204,8 +207,11 @@ Of Innovation`}
                             </button>
                         ))}
                     </div>
-                    <div className="event-scroll" aria-label="Upcoming events">
-                        <div className="event-scroll-track">
+                    <div
+                        className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
+                        aria-label="Upcoming events"
+                    >
+                        <div className={`event-scroll-track${isAllDepartmentsView ? ' is-grid' : ''}`}>
                             {filteredEvents.map((event) => (
                                 <div key={event.id}>
                                     <EventCard event={event} />
