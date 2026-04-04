@@ -142,11 +142,9 @@ function EventDetail() {
                         Back to Events
                     </Link>
                     <div className="event-detail-headline">
-                        <div className="event-detail-badges">
-                            <span className="event-badge">{event.department}</span>
-                            <span className="event-badge">{event.eventId || event.id}</span>
-                            <span className="event-badge">{(event.type || 'event').toUpperCase()}</span>
-                        </div>
+                        <p className="meta-label" style={{ color: 'var(--accent)', marginBottom: '-8px' }}>
+                            {event.department}
+                        </p>
                         <h1 className="event-title">{event.eventName || event.title}</h1>
                         <div className="event-detail-hero-about-flow">
                             <p className="meta-label">About Event</p>

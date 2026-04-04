@@ -1201,8 +1201,8 @@
                     "description": "Tower-building challenge using up to 150 popsicle sticks, judged by structural efficiency ratio.",
                     "type": "competition",
                     "schedule": {
-                        "day": "Day 1",
-                        "date": "2026-04-15",
+                        "day": "Day 2",
+                        "date": "2026-04-16",
                         "start_time": "09:30",
                         "end_time": "14:00"
                     },
@@ -1273,7 +1273,7 @@
                             "Maximum 2 participants per team"
                         ],
                         "event_timeline": [
-                            "Date: Day 1 (15 Apr 2026)",
+                            "Date: Day 2 (16 Apr 2026)",
                             "Time: 09:30 AM to 02:00 PM",
                             "Entry Fee: INR 100 per participant"
                         ],
@@ -1522,6 +1522,136 @@
                         "team_structure": "Only single-participant entries are allowed.",
                         "additional_information": [
                             "AutoCAD round file should satisfy minimum size requirement as per event instructions"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CIV-04",
+                    "event_name": "CIVIL CLASH",
+                    "description": "Three-round civil engineering challenge testing materials knowledge, structural diagnosis, and rapid analysis under pressure.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:30",
+                        "end_time": "15:00"
+                    },
+                    "venue": "Computer Lab, Civil Engineering Department",
+                    "participation": {
+                        "eligibility": "Degree and Diploma students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": null,
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Blindfold Round",
+                            "subtitle": "Round 1",
+                            "description": "Participants identify construction materials by touch within a strict time limit.",
+                            "steps": [
+                                "Blindfold remains on throughout the round",
+                                "Identify materials using touch only",
+                                "60 seconds per guess",
+                                "Highest score qualifies"
+                            ]
+                        },
+                        {
+                            "name": "Identify Me",
+                            "subtitle": "Round 2",
+                            "description": "Teams analyze structural problem images and explain causes with suitable solutions.",
+                            "steps": [
+                                "Identify type of structural problem",
+                                "Explain probable causes",
+                                "Suggest prevention or corrective solution",
+                                "Qualification based on completeness and correctness"
+                            ]
+                        },
+                        {
+                            "name": "Structure Beauty",
+                            "subtitle": "Round 3",
+                            "description": "Rapid-fire final based on structural images after short preparation.",
+                            "steps": [
+                                "Given structure image for analysis",
+                                "10 minutes preparation time",
+                                "Rapid-fire questions",
+                                "Highest scoring team wins"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mr. S. A. Salokhe",
+                            "phone": "9766167240"
+                        },
+                        {
+                            "name": "Ms. Sakshi",
+                            "phone": "9518700297"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "Civil Clash is a multi-round event that combines tactile material recognition, structural fault analysis, and quick-response engineering thinking.",
+                        "what_is": "Participants compete solo or in duo teams through three progressive rounds to demonstrate technical insight and problem-solving speed.",
+                        "who_can_participate": [
+                            "Open to Degree and Diploma students",
+                            "Single or duo entry allowed",
+                            "Qualification is based on Round 1 and Round 2 performance"
+                        ],
+                        "event_timeline": [
+                            "Date: Day 2 (16 Apr 2026)",
+                            "Time: 09:30 AM to 03:00 PM",
+                            "Entry Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Round Rules",
+                                "points": [
+                                    "Round 1 (Blindfold): identify given material by touch with 60 seconds per guess",
+                                    "Round 2 (Identify Me): identify structural problem, explain causes, and suggest solutions",
+                                    "Round 3 (Structure Beauty): 10 minutes preparation followed by rapid-fire questions"
+                                ]
+                            },
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Single or duo participation is allowed",
+                                    "Winner and runner-up are decided from Round 3",
+                                    "Cheating leads to immediate elimination",
+                                    "Mobile phones and other electronic devices are not allowed",
+                                    "Judges' decision is final"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual participation or team of up to 2 members.",
+                        "additional_information": [
+                            "Civil Clash includes three rounds with qualification before final stage"
                         ]
                     }
                 }
@@ -1811,7 +1941,7 @@
                 {
                     "event_id": "CHEM-01",
                     "event_name": "Mock Placement Drive",
-                    "description": "National-level mock recruitment simulation with aptitude test, group discussion, and personal interview rounds.",
+                    "description": "A simulation of real campus recruitment procedures.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
@@ -1819,9 +1949,9 @@
                         "start_time": "10:00",
                         "end_time": "16:00"
                     },
-                    "venue": "DY Patil College of Engineering and Technology, Kolhapur",
+                    "venue": "DY Patil College of Engineering & Technology, Kolhapur",
                     "participation": {
-                        "eligibility": "Open to engineering students from all departments across India",
+                        "eligibility": "Open to all departments of engineering students across India",
                         "mode": [
                             "individual"
                         ],
@@ -1831,8 +1961,7 @@
                         }
                     },
                     "fees": {
-                        "individual": 100,
-                        "team": null
+                        "individual": 100
                     },
                     "registration": {
                         "link": "https://forms.gle/efZUchKSw2KHfp9i9",
@@ -1840,64 +1969,46 @@
                     },
                     "prizes": [
                         {
-                            "position": "Top Performers",
-                            "reward": "Cash prizes and certificates"
+                            "position": "1st",
+                            "amount": "Cash Prizes"
                         }
                     ],
                     "rounds": [
                         {
                             "name": "General Aptitude Test (GAT)",
                             "subtitle": "Round 1",
-                            "description": "All participants appear for aptitude, logical reasoning, and verbal ability assessment.",
+                            "description": "Test includes questions on quantitative aptitude, logical reasoning, and verbal ability.",
                             "steps": [
-                                "Mandatory for all participants",
-                                "Covers quantitative aptitude, logical reasoning, and verbal ability",
-                                "Shortlisting based on test score"
+                                "All participants must appear",
+                                "Shortlisting purely based on assessment scores"
                             ]
                         },
                         {
                             "name": "Group Discussion (GD)",
                             "subtitle": "Round 2",
-                            "description": "Shortlisted participants discuss current affairs and general topics.",
+                            "description": "Topics based on current affairs and general issues.",
                             "steps": [
-                                "Only Round 1 shortlisted candidates are eligible",
+                                "Only shortlisted from Round 1",
                                 "Evaluated on communication, confidence, leadership, and analytical skills"
                             ]
                         },
                         {
                             "name": "Personal Interview (PI)",
                             "subtitle": "Round 3",
-                            "description": "Final interview round conducted by professional HR panel.",
+                            "description": "Interviews by a professional HR panel.",
                             "steps": [
-                                "Only GD shortlisted candidates are eligible",
-                                "Assessment on technical knowledge, HR skills, personality, and presentation",
-                                "Results announced after interview completion"
+                                "Shortlisted from GD",
+                                "Assessment based on technical knowledge, HR skills, personality, and overall presentation"
                             ]
                         }
                     ],
                     "contact": [
                         {
-                            "name": "Lt. (Dr.) Rahul D. Mahajan",
-                            "phone": "8669116943"
-                        },
-                        {
-                            "name": "Mrs. Poonam R. Mandale",
-                            "phone": "8485824122"
-                        },
-                        {
-                            "name": "Mr. Sumit Potdar",
-                            "phone": "9529303734"
-                        },
-                        {
-                            "name": "Mr. Digvijay Bhogavkar",
-                            "phone": "7040015519"
-                        },
-                        {
                             "name": "Rupesh Nimbalkar",
                             "phone": "9075179696"
                         },
                         {
-                            "name": "Mr. Kiran Dhere",
+                            "name": "Kiran Dhere",
                             "phone": "8767979556"
                         },
                         {
@@ -1926,52 +2037,40 @@
                         }
                     ],
                     "benefits": [
-                        "Participation certificates",
-                        "Winning certificates",
-                        "Cash prizes"
+                        "Certificates"
                     ],
                     "details": {
-                        "primary_overview": "Mock Placement Drive simulates real campus recruitment procedures to prepare students for aptitude tests, group discussions, and personal interviews.",
-                        "what_is": "Participants progress through three structured rounds based on shortlisting and performance to experience an end-to-end hiring process.",
+                        "primary_overview": "The Mock Placement Drive consists of three structured rounds designed to simulate real campus recruitment procedures.",
+                        "what_is": "A competition that helps students experience real-life recruitment processes.",
                         "who_can_participate": [
-                            "Open to engineering students from all departments across India",
-                            "Individual participation only"
+                            "Open to all departments of engineering students across India"
                         ],
                         "event_timeline": [
-                            "Date: 16 Apr 2026",
-                            "Time: 10:00 AM to 04:00 PM (tentative)",
-                            "Entry Fee: INR 100 per participant"
+                            "Date: 16th April 2026",
+                            "Time: 10:00 AM to 4:00 PM (Tentative)",
+                            "Registration Fee: \u20b9100 per participant"
                         ],
                         "rules_and_regulations": [
                             {
-                                "title": "Participation Rules",
+                                "title": "Guidelines",
                                 "points": [
-                                    "All participants must appear for Round 1",
-                                    "Only shortlisted candidates can proceed to further rounds",
-                                    "Participants should attend in formal attire",
-                                    "Participants should carry resume and supporting document folder for interview round"
-                                ]
-                            },
-                            {
-                                "title": "Round-wise Evaluation",
-                                "points": [
-                                    "Round 1 evaluates aptitude, logic, and verbal skills",
-                                    "Round 2 evaluates communication, confidence, leadership, and analysis",
-                                    "Round 3 evaluates technical knowledge, HR skills, and presentation"
+                                    "All participants must appear along with formal outfits and with their Resume + Folder file of all supporting documents for Personal Interviews.",
+                                    "All Participants must have to appear for Round 1.",
+                                    "Based on performance, shortlisted candidates will progress to further rounds."
                                 ]
                             }
                         ],
-                        "team_structure": "Only individual or solo participation allowed.",
+                        "team_structure": "Individual/Solo",
                         "additional_information": [
-                            "Professional HR panel conducts interviews in final round",
-                            "Certificates issued for participation and winners"
+                            "Faculty Coordinators - Lt.(Dr.) Rahul D. Mahajan, Mrs. Poonam R. Mandale, Mr. Sumit Potdar",
+                            "Non teaching Faculty - Mr. Digvijay Bhogavkar"
                         ]
                     }
                 },
                 {
                     "event_id": "CHEM-02",
                     "event_name": "Product Development Competition",
-                    "description": "Innovation challenge to design, develop, and present a novel product addressing real-world needs.",
+                    "description": "Design, develop, and present a novel product that addresses real-world needs.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
@@ -1981,8 +2080,9 @@
                     },
                     "venue": "Department of Chemical Engineering",
                     "participation": {
-                        "eligibility": "All Diploma and UG students",
+                        "eligibility": "All Diploma & UG Students",
                         "mode": [
+                            "individual",
                             "team"
                         ],
                         "team_size": {
@@ -2015,13 +2115,11 @@
                     "rounds": [
                         {
                             "name": "Presentation and Evaluation",
-                            "subtitle": "Main round",
-                            "description": "Teams present product sample and concept for judging based on utility, innovation, cost, and feasibility.",
+                            "subtitle": "Round 1",
+                            "description": "Evaluation based on Usefulness to the society, Enovation, cost effective, feasibility and understanding.",
                             "steps": [
-                                "Showcase product sample with complete information",
-                                "Present using PPT or poster format",
-                                "5 to 10 minute presentation window",
-                                "Evaluation on usefulness, innovation, cost-effectiveness, feasibility, and concept clarity"
+                                "Product Showcase",
+                                "PPT/Poster Presentation (5-10 min)"
                             ]
                         }
                     ],
@@ -2032,38 +2130,716 @@
                         }
                     ],
                     "benefits": [
-                        "Refreshments"
+                        "Refreshment"
                     ],
                     "details": {
-                        "primary_overview": "Product Development Competition encourages participants to ideate, build, and present innovative products that solve real-world challenges.",
-                        "what_is": "Teams move through ideation and prototyping with final presentation before judges for recognition and prizes.",
+                        "primary_overview": "This competition challenges participants to design, develop, and present a novel product that addresses real-world needs. Teams will work through stages of ideation, prototyping, and validation.",
+                        "what_is": "A product development competition where innovation meets impact.",
                         "who_can_participate": [
-                            "Students from Diploma and Undergraduate programs",
-                            "Team format with minimum 3 and maximum 4 members"
+                            "Students from Diploma and Undergraduate (UG) programs are eligible to participate."
                         ],
                         "event_timeline": [
-                            "Date: 15 Apr 2026",
+                            "Date: 15th April 2026",
                             "Time: 10:00 AM to 04:00 PM",
-                            "Registration Fee: INR 100 per participant",
+                            "Registration Fee: \u20b9100 per participant",
                             "Includes: Refreshment"
                         ],
                         "rules_and_regulations": [
                             {
-                                "title": "Participation Rules",
+                                "title": "Rules & Regulations",
                                 "points": [
-                                    "Each team must have minimum 3 and maximum 4 members",
-                                    "Teams should bring sample product for showcase",
-                                    "PPT or poster presentation is allowed",
-                                    "Only original product ideas are allowed; copied ideas are not allowed",
-                                    "Presentation time limit is 5 to 10 minutes"
+                                    "There shall be minimum 3 and maximum 4 members in a team.",
+                                    "Students should bring the sample of the product and has to showcase along with its information.",
+                                    "Students can prepare PPT/Poster presentation to give the information about the product.",
+                                    "Only original Product Development ideas allowed (no copied ideas).",
+                                    "Time limits for presentation (5\u201310 min)."
                                 ]
                             }
                         ],
-                        "team_structure": "Team participation only with 3 to 4 members.",
+                        "team_structure": "Minimum 3 and maximum 4 members in a team.",
                         "additional_information": [
-                            "Block and room details will be shared before event",
-                            "Finalists present before judging panel"
+                            "Block/Room details will be shared before the event"
                         ]
+                    }
+                },
+                {
+                    "event_id": "CHEM-03",
+                    "event_name": "Project competition",
+                    "description": "Showcasing your mini and mega projects in the field of Project areas Chemical, biotechnology, pharmaceutical, nanotechnology, environmental.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Project Laboratory, Chemical Engineering Department",
+                    "participation": {
+                        "eligibility": "All UG students",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 3,
+                            "max": 5
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 500
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/yHtt4CEqkBUox3T59",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Presentation and Evaluation",
+                            "subtitle": "Round 1",
+                            "description": "Evaluation will be done on the basis of Usefulness to society, Innovation, Cost effective, feasibility and understanding.",
+                            "steps": [
+                                "Prototype/PPT/Design presentation",
+                                "Evaluation"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Salman Nadaf",
+                            "phone": "7218715120"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshment"
+                    ],
+                    "details": {
+                        "primary_overview": "Showcasing your mini and mega projects in the field of Project areas Chemical, biotechnology, pharmaceutical, nanotechnology, environmental and any project related to betterment of society.",
+                        "what_is": "A competition to showcase innovative projects.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate (UG) programs are eligible to participate."
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Registration Fee: \u20b9100 per participant",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Rules & Regulations",
+                                "points": [
+                                    "There shall be minimum 3 and maximum 5 members in a team.",
+                                    "Project should be in following areas: Chemical, biotechnology, pharmaceutical, nanotechnology, environmental and any project related to betterment of society.",
+                                    "Students can present their project in the form of prototype, ppt, design or any other form to give the information about the project.",
+                                    "Project will be evaluated on the basis of Usefulness to the society, Innovation, Cost effective, feasibility and understanding."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Minimum 3 and maximum 5 members in a team.",
+                        "additional_information": [
+                            "Block/Room details will be shared before the event"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "Ecell",
+            "events": [
+                {
+                    "event_id": "ECELL-01",
+                    "event_name": "IPL Auction",
+                    "description": "A two-stage quiz and live auction event replicating the Indian Premier League auction strategy environment.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:30",
+                        "end_time": "17:30"
+                    },
+                    "venue": "DYPCET Kolhapur",
+                    "participation": {
+                        "eligibility": "All students from any department",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 3,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfyYVfahF4HxNZc7Zn6KXUch6lsJ4yoabYTJMSvKOSEhrkbsw/viewform?usp=header",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "Winner",
+                            "amount": 3000,
+                            "reward": "INR 3000 + Certificates"
+                        },
+                        {
+                            "position": "Runner-up",
+                            "amount": 2000,
+                            "reward": "INR 2000 + Certificates"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "IPL Quiz (Qualifier)",
+                            "subtitle": "Round 1",
+                            "description": "Teams answer IPL-focused quiz questions on players, teams, stats, and records.",
+                            "steps": [
+                                "Quiz on IPL teams, players, stats, and records",
+                                "Top 20 scoring teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "IPL Quiz (Elimination)",
+                            "subtitle": "Round 2",
+                            "description": "Elimination round with advanced IPL quiz questions.",
+                            "steps": [
+                                "IPL elimination quiz round",
+                                "Top 10 scoring teams qualify"
+                            ]
+                        },
+                        {
+                            "name": "Live IPL Auction",
+                            "subtitle": "Round 3",
+                            "description": "Qualified teams are assigned an IPL franchise and build squads through live bidding with a virtual purse.",
+                            "steps": [
+                                "Random IPL franchise assignment",
+                                "Auction with INR 100 crore virtual purse",
+                                "Squad build as per role and foreign-player rules",
+                                "Winner decided by balance, ratings, and purse strategy"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Abhijeet Adamuthe",
+                            "phone": "7058987796"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "IPL Auction recreates the real auction atmosphere where student teams use cricket knowledge and strategy to build Dream11-style squads.",
+                        "what_is": "The event blends quiz-based qualification with a live bidding simulation to test decision-making, budget management, and team composition strategy.",
+                        "who_can_participate": [
+                            "Open to all students from any department or year",
+                            "Team participation only",
+                            "Each team must have 3 to 4 members"
+                        ],
+                        "event_timeline": [
+                            "Date: 16 Apr 2026",
+                            "Time: 09:30 AM to 05:30 PM (approx)",
+                            "Registration Fee: INR 100 per participant",
+                            "Team fee: INR 300 to INR 400 based on team size",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Team and Qualification Rules",
+                                "points": [
+                                    "Total teams: 40",
+                                    "Each team must have 3 to 4 members",
+                                    "Top 10 teams qualify for Mega Auction Round",
+                                    "Qualified teams are assigned one IPL franchise randomly"
+                                ]
+                            },
+                            {
+                                "title": "Auction and Purse Rules",
+                                "points": [
+                                    "Each team gets an INR 100 crore virtual purse",
+                                    "Bid increment: INR 50 lakh till INR 10 crore",
+                                    "Bid increment: INR 1 crore after INR 10 crore",
+                                    "Teams must remain within purse budget"
+                                ]
+                            },
+                            {
+                                "title": "Squad Composition Rules",
+                                "points": [
+                                    "Minimum 5 batsmen",
+                                    "Minimum 1 wicketkeeper",
+                                    "Minimum 2 all-rounders",
+                                    "Minimum 3 bowlers",
+                                    "Maximum 4 foreign players",
+                                    "Minimum 2 female players in team"
+                                ]
+                            },
+                            {
+                                "title": "General Notes",
+                                "points": [
+                                    "Rules may vary on the event day",
+                                    "Committee decision is final"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Team participation with minimum 3 and maximum 4 members.",
+                        "additional_information": [
+                            "Winner criteria: team balance, player rating, purse utilization, and rule compliance",
+                            "Live animated auction setup with team management sheets",
+                            "For queries contact Abhijeet Adamuthe at 7058987796"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "Central",
+            "events": [
+                {
+                    "event_id": "CENTRAL-01",
+                    "event_name": "Technical Paper Presentation",
+                    "description": "Participants present their research papers on technical themes.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:30",
+                        "end_time": "14:00"
+                    },
+                    "venue": "Class Room G-003 and G-004",
+                    "participation": {
+                        "eligibility": "Open for all department",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st Prize",
+                            "amount": 7000,
+                            "reward": "INR 7000 + Certificates"
+                        },
+                        {
+                            "position": "2nd Prize",
+                            "amount": 5000,
+                            "reward": "INR 5000 + Certificates"
+                        },
+                        {
+                            "position": "3rd Prize",
+                            "amount": 3000,
+                            "reward": "INR 3000 + Certificates"
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Round - 1",
+                            "subtitle": "Paper Presentation",
+                            "description": "Time Limit: 6 Minutes Presentation + 2 Minutes Q&A",
+                            "steps": [
+                                "Follow IEEE format or provided template",
+                                "Target technical and research-based topic from list",
+                                "No plagiarism allowed"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Participation certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Technical Paper Presentation provides a platform for students to present original research on advanced engineering themes including IoT, Smart Cities, AI, and Cybersecurity.",
+                        "what_is": "A competition testing research depth, technical accuracy, and presentation skills on specific forward-looking engineering topics.",
+                        "who_can_participate": [
+                            "Open for all department",
+                            "A maximum of 4 participants per team is allowed."
+                        ],
+                        "event_timeline": [
+                            "Date: 16th April 2026",
+                            "Time: 9:30 AM to 2:00 PM (approx)",
+                            "Registration Fee: \u20b9100 per participant",
+                            "Includes: Refreshments"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Submission & Format Rules",
+                                "points": [
+                                    "The paper must follow the IEEE format or shared format.",
+                                    "Topic should be technical and research-based from the list.",
+                                    "Submissions must be original and plagiarism-free.",
+                                    "Deadline for paper submission: 14 April 2026",
+                                    "Submit paper to dypcettechnotsav25@gmail.com with subject TeamLeaderName_CollegeName_TopicNumber."
+                                ]
+                            },
+                            {
+                                "title": "Presentation Guidelines",
+                                "points": [
+                                    "PPT must be prepared using the official template.",
+                                    "Use of PowerPoint (.ppt/.pptx) or PDF format is allowed.",
+                                    "6 minutes for presentation, 2 minutes for Q&A."
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Research Depth & Originality.",
+                                    "Technical Content & Accuracy.",
+                                    "Presentation & Communication Skills.",
+                                    "Handling of Questions (Q&A)."
+                                ]
+                            }
+                        ],
+                        "team_structure": "A maximum of 4 participants per team is allowed.",
+                        "additional_information": [
+                            "The entire event will be conducted in offline mode.",
+                            "Students must bring a valid college ID card for verification.",
+                            "The judges\u2019 decision will be final. No objections or disputes will be entertained.",
+                            "Acceptance will be declared by 14 April 2025(via mail)."
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "department_name": "CSE (Data Science)",
+            "events": [
+                {
+                    "event_id": "DS-01",
+                    "event_name": "AI-GameCraft",
+                    "description": "Design and develop interactive games using AI-assisted development within deadline.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "First Floor Labs",
+                    "participation": {
+                        "eligibility": "All students from any Department",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 2,
+                            "max": 3
+                        }
+                    },
+                    "fees": {
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "http://bit.ly/4uX6IJM",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Rapid Quiz (Elimination Round)",
+                            "subtitle": "Round 1",
+                            "description": "AI and technology-based MCQs, game development basics, logical reasoning.",
+                            "steps": [
+                                "Duration: 20\u201330 minutes",
+                                "Top teams qualify for the development round"
+                            ]
+                        },
+                        {
+                            "name": "Game Development",
+                            "subtitle": "Round 2",
+                            "description": "Teams must develop a playable game based on the given problem statement.",
+                            "steps": [
+                                "Duration: 3 Hours",
+                                "Focus on gameplay mechanics, UX, creativity"
+                            ]
+                        },
+                        {
+                            "name": "Testing & Judging",
+                            "subtitle": "Round 3",
+                            "description": "Judges test the games and teams explain their approach.",
+                            "steps": [
+                                "Present game concept",
+                                "Explain design decisions and AI usage approach"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mrs. S. M. Ingawale",
+                            "phone": "9921958323"
+                        },
+                        {
+                            "name": "Irfan Naikwade",
+                            "phone": "8855909848"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "The GameCraft \u2013 AI Game Development Challenge provides a platform for students to design and develop creative, interactive, and user-friendly games using controlled AI tools.",
+                        "what_is": "The competition blends game development, AI integration, and UX design, allowing participants to showcase their technical and creative abilities.",
+                        "who_can_participate": [
+                            "Open to all Students of any Department or Year",
+                            "Team participation only"
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 9:00 AM to 4:00 PM (approx)",
+                            "Registration Fee: \u20b9200 per team"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Development Rules",
+                                "points": [
+                                    "The competition duration is strictly 5 hours.",
+                                    "Problem statement/theme given at the start.",
+                                    "Use of any programming language or framework (HTML, CSS, JavaScript, etc.) is allowed."
+                                ]
+                            },
+                            {
+                                "title": "AI Usage Rules",
+                                "points": [
+                                    "Only AI tools provided by the organizers are allowed.",
+                                    "Use of external AI tools is strictly prohibited.",
+                                    "Participants must demonstrate understanding of AI-generated outputs."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Minimum 2 and Maximum 3 members per team.",
+                        "additional_information": [
+                            "Participants must carry their own laptops and necessary accessories"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "DS-02",
+                    "event_name": "BI DashBattle",
+                    "description": "A fast-paced data analytics competition where participants design and develop interactive dashboards.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Data Science Labs",
+                    "participation": {
+                        "eligibility": "All students from any Department",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://bit.ly/4195xcM",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Dashboard Development & Presentation",
+                            "subtitle": "Round 1",
+                            "description": "Develop and present an interactive dashboard based on a given dataset.",
+                            "steps": [
+                                "Data Cleaning & Preparation (1 Hour)",
+                                "Dashboard Development (2 Hours)",
+                                "Presentation (5 Min), Demonstration (3 Min), Q&A (5 Min)"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mrs. S. A. Dhamankar",
+                            "phone": "9130585001"
+                        },
+                        {
+                            "name": "Namrata Belvekar",
+                            "phone": "9604522015"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshment"
+                    ],
+                    "details": {
+                        "primary_overview": "BI DashBattle is a fast-paced data analytics competition where participants design interactive dashboards based on a given dataset or business problem statement.",
+                        "what_is": "A competition to showcase analytical thinking, visualization skills, and problem-solving abilities using tools like Power BI or Tableau.",
+                        "who_can_participate": [
+                            "Open to all Students of any Department or Year"
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 9:00 AM to 4:00 PM (approx)",
+                            "Registration Fee: \u20b9100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Development Rules",
+                                "points": [
+                                    "Time Limit: 2 Hours.",
+                                    "Teams must report to the venue at least 30 minutes before the start.",
+                                    "Use of personal laptops, mobile phones, internet, or pen drives is strictly prohibited.",
+                                    "Participants must use only the systems provided in the computer lab."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individuals or teams (maximum 2 member per team).",
+                        "additional_information": [
+                            "For any queries, reach out to Namrata Belvekar."
+                        ]
+                    }
+                },
+                {
+                    "event_id": "DS-03",
+                    "event_name": "E-sports",
+                    "description": "Competitive Battlegrounds Mobile India tournament in battle royale mode.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Class Room No- 203 old building",
+                    "participation": {
+                        "eligibility": "All students from any Department",
+                        "mode": [
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 4,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/mcy3112FL5T7Q6uS7",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Battle Royale Match",
+                            "subtitle": "Round 1",
+                            "description": "Teams fight in battle royale matches.",
+                            "steps": [
+                                "Join matches on time",
+                                "Scoring based on kills and final ranking"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Mrs. J. K. Mane",
+                            "phone": "7387274784"
+                        },
+                        {
+                            "name": "Raj Khurd",
+                            "phone": "9322533976"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "The E-sports is a 4-hour fast-paced competition where participants compete in Battlegrounds Mobile India tournaments for prize money.",
+                        "what_is": "A squad-based mobile gaming tournament.",
+                        "who_can_participate": [
+                            "All students from any Department"
+                        ],
+                        "event_timeline": [
+                            "Date: 16th April 2026",
+                            "Time: 9:00 AM to 4:00 PM (approx)",
+                            "Registration Fee: \u20b9400 per team"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Rules",
+                                "points": [
+                                    "Each team has 4 players (squad).",
+                                    "Matches are played in battle royale mode.",
+                                    "Points based on Kills + Final position (ranking).",
+                                    "Fair Play: No hacking or cheating, no external tools.",
+                                    "Communication: Only team members allowed.",
+                                    "No abusive language or toxic behavior."
+                                ]
+                            }
+                        ],
+                        "team_structure": "4 players per team (Squad)",
+                        "additional_information": []
                     }
                 }
             ]

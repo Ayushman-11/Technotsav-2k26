@@ -14,15 +14,17 @@ const EVENT_IMAGES = {
     'CIV-01': 'https://unsplash.com/photos/X1P1_EDNnok/download?force=true&w=1400',
     'CIV-02': 'https://unsplash.com/photos/on4nRkHfSIg/download?force=true&w=1400',
     'CIV-03': 'https://unsplash.com/photos/VFMhqkiL6E4/download?force=true&w=1400',
+    'CIV-04': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop',
     'ARCH-01': 'https://unsplash.com/photos/n1LIveUPls4/download?force=true&w=1400',
     'ARCH-02': 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop',
     'CHEM-01': 'https://unsplash.com/photos/ehbR49Wo_NY/download?force=true&w=1400',
     'CHEM-02': 'https://unsplash.com/photos/XknuBmnjbKg/download?force=true&w=1400',
+    'ECELL-01': 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1400&auto=format&fit=crop',
 }
 
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop'
 
-const DEPARTMENT_FILTER_ORDER = ['CSE', 'AIML', 'MECHANICAL', 'CIVIL', 'ARCHITECTURE', 'CHEMICAL', 'ENTC']
+const DEPARTMENT_FILTER_ORDER = ['CSE', 'AIML', 'DS', 'MECHANICAL', 'CIVIL', 'ARCHITECTURE', 'CHEMICAL', 'ENTC']
 
 function normalizeDepartmentName(name) {
     return String(name || '')
@@ -35,6 +37,9 @@ function normalizeDepartmentName(name) {
 function getDepartmentCode(departmentName) {
     const normalized = normalizeDepartmentName(departmentName)
 
+    if (normalized.includes('data science') || normalized.includes(' ds')) {
+        return 'DS'
+    }
     if (normalized.includes('artificial intelligence') || normalized.includes('machine learning') || normalized.includes('aiml')) {
         return 'AIML'
     }
@@ -46,6 +51,7 @@ function getDepartmentCode(departmentName) {
     if (normalized.includes('electronics') && (normalized.includes('telecommunication') || normalized.includes('entc'))) {
         return 'ENTC'
     }
+    if (normalized.includes('ecell') || normalized.includes('entrepreneur')) return 'ECELL'
 
     return String(departmentName || 'GENERAL').trim().toUpperCase()
 }
@@ -149,6 +155,7 @@ function normalizeDepartmentData(source) {
                 contacts: event.contact,
                 benefits: event.benefits,
                 details: event.details || null,
+                isHot: Boolean(event.is_hot),
             }
         })
     })
@@ -159,6 +166,7 @@ function normalizeLegacyData(source) {
     return source.map((event) => ({
         ...event,
         departmentCode: event.departmentCode || getDepartmentCode(event.department),
+        isHot: Boolean(event.isHot || event.is_hot),
     }))
 }
 
@@ -171,7 +179,7 @@ const availableDepartmentCodes = [...new Set(events.map((event) => event.departm
 const orderedDepartmentCodes = [
     ...DEPARTMENT_FILTER_ORDER.filter((code) => availableDepartmentCodes.includes(code)),
     ...availableDepartmentCodes.filter((code) => !DEPARTMENT_FILTER_ORDER.includes(code)),
-]
+].filter(code => code !== 'ECELL' && code !== 'CENTRAL')
 
 export const departmentFilters = ['All', ...orderedDepartmentCodes]
 

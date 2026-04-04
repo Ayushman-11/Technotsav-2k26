@@ -58,8 +58,24 @@ const stagger = {
     },
 }
 
+const HERO_BADGE_SRC = `${import.meta.env.BASE_URL}dypcet.png`
+const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
+const HOT_PRIZE_THRESHOLD = 3000
+
+function isHotEvent(event) {
+    return Boolean(event?.isHot)
+}
+
 function Home() {
-    const [activeDepartment, setActiveDepartment] = useState('All')
+    const [activeDepartment, setActiveDepartment] = useState(() => {
+        return sessionStorage.getItem('technotsav_filter') || 'All'
+    })
+
+    useEffect(() => {
+        sessionStorage.setItem('technotsav_filter', activeDepartment)
+    }, [activeDepartment])
+    const isAllDepartmentsView = activeDepartment === 'All'
+    const filterOptions = ['All', TECHO_HIGHLIGHTS_FILTER, ...departmentFilters.filter((f) => f !== 'All')]
     const [countdown, setCountdown] = useState({
         days: '00',
         hours: '00',
@@ -69,7 +85,9 @@ function Home() {
     const filteredEvents = events.filter((event) =>
         activeDepartment === 'All'
             ? true
-            : (event.departmentCode || event.department) === activeDepartment,
+            : activeDepartment === TECHO_HIGHLIGHTS_FILTER
+                ? isHotEvent(event)
+                : (event.departmentCode || event.department) === activeDepartment,
     )
 
     useEffect(() => {
@@ -113,7 +131,7 @@ function Home() {
                         transition={{ duration: 0.6 }}
                     >
                         <img
-                            src="/dypcet.png"
+                            src={HERO_BADGE_SRC}
                             alt="Technotsav"
                             className="hero-eyebrow-image"
                             loading="eager"
@@ -191,21 +209,24 @@ Of Innovation`}
                         description="Filter by department and explore the full technical roster."
                     />
                     <div className="dept-filter" role="tablist" aria-label="Filter events by department">
-                        {departmentFilters.map((dept) => (
+                        {filterOptions.map((dept) => (
                             <button
                                 key={dept}
                                 type="button"
                                 role="tab"
                                 aria-selected={activeDepartment === dept}
-                                className={`dept-filter-btn${activeDepartment === dept ? ' is-active' : ''}`}
+                                className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartment === dept ? ' is-active' : ''}`}
                                 onClick={() => setActiveDepartment(dept)}
                             >
                                 {dept}
                             </button>
                         ))}
                     </div>
-                    <div className="event-scroll" aria-label="Upcoming events">
-                        <div className="event-scroll-track">
+                    <div
+                        className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
+                        aria-label="Upcoming events"
+                    >
+                        <div className={`event-scroll-track${isAllDepartmentsView ? ' is-grid' : ''}`}>
                             {filteredEvents.map((event) => (
                                 <div key={event.id}>
                                     <EventCard event={event} />
