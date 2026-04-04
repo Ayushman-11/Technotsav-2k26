@@ -151,15 +151,7 @@ Of Innovation`}
                                 encryptedClassName="decrypt-text decrypt-text--scramble"
                             />
                         </h1>
-                        <DecryptedText
-                            text="A technical frontier where human curiosity meets mathematical precision. Join the collective push toward the stars."
-                            speed={30}
-                            maxIterations={10}
-                            animateOn="view"
-                            parentClassName="hero-description"
-                            className="decrypt-text"
-                            encryptedClassName="decrypt-text decrypt-text--scramble"
-                        />
+
                         <div className="hero-actions">
                             <div className="hero-countdown">
                                 <span className="meta-label">Launch in</span>

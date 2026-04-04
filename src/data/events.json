@@ -2843,6 +2843,338 @@
                     }
                 }
             ]
+        },
+        {
+            "department_name": "Mechanical Engineering",
+            "events": [
+                {
+                    "event_id": "MECH-01",
+                    "event_name": "Robo Race",
+                    "description": "A thrilling contest where students build and control robots to race through an obstacle track.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1 & Day 2",
+                        "date": "2026-04-15 to 2026-04-16",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "College lawn, DYPCET",
+                    "participation": {
+                        "eligibility": "Students from Diploma and Undergraduate (UG) programs",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 200,
+                        "team": 400
+                    },
+                    "registration": {
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd_rZd84hAqKXISQynoi3ncQ3XSwo8-cVeeymwln7mrp3Q6Sw/viewform?usp=header",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 2000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Robo Race",
+                            "subtitle": "Track completion",
+                            "description": "The robot with the lowest total time (including penalties) will be declared the winner.",
+                            "steps": [
+                                "Complete the track with obstacles",
+                                "Avoid penalties for skipping obstacles or touching the robot"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Participation Certificate"
+                    ],
+                    "details": {
+                        "primary_overview": "Robo Race is a thrilling contest where students build and control robots to race through a track, testing speed, precision, and obstacle navigation while encouraging innovation and teamwork.",
+                        "what_is": "A robotic racing competition against time on an obstacle-filled track.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate (UG) programs"
+                        ],
+                        "event_timeline": [
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Venue: College lawn",
+                            "Registration Fee: INR 200 per participant",
+                            "Spot Entry Fee: INR 250 per person"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Timer Start & End",
+                                "points": [
+                                    "The timer starts when the robot begins moving from the starting line.",
+                                    "The timer stops only when the robot crosses the finish line.",
+                                    "If the robot encounters issues, only one opportunity will be given to fix defects."
+                                ]
+                            },
+                            {
+                                "title": "Track Rules & Penalties",
+                                "points": [
+                                    "The robot must stay on the designated track.",
+                                    "If the robot goes off-track, it must return to the last checkpoint crossed.",
+                                    "Skipping any obstacle: 30-second penalty per obstacle.",
+                                    "Touching the robot by hand: 10-second penalty per instance."
+                                ]
+                            },
+                            {
+                                "title": "Robot Specifications",
+                                "points": [
+                                    "Control: Manually operated (wired or wireless).",
+                                    "Size Limit: Maximum 250mm \u00d7 250mm \u00d7 250mm.",
+                                    "Weight Limit: Maximum 3 kg.",
+                                    "Use of Lego parts or ready-made kits is not allowed.",
+                                    "Max 12V battery permitted. Teams must carry an extra battery."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Maximum of 2 members per team.",
+                        "additional_information": [
+                            "Robots provided by the committee will be allotted on a first-come, first-serve basis for spot entries."
+                        ]
+                    }
+                },
+                {
+                    "event_id": "MECH-02",
+                    "event_name": "CAD Clash",
+                    "description": "Showcase your creativity, speed, and technical skills in computer-aided design.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Classroom 139, CAD Lab 1 & 2, CIII Lab",
+                    "participation": {
+                        "eligibility": "Students from Diploma and Undergraduate (UG) programs",
+                        "mode": [
+                            "individual"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": null
+                    },
+                    "registration": {
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd_rZd84hAqKXISQynoi3ncQ3XSwo8-cVeeymwln7mrp3Q6Sw/viewform?usp=header",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Quiz Round",
+                            "subtitle": "Round 1 (Elimination)",
+                            "description": "An online quiz testing basic knowledge about CAD software, design standards and general engineering concepts.",
+                            "steps": [
+                                "Answer multiple-choice questions within a limited time."
+                            ]
+                        },
+                        {
+                            "name": "2D Drafting on AutoCAD",
+                            "subtitle": "Round 2 (Elimination)",
+                            "description": "Create a 2D drawing of a given drawing using AutoCAD.",
+                            "steps": [
+                                "Accuracy check",
+                                "Understanding of 2D views"
+                            ]
+                        },
+                        {
+                            "name": "3D Modelling Round",
+                            "subtitle": "Round 3",
+                            "description": "Create a 3D model of a mechanical part using CAD software.",
+                            "steps": [
+                                "Fastest design completion",
+                                "Minimal steps usage"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [
+                        "Participation Certificate",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "CAD Clash tests participants' knowledge and hands-on abilities in design software through multiple engaging rounds including quizzing, 2D drafting, and 3D modeling.",
+                        "what_is": "A multi-round computer-aided design competition.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate (UG) programs"
+                        ],
+                        "event_timeline": [
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Venue: Classroom 139, CAD Lab 1 & 2, CIII Lab",
+                            "Registration Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Only individual participation is allowed.",
+                                    "Participants must bring smartphones for Round 1.",
+                                    "Round 2 will be conducted strictly on AutoCAD on provided systems.",
+                                    "UG NX 9.0 will be provided for the final round. Competitors can bring their laptop with other CAD software pre-installed."
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Final round judged on minimum number of steps/features used.",
+                                    "Minimum time taken to complete the design."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual Participation",
+                        "additional_information": [
+                            "Refreshments will be provided.",
+                            "Every participant will receive a Participation Certificate."
+                        ]
+                    }
+                },
+                {
+                    "event_id": "MECH-03",
+                    "event_name": "Tech Debate",
+                    "description": "A rapid-fire technical debate competition to test your communication and engineering knowledge.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "10:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "Classroom 226",
+                    "participation": {
+                        "eligibility": "Open for All",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd_rZd84hAqKXISQynoi3ncQ3XSwo8-cVeeymwln7mrp3Q6Sw/viewform?usp=header",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Quiz Round",
+                            "subtitle": "Round 1 (Elimination)",
+                            "description": "A Quiz on general Engineering e.g. Mechanical, Automobile etc.",
+                            "steps": [
+                                "Duration: 15 mins",
+                                "Weightage: 20 Marks"
+                            ]
+                        },
+                        {
+                            "name": "Tech Debate",
+                            "subtitle": "Round 2",
+                            "description": "Debate on a technical topic randomly picked from 'CHITS BOWL' on the spot.",
+                            "steps": [
+                                "Preparation: 5 mins with smartphone",
+                                "Debate: 7 mins",
+                                "Conclusion: 1 min",
+                                "Weightage: 25 Marks"
+                            ]
+                        },
+                        {
+                            "name": "Final Round",
+                            "subtitle": "Round 3",
+                            "description": "Shortlisted teams will pick topics again for a final debate.",
+                            "steps": [
+                                "Preparation: 10 mins (No smartphone allowed)",
+                                "Debate: 7 mins",
+                                "Conclusion: 1 min",
+                                "Weightage: 25 Marks"
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "Tech Debate challenges participants to quickly synthesize their technical knowledge and debate impromptu on engineering topics.",
+                        "what_is": "A competition consisting of a technical quiz followed by multiple rounds of spot debating on engineering concepts.",
+                        "who_can_participate": [
+                            "Open for All"
+                        ],
+                        "event_timeline": [
+                            "Time: 10:00 AM to 04:00 PM",
+                            "Venue: Classroom 226",
+                            "Registration Fee: INR 100 per participant"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Debate Rules",
+                                "points": [
+                                    "Language of conduct \u2013 English",
+                                    "Topics will be given on the spot from a 'CHITS BOWL'.",
+                                    "Every participant should speak during the debate.",
+                                    "Abusive language and misconduct are strictly prohibited.",
+                                    "No smartphones allowed during final round preparation."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Maximum allowed entries per group is 2.",
+                        "additional_information": []
+                    }
+                }
+            ]
         }
     ]
 }
