@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
@@ -82,6 +82,8 @@ function Home() {
         minutes: '00',
         seconds: '00',
     })
+    const filterRef = useRef(null)
+    const [isFilterPinned, setIsFilterPinned] = useState(false)
     const filteredEvents = events.filter((event) =>
         activeDepartment === 'All'
             ? true
@@ -116,6 +118,29 @@ function Home() {
         const timer = setInterval(updateCountdown, 1000)
 
         return () => clearInterval(timer)
+    }, [])
+
+    useEffect(() => {
+        const getViewportWidth = () => window.innerWidth || document.documentElement.clientWidth
+
+        const updatePinnedState = () => {
+            if (!filterRef.current || getViewportWidth() > 760) {
+                setIsFilterPinned(false)
+                return
+            }
+
+            const { top } = filterRef.current.getBoundingClientRect()
+            setIsFilterPinned(top <= 0)
+        }
+
+        updatePinnedState()
+        window.addEventListener('scroll', updatePinnedState, { passive: true })
+        window.addEventListener('resize', updatePinnedState)
+
+        return () => {
+            window.removeEventListener('scroll', updatePinnedState)
+            window.removeEventListener('resize', updatePinnedState)
+        }
     }, [])
 
     return (
@@ -200,7 +225,12 @@ Of Innovation`}
                         title="Upcoming Events"
                         description="Filter by department and explore the full technical roster."
                     />
-                    <div className="dept-filter" role="tablist" aria-label="Filter events by department">
+                    <div
+                        ref={filterRef}
+                        className={`dept-filter${isFilterPinned ? ' is-pinned-mobile' : ''}`}
+                        role="tablist"
+                        aria-label="Filter events by department"
+                    >
                         {filterOptions.map((dept) => (
                             <button
                                 key={dept}

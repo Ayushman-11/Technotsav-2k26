@@ -61,6 +61,17 @@ main {
     border-bottom: none;
 }
 
+.site-header {
+    will-change: transform, opacity;
+    transition: transform 0.24s ease, opacity 0.24s ease;
+}
+
+.site-header.is-hidden-mobile {
+    transform: translateY(-110%);
+    opacity: 0;
+    pointer-events: none;
+}
+
 .header-inner {
     position: relative;
     display: grid;
@@ -564,7 +575,7 @@ main {
 
 .events {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .roadmap {
@@ -637,31 +648,6 @@ main {
 .event-scroll-track>div {
     flex: 0 0 auto;
     scroll-snap-align: start;
-}
-
-.event-scroll.is-grid {
-    overflow: visible;
-    overflow-x: visible;
-    overflow-y: visible;
-    scroll-snap-type: none;
-    padding-bottom: 0;
-}
-
-.event-scroll.is-grid .event-scroll-track {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    width: 100%;
-    will-change: auto;
-}
-
-.event-scroll.is-grid .event-scroll-track>div {
-    min-width: 0;
-}
-
-.event-scroll.is-grid .event-card {
-    width: 100%;
-    min-width: 0;
 }
 
 .event-card {
@@ -2176,10 +2162,6 @@ main {
     .event-detail-side {
         position: static;
     }
-
-    .event-scroll.is-grid .event-scroll-track {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 760px) {
@@ -2260,6 +2242,49 @@ main {
         width: 20px;
     }
 
+    .site-header {
+        z-index: 20;
+    }
+
+    .site-header.is-hidden-mobile {
+        transform: translateY(-120%);
+    }
+
+    .dept-filter {
+        position: sticky;
+        top: 0;
+        z-index: 6;
+        margin-bottom: 20px;
+        padding: 0 0 14px;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        backdrop-filter: none;
+        box-shadow: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .dept-filter.is-pinned-mobile {
+        padding: 10px 12px 12px;
+        background: rgba(11, 15, 20, 0.78);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
+    }
+
+    .dept-filter::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dept-filter-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
     .hero-countdown {
         width: 100%;
     }
@@ -2338,10 +2363,6 @@ main {
         padding: 18px;
     }
 
-    .event-scroll.is-grid .event-scroll-track {
-        grid-template-columns: 1fr;
-    }
-
     .dept-bento {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 200px;
@@ -2378,6 +2399,33 @@ main {
     .timeline-index {
         grid-column: 1 / -1;
         margin-top: 8px;
+    }
+}
+
+@media (min-width: 961px) {
+    .event-scroll.is-grid {
+        overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+        scroll-snap-type: none;
+        padding-bottom: 0;
+    }
+
+    .event-scroll.is-grid .event-scroll-track {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+        width: 100%;
+        will-change: auto;
+    }
+
+    .event-scroll.is-grid .event-scroll-track>div {
+        min-width: 0;
+    }
+
+    .event-scroll.is-grid .event-card {
+        width: 100%;
+        min-width: 0;
     }
 }
 
@@ -2485,20 +2533,49 @@ main {
 ───────────────────────────────────────────── */
 
 @keyframes fab-float {
-    0%, 100% { transform: translateY(0px); }
-    50%       { transform: translateY(-7px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
 }
 
 @keyframes fab-ring-pulse {
-    0%   { transform: scale(1);   opacity: 0.55; }
-    70%  { transform: scale(1.9); opacity: 0; }
-    100% { transform: scale(1.9); opacity: 0; }
+    0% {
+        transform: scale(1);
+        opacity: 0.55;
+    }
+
+    70% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
 }
 
 @keyframes fab-ring-pulse-2 {
-    0%   { transform: scale(1);   opacity: 0.35; }
-    70%  { transform: scale(2.5); opacity: 0; }
-    100% { transform: scale(2.5); opacity: 0; }
+    0% {
+        transform: scale(1);
+        opacity: 0.35;
+    }
+
+    70% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
 }
 
 .flyer-fab {
@@ -2625,4 +2702,4 @@ main {
         bottom: 20px;
         right: 20px;
     }
-}
+}

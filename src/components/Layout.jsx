@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import FlyerFab from './FlyerFab.jsx'
 
@@ -10,6 +10,50 @@ const NAV_LINKS = [
 
 function Layout() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isHeaderHidden, setIsHeaderHidden] = useState(false)
+    const lastScrollYRef = useRef(0)
+
+    useEffect(() => {
+        const getViewportWidth = () => window.innerWidth || document.documentElement.clientWidth
+
+        const handleScroll = () => {
+            const isMobile = getViewportWidth() <= 760
+
+            if (!isMobile || isMenuOpen) {
+                setIsHeaderHidden(false)
+                lastScrollYRef.current = window.scrollY
+                return
+            }
+
+            const currentScrollY = window.scrollY
+            const lastScrollY = lastScrollYRef.current
+            const scrollingDown = currentScrollY > lastScrollY + 8
+            const scrollingUp = currentScrollY < lastScrollY - 8
+
+            if (currentScrollY <= 24 || scrollingUp) {
+                setIsHeaderHidden(false)
+            } else if (scrollingDown && currentScrollY > 64) {
+                setIsHeaderHidden(true)
+            }
+
+            lastScrollYRef.current = currentScrollY
+        }
+
+        const handleResize = () => {
+            if (getViewportWidth() > 760) {
+                setIsHeaderHidden(false)
+            }
+        }
+
+        lastScrollYRef.current = window.scrollY
+        window.addEventListener('scroll', handleScroll, { passive: true })
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [isMenuOpen])
 
     return (
         <div className="app">
@@ -18,7 +62,7 @@ function Layout() {
                     <source src="/11892851-hd_1280_720_24fps.mp4" type="video/mp4" />
                 </video>
             </div>
-            <header className="site-header">
+            <header className={`site-header${isHeaderHidden ? ' is-hidden-mobile' : ''}`}>
                 <div className="container header-inner">
                     <div className="brand">
                         <span className="brand-mark">TECHNOTSAV'26</span>
