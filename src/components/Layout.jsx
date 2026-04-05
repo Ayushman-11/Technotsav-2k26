@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import FlyerFab from './FlyerFab.jsx'
 
 const NAV_LINKS = [
     { label: 'Home', to: '/' },
@@ -86,6 +87,7 @@ function Layout() {
                     <span>Built for makers and innovators.</span>
                 </div>
             </footer>
+            <FlyerFab />
         </div>
     )
 }
