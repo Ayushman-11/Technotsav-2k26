@@ -2253,27 +2253,21 @@ main {
     .dept-filter {
         position: sticky;
         top: 0;
-        z-index: 6;
+        z-index: 8;
         margin-bottom: 20px;
-        padding: 0 0 14px;
-        background: transparent;
-        border: none;
-        border-radius: 0;
-        backdrop-filter: none;
-        box-shadow: none;
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-
-    .dept-filter.is-pinned-mobile {
         padding: 10px 12px 12px;
         background: rgba(11, 15, 20, 0.78);
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 0;
         backdrop-filter: blur(16px);
         box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        scroll-padding-inline: 12px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     .dept-filter::-webkit-scrollbar {
@@ -2283,6 +2277,12 @@ main {
     .dept-filter-btn {
         flex: 0 0 auto;
         white-space: nowrap;
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .dept-filter-btn.is-hot-filter {
+        box-shadow: 0 0 0 1px rgba(255, 102, 52, 0.22);
     }
 
     .hero-countdown {
