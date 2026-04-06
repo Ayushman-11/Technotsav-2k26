@@ -1,6 +1,8 @@
 import { useEffect, useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { getEventById } from '../lib/events.js'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import { departmentFilters, getEventById } from '../lib/events.js'
+
+const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
 
 function formatTimeRange(schedule) {
     if (!schedule?.start_time && !schedule?.end_time) return 'Time TBA'
@@ -90,11 +92,23 @@ function normalizeRounds(rounds) {
 
 function EventDetail() {
     const { eventId } = useParams()
+    const navigate = useNavigate()
     const event = useMemo(() => getEventById(eventId), [eventId])
+    const filterOptions = useMemo(
+        () => [...new Set([TECHO_HIGHLIGHTS_FILTER, ...departmentFilters.filter((department) => department !== 'All')])],
+        [],
+    )
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [eventId])
+
+    useEffect(() => {
+        document.body.classList.add('has-filter-subheader-body')
+        return () => {
+            document.body.classList.remove('has-filter-subheader-body')
+        }
+    }, [])
 
     if (!event) {
         return (
@@ -132,14 +146,49 @@ function EventDetail() {
         heroAboutParagraphs.push(event.description || event.summary)
     }
 
+    const activeDepartmentFilter = event.departmentCode || event.department
+    const handleTopFilterClick = (department) => {
+        sessionStorage.setItem('technotsav_filter', department)
+        sessionStorage.setItem('technotsav_open_events', '1')
+        navigate('/?openEvents=1#events')
+    }
+
     return (
-        <main className="event-detail-page">
+        <main className="event-detail-page has-filter-subheader">
+            <div className="site-subheader" aria-label="Department filters">
+                <div className="container">
+                    <div className="events-subheader">
+                        <div className="events-subheader-inner">
+                            <span className="events-subheader-label">Filter by Department</span>
+                            <div
+                                className="dept-filter"
+                                role="tablist"
+                                aria-label="Filter events by department"
+                            >
+                                {filterOptions.map((dept) => (
+                                    <button
+                                        key={dept}
+                                        type="button"
+                                        role="tab"
+                                        aria-selected={activeDepartmentFilter === dept}
+                                        className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartmentFilter === dept ? ' is-active' : ''}`}
+                                        onClick={() => handleTopFilterClick(dept)}
+                                    >
+                                        {dept}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section className="event-detail-hero">
                 <div className="event-detail-hero-bg" style={{ backgroundImage: `url(${event.image})` }} aria-hidden="true" />
                 <div className="event-detail-hero-overlay" aria-hidden="true" />
                 <div className="container event-detail-hero-content">
                     <Link to="/#events" className="event-back">
-                        Back to Events
+                        <span className="event-back-icon" aria-hidden="true">{'<'}</span>
+                        <span className="event-back-text">Back to Events</span>
                     </Link>
                     <div className="event-detail-headline">
                         <p className="meta-label" style={{ color: 'var(--accent)', marginBottom: '-8px' }}>

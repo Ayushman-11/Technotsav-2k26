@@ -509,6 +509,239 @@
                             "For queries, contact Saniya Mane (8799879400) or Viraj Potdar (9764482435)"
                         ]
                     }
+                },
+                {
+                    "event_id": "CENTRAL-02",
+                    "event_name": "Reel Rumble",
+                    "description": "Solo and duo reel-making competition capturing the energy of Technotsav across Day 1 and Day 2.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 1 & Day 2",
+                        "date": "2026-04-15",
+                        "start_time": "09:00",
+                        "end_time": "16:00"
+                    },
+                    "venue": "DY Patil College of Engineering & Technology (DYPCET), Kolhapur",
+                    "participation": {
+                        "eligibility": "Open to all students of any department or year",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 200,
+                        "team": 300
+                    },
+                    "registration": {
+                        "link": "",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Round 1 - One Shot, One Reel",
+                            "subtitle": "Theme-based production",
+                            "description": "Participants conceptualize, shoot, and edit a maximum 90-second reel based on Technotsav highlights.",
+                            "steps": [
+                                "Shoot event highlights from Day 1 and Day 2 within college premises",
+                                "Edit in portrait format (9:16) with maximum duration of 90 seconds",
+                                "Submit final reel via Google Drive link within upload window"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Arya Sutar",
+                            "phone": "7666887603"
+                        }
+                    ],
+                    "benefits": [
+                        "Participation certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Reel Rumble is a content creation competition where participants document Technotsav's atmosphere, moments, and storytelling through short-form video reels.",
+                        "what_is": "Participants create and submit an original reel that captures inauguration, activities, and closing highlights in a compelling narrative format.",
+                        "who_can_participate": [
+                            "Open to all students of any department or year",
+                            "Solo participation or group participation up to 2 members"
+                        ],
+                        "event_timeline": [
+                            "Day 1 Reporting: 8:30 AM | Shooting starts: 9:00 AM",
+                            "Day 1 shooting closes: 4:00 PM",
+                            "Day 2 Reporting: 8:30 AM | Shooting window: 9:00 AM to 2:00 PM",
+                            "Submission window opens after closing ceremony and remains active for 2 hours"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Students from diploma and undergraduate programs are eligible",
+                                    "Participants must carry valid college ID cards",
+                                    "No spot entries allowed; fees are non-refundable",
+                                    "Judges' decision is final",
+                                    "Misconduct with volunteers, judges, or peers results in disqualification"
+                                ]
+                            },
+                            {
+                                "title": "Reel Guidelines",
+                                "points": [
+                                    "Maximum reel duration: 90 seconds",
+                                    "Format: Portrait 9:16 suitable for Instagram",
+                                    "Content must be shot inside DYPCET premises during Technotsav",
+                                    "Participants must cover both inauguration and closing ceremony",
+                                    "Do not post or share reels publicly before official results"
+                                ]
+                            },
+                            {
+                                "title": "Submission Rules",
+                                "points": [
+                                    "Submission accepted only through the shared Google Drive link",
+                                    "Upload window is limited to 2 hours after closing ceremony",
+                                    "Late submissions are eliminated"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Solo or group participation (maximum 2 members).",
+                        "additional_information": [
+                            "Maximum entries: 30 (solo + group combined)",
+                            "Participants must attach payment screenshot and transaction ID in registration",
+                            "For queries contact Arya Sutar at 7666887603"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CENTRAL-03",
+                    "event_name": "Clash of 3D Creators",
+                    "description": "Theme-based 3D modeling challenge to build realistic scenes using creativity, composition, and rendering skills.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "09:30",
+                        "end_time": "16:00"
+                    },
+                    "venue": "CSE Building Lab",
+                    "participation": {
+                        "eligibility": "All students from any department",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/ebqMASMonJWui2es7",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Theme-Based 3D Modeling",
+                            "subtitle": "One-day challenge",
+                            "description": "Participants create a visually realistic 3D scene from a theme announced at the event start.",
+                            "steps": [
+                                "Theme announced at the beginning of challenge",
+                                "Model and arrange assets creatively within time limit",
+                                "Submit project file and rendered image before deadline"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "name": "Rohit Harne",
+                            "phone": "8459206177"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Clash of 3D Creators challenges participants to build immersive 3D scenes under a given theme while showcasing visual composition and realism.",
+                        "what_is": "A one-day 3D modeling competition where participants can use any software and online assets, but originality and presentation quality drive scoring.",
+                        "who_can_participate": [
+                            "Open to all students from any department or year"
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 9:30 AM to 4:00 PM",
+                            "Venue: CSE Building Lab"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Participation Rules",
+                                "points": [
+                                    "Participants must carry valid college ID card",
+                                    "Participants must bring their own laptop, software setup, and mouse",
+                                    "Respectful behavior is mandatory"
+                                ]
+                            },
+                            {
+                                "title": "Competition Rules",
+                                "points": [
+                                    "Theme will be disclosed only at challenge start",
+                                    "Submissions must align with the provided theme",
+                                    "Use of online assets is allowed, but final scene composition must be original",
+                                    "Submit both source file and rendered output (PNG/JPEG)"
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Theme relevance",
+                                    "Creativity and arrangement",
+                                    "Realism and detailing",
+                                    "Overall visual impact"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual or team participation up to 2 members.",
+                        "additional_information": [
+                            "Participation includes certificates and refreshments",
+                            "For queries contact Rohit Harne at 8459206177"
+                        ]
+                    }
                 }
             ]
         },
@@ -1223,7 +1456,7 @@
                         "team": 200
                     },
                     "registration": {
-                        "link": null,
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfjscp2lRWlVyPm3M2sZzQVj_l5hFPQwb4x3jF1HO5BH6fS7w/viewform",
                         "qr": null
                     },
                     "prizes": [
@@ -1326,7 +1559,7 @@
                         "team": 200
                     },
                     "registration": {
-                        "link": null,
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfjscp2lRWlVyPm3M2sZzQVj_l5hFPQwb4x3jF1HO5BH6fS7w/viewform",
                         "qr": null
                     },
                     "prizes": [
@@ -1427,7 +1660,7 @@
                         "team": 100
                     },
                     "registration": {
-                        "link": null,
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfjscp2lRWlVyPm3M2sZzQVj_l5hFPQwb4x3jF1HO5BH6fS7w/viewform",
                         "qr": null
                     },
                     "prizes": [
@@ -1553,7 +1786,7 @@
                         "team": 200
                     },
                     "registration": {
-                        "link": null,
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfjscp2lRWlVyPm3M2sZzQVj_l5hFPQwb4x3jF1HO5BH6fS7w/viewform",
                         "qr": null
                     },
                     "prizes": [

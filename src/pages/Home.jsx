@@ -21,21 +21,21 @@ const ROADMAP = [
         highlights: ['Final submissions', 'Workshop sign-ups', 'Roster lock'],
     },
     {
-        phase: '14 April · Day 01',
+        phase: '15 April · Day 01',
         title: 'Launch Window + Competitive Tracks',
         detail:
             'Check-in, inaugural keynote, and department-led competitions light up the runway with rapid-fire challenges.',
         highlights: ['Inaugural keynote', 'Department contests', 'Opening briefings'],
     },
     {
-        phase: '15 April · Day 02',
+        phase: '16 April · Day 02',
         title: 'Workshops, Showcases + Awards',
         detail:
             'Hands-on workshops, project demos, and judging panels guide the final showcases and closing ceremonies.',
         highlights: ['Hands-on labs', 'Project expo', 'Awards + closing'],
     },
     {
-        phase: '16 April · Post-Event',
+        phase: '17 April · Post-Event',
         title: 'Results + Declarations',
         detail:
             'Final results and certificates are published with winning team announcements.',
@@ -58,22 +58,54 @@ const stagger = {
 }
 
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
+const FLYER_URL = `${import.meta.env.BASE_URL}flyer.pdf`
+
 function isHotEvent(event) {
     return Boolean(event?.isHot)
 }
 
+function shouldOpenEventsFromNavigation() {
+    const sessionFlag = sessionStorage.getItem('technotsav_open_events') === '1'
+    const urlFlag = new URLSearchParams(window.location.search).get('openEvents') === '1'
+
+    return sessionFlag || urlFlag
+}
+
 function Home() {
+    const departmentCodeOptions = departmentFilters.filter((department) => department !== 'All')
+    const departmentOptions = [...new Set([TECHO_HIGHLIGHTS_FILTER, ...departmentCodeOptions])]
     const [activeDepartment, setActiveDepartment] = useState(() => {
-        return sessionStorage.getItem('technotsav_filter') || 'All'
+        const persistedDepartment = sessionStorage.getItem('technotsav_filter')
+        if (persistedDepartment && persistedDepartment !== 'All') {
+            return persistedDepartment
+        }
+
+        return departmentOptions[0] || TECHO_HIGHLIGHTS_FILTER
     })
-    const [eventsViewMode, setEventsViewMode] = useState('events')
+    const [hasDepartmentSelection, setHasDepartmentSelection] = useState(
+        () => shouldOpenEventsFromNavigation(),
+    )
 
     useEffect(() => {
         sessionStorage.setItem('technotsav_filter', activeDepartment)
     }, [activeDepartment])
-    const isAllDepartmentsView = activeDepartment === 'All'
-    const filterOptions = ['All', TECHO_HIGHLIGHTS_FILTER, ...departmentFilters.filter((f) => f !== 'All')]
-    const departmentCardOptions = ['All', ...departmentFilters.filter((department) => department !== 'All')]
+
+    useEffect(() => {
+        if (sessionStorage.getItem('technotsav_open_events') === '1') {
+            sessionStorage.removeItem('technotsav_open_events')
+        }
+
+        const params = new URLSearchParams(window.location.search)
+        if (params.get('openEvents') === '1') {
+            params.delete('openEvents')
+            const query = params.toString()
+            const nextUrl = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`
+            window.history.replaceState({}, '', nextUrl)
+        }
+    }, [])
+
+    const filterOptions = departmentOptions
+    const departmentCardOptions = departmentOptions
     const [countdown, setCountdown] = useState({
         days: '00',
         hours: '00',
@@ -81,18 +113,19 @@ function Home() {
         seconds: '00',
     })
     const filteredEvents = events.filter((event) =>
-        activeDepartment === 'All'
-            ? true
-            : activeDepartment === TECHO_HIGHLIGHTS_FILTER
-                ? isHotEvent(event)
-                : (event.departmentCode || event.department) === activeDepartment,
+        activeDepartment === TECHO_HIGHLIGHTS_FILTER
+            ? isHotEvent(event)
+            : (event.departmentCode || event.department) === activeDepartment,
     )
 
-    const eventsCountByDepartment = events.reduce((accumulator, event) => {
-        const code = event.departmentCode || event.department
-        accumulator[code] = (accumulator[code] || 0) + 1
-        return accumulator
-    }, {})
+    const activeDepartmentLabel =
+        activeDepartment === TECHO_HIGHLIGHTS_FILTER
+            ? 'TECHO Highlights'
+            : activeDepartment
+    const eventsSectionTitle = 'Choose Department To View Events'
+    const eventsSectionDescription = !hasDepartmentSelection
+        ? 'Select a department card below and click Explore More to load event cards.'
+        : `You are viewing ${activeDepartmentLabel} (${filteredEvents.length} ${filteredEvents.length === 1 ? 'event' : 'events'}). Choose another department card to switch.`
 
     const scrollWithHeaderOffset = (target, spacingOffset = 16) => {
         if (!target) {
@@ -114,22 +147,24 @@ function Home() {
         })
     }
 
-    const handleDepartmentSelect = (department) => {
+    const handleDepartmentSelect = (department, source = 'subheader') => {
         setActiveDepartment(department)
-        setEventsViewMode('events')
+        setHasDepartmentSelection((current) => current || source === 'card')
 
         window.setTimeout(() => {
+            const canShowEvents = hasDepartmentSelection || source === 'card'
+            const selectedDepartmentLabel = document.querySelector('#events .events-selected-dept')
             const eventCards = document.querySelector('#events .event-scroll')
+            const departmentPicker = document.querySelector('#events .dept-grid--picker')
             const eventsSection = document.getElementById('events')
-            const scrollTarget = eventCards || eventsSection
+            const scrollTarget = canShowEvents
+                ? (selectedDepartmentLabel || eventCards || eventsSection)
+                : (departmentPicker || eventsSection)
             scrollWithHeaderOffset(scrollTarget)
         }, 0)
     }
 
     const handleExploreEventsClick = () => {
-        setActiveDepartment('All')
-        setEventsViewMode('departments')
-
         window.setTimeout(() => {
             const departmentPicker = document.querySelector('#events .dept-grid--picker')
             const eventsSection = document.getElementById('events')
@@ -137,13 +172,8 @@ function Home() {
         }, 0)
     }
 
-    const handleScheduleClick = () => {
-        const scheduleSection = document.getElementById('schedule')
-        scrollWithHeaderOffset(scheduleSection, 12)
-    }
-
     useEffect(() => {
-        const target = new Date('2026-04-14T10:00:00+05:30')
+        const target = new Date('2026-04-15T10:00:00+05:30')
 
         const updateCountdown = () => {
             const now = new Date()
@@ -183,7 +213,7 @@ function Home() {
                 <div className="container">
                     <div className="events-subheader">
                         <div className="events-subheader-inner">
-                            <span className="events-subheader-label">Departments</span>
+                            <span className="events-subheader-label">Filter by Department</span>
                             <div
                                 className="dept-filter"
                                 role="tablist"
@@ -196,7 +226,7 @@ function Home() {
                                         role="tab"
                                         aria-selected={activeDepartment === dept}
                                         className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartment === dept ? ' is-active' : ''}`}
-                                        onClick={() => handleDepartmentSelect(dept)}
+                                        onClick={() => handleDepartmentSelect(dept, 'subheader')}
                                     >
                                         {dept}
                                     </button>
@@ -217,7 +247,7 @@ function Home() {
                         animate="visible"
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="hero-kicker">14-15 April 2026 · DYPCET Kolhapur</span>
+                        <span className="hero-kicker">15th-16th April 2026 · DYPCET Kolhapur</span>
                         <h1 className="hero-main-title">
                             Technotsav <span>2026</span>
                         </h1>
@@ -235,13 +265,13 @@ function Home() {
                             >
                                 Explore Events
                             </button>
-                            <button
-                                type="button"
+                            <a
+                                href={FLYER_URL}
+                                download="Technotsav26-Flyer.pdf"
                                 className="btn ghost hero-cta-secondary"
-                                onClick={handleScheduleClick}
                             >
-                                View Schedule
-                            </button>
+                                Download Flyer
+                            </a>
                         </div>
 
                         <div className="hero-countdown hero-countdown--hero">
@@ -288,49 +318,93 @@ function Home() {
                 <div className="container events-content">
                     <SectionHead
                         eyebrow="Mission Catalog"
-                        title={eventsViewMode === 'departments' ? 'Choose Department' : 'Upcoming Events'}
-                        description={
-                            eventsViewMode === 'departments'
-                                ? 'Select a department to view its complete event lineup.'
-                                : 'Filter by department and explore the full technical roster.'
-                        }
+                        title={eventsSectionTitle}
+                        description={eventsSectionDescription}
                     />
-                    {eventsViewMode === 'departments' ? (
-                        <div className="dept-grid dept-grid--picker" aria-label="Choose department">
-                            {departmentCardOptions.map((department) => {
-                                const isActive = activeDepartment === department
-                                const eventCount =
-                                    department === 'All'
-                                        ? events.length
-                                        : eventsCountByDepartment[department] || 0
+                    <div className="dept-grid dept-grid--picker" aria-label="Choose department">
+                        {departmentCardOptions.map((department) => {
+                            const isActive = activeDepartment === department
+                            const departmentEvents =
+                                department === TECHO_HIGHLIGHTS_FILTER
+                                    ? events.filter((event) => isHotEvent(event))
+                                    : events.filter(
+                                        (event) => (event.departmentCode || event.department) === department,
+                                    )
+                            const eventCount = departmentEvents.length
+                            const previewTitles = departmentEvents.slice(0, 4).map((event) => event.title)
+                            const departmentLabel =
+                                department === TECHO_HIGHLIGHTS_FILTER
+                                    ? 'TECHO Highlights'
+                                    : department
 
-                                return (
-                                    <button
-                                        key={department}
-                                        type="button"
-                                        className={`dept-card dept-card--pick${isActive ? ' is-active' : ''}`}
-                                        onClick={() => handleDepartmentSelect(department)}
+                            return (
+                                <article
+                                    key={department}
+                                    className={`dept-card dept-card--pick${isActive ? ' is-active' : ''}`}
+                                >
+                                    <span
+                                        className="dept-card-count"
+                                        aria-label={`${eventCount} events available`}
+                                        title={`${eventCount} events`}
                                     >
-                                        <h3>{department === 'All' ? 'All Departments' : department}</h3>
-                                        <p>{eventCount} events available</p>
-                                    </button>
-                                )
-                            })}
-                        </div>
-                    ) : (
-                        <div
-                            className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
-                            aria-label="Upcoming events"
-                        >
-                            <div className={`event-scroll-track${isAllDepartmentsView ? ' is-grid' : ''}`}>
-                                {filteredEvents.map((event) => (
-                                    <div key={event.id}>
-                                        <EventCard event={event} />
+                                        {eventCount}
+                                    </span>
+                                    <div className="dept-card-head">
+                                        <h3>{departmentLabel}</h3>
                                     </div>
-                                ))}
+                                    <div className="dept-card-divider" aria-hidden="true" />
+                                    {previewTitles.length > 0 ? (
+                                        <ol className="dept-card-list" aria-label={`${departmentLabel} event titles`}>
+                                            {previewTitles.map((title) => (
+                                                <li key={`${department}-${title}`}>{title}</li>
+                                            ))}
+                                        </ol>
+                                    ) : (
+                                        <p className="dept-card-list-empty">No events listed yet.</p>
+                                    )}
+                                    <button
+                                        type="button"
+                                        className="btn ghost dept-card-action"
+                                        onClick={() => handleDepartmentSelect(department, 'card')}
+                                    >
+                                        Explore More
+                                    </button>
+                                </article>
+                            )
+                        })}
+                    </div>
+                    <div className="events-results" aria-live="polite">
+                        {hasDepartmentSelection ? (
+                            <div className="events-selected-dept" role="status" aria-label="Selected department">
+                                <span>Selected department:</span>
+                                <strong>{activeDepartmentLabel}</strong>
                             </div>
-                        </div>
-                    )}
+                        ) : null}
+                        {!hasDepartmentSelection ? (
+                            <div className="events-placeholder" role="status">
+                                <h3>Choose a department card to view events</h3>
+                                <p>The event list will appear here after you pick a department card.</p>
+                            </div>
+                        ) : filteredEvents.length > 0 ? (
+                            <div
+                                className="event-scroll"
+                                aria-label={`${activeDepartmentLabel} events`}
+                            >
+                                <div className="event-scroll-track">
+                                    {filteredEvents.map((event) => (
+                                        <div key={event.id}>
+                                            <EventCard event={event} />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="events-empty" role="status">
+                                <h3>No events found for {activeDepartmentLabel}</h3>
+                                <p>Try switching to another department from the list above.</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </section>
 
