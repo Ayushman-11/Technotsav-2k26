@@ -11,8 +11,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "First Floor Labs",
                     "participation": {
@@ -63,6 +63,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Mrs. Ranjita Jadhav",
+                            "phone": "9096282252"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Sarthi Patil",
                             "phone": "8446639066"
                         }
@@ -81,7 +87,7 @@
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
-                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100 per participant (team fee INR 200)",
                             "Includes: Refreshment and participation certificate"
                         ],
@@ -143,7 +149,8 @@
                         "team_structure": "The competition is open to individuals or teams consisting of up to two members.",
                         "additional_information": [
                             "Participation includes certificates and refreshments",
-                            "For queries, contact Sarthi Patil at 8446639066"
+                            "Faculty Coordinator: Mrs. Ranjita Jadhav (9096282252)",
+                            "Student Coordinator: Sarthi Patil (8446639066)"
                         ]
                     }
                 },
@@ -155,8 +162,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": null,
                     "participation": {
@@ -201,6 +208,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Pooja R. Patil",
+                            "phone": "9096817433"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Suraj Munde",
                             "phone": "7741007540"
                         }
@@ -219,7 +232,7 @@
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
-                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100 per participant",
                             "Includes: Refreshment and participation certificate"
                         ],
@@ -246,7 +259,8 @@
                         "team_structure": "The competition is open to teams of two or four members.",
                         "additional_information": [
                             "Participation includes certificates and refreshments",
-                            "For queries, contact Suraj Munde at 7741007540"
+                            "Faculty Coordinator: Dr. Pooja R. Patil (9096817433)",
+                            "Student Coordinator: Suraj Munde (7741007540)"
                         ]
                     }
                 },
@@ -258,8 +272,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "CSE Labs + Classrooms",
                     "participation": {
@@ -328,6 +342,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Mr. M A Pardeshi",
+                            "phone": "7588227505"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Atharva Bhasme",
                             "phone": "9322142632"
                         }
@@ -346,7 +366,7 @@
                         ],
                         "event_timeline": [
                             "Date: 16 Apr 2026",
-                            "Time: 09:00 AM to 04:00 PM (approx)",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100 per participant (team fee INR 400)",
                             "Includes: Refreshment and participation certificate"
                         ],
@@ -390,7 +410,8 @@
                         "team_structure": "Infinity Hunt is open to teams of four members.",
                         "additional_information": [
                             "Participation includes certificates and refreshments",
-                            "For queries, contact Atharva Bhasme at 9322142632"
+                            "Faculty Coordinator: Mr. M A Pardeshi (7588227505)",
+                            "Student Coordinator: Atharva Bhasme (9322142632)"
                         ]
                     }
                 },
@@ -402,8 +423,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "1 Classroom + 2 Labs",
                     "participation": {
@@ -467,12 +488,14 @@
                     ],
                     "contact": [
                         {
-                            "name": "Saniya Mane",
-                            "phone": "8799879400"
+                            "role": "Faculty Coordinator",
+                            "name": "Santosh S. Kore",
+                            "phone": "9421749956"
                         },
                         {
-                            "name": "Viraj Potdar",
-                            "phone": "9764482435"
+                            "role": "Student Coordinator",
+                            "name": "Saniya Mane",
+                            "phone": "8799879400"
                         }
                     ],
                     "benefits": [
@@ -488,7 +511,7 @@
                         ],
                         "event_timeline": [
                             "Date Window: 15 Apr to 16 Apr 2026",
-                            "Time: 09:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100",
                             "Includes: Refreshments and certificate"
                         ],
@@ -506,240 +529,8 @@
                         "team_structure": "Only individual participation is allowed.",
                         "additional_information": [
                             "All participants receive certificates",
-                            "For queries, contact Saniya Mane (8799879400) or Viraj Potdar (9764482435)"
-                        ]
-                    }
-                },
-                {
-                    "event_id": "CENTRAL-02",
-                    "event_name": "Reel Rumble",
-                    "description": "Solo and duo reel-making competition capturing the energy of Technotsav across Day 1 and Day 2.",
-                    "type": "competition",
-                    "is_hot": true,
-                    "schedule": {
-                        "day": "Day 1 & Day 2",
-                        "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
-                    },
-                    "venue": "DY Patil College of Engineering & Technology (DYPCET), Kolhapur",
-                    "participation": {
-                        "eligibility": "Open to all students of any department or year",
-                        "mode": [
-                            "individual",
-                            "team"
-                        ],
-                        "team_size": {
-                            "min": 1,
-                            "max": 2
-                        }
-                    },
-                    "fees": {
-                        "individual": 200,
-                        "team": 300
-                    },
-                    "registration": {
-                        "link": "",
-                        "qr": null
-                    },
-                    "prizes": [
-                        {
-                            "position": "1st",
-                            "amount": 5000
-                        },
-                        {
-                            "position": "2nd",
-                            "amount": 3000
-                        },
-                        {
-                            "position": "3rd",
-                            "amount": 1000
-                        }
-                    ],
-                    "rounds": [
-                        {
-                            "name": "Round 1 - One Shot, One Reel",
-                            "subtitle": "Theme-based production",
-                            "description": "Participants conceptualize, shoot, and edit a maximum 90-second reel based on Technotsav highlights.",
-                            "steps": [
-                                "Shoot event highlights from Day 1 and Day 2 within college premises",
-                                "Edit in portrait format (9:16) with maximum duration of 90 seconds",
-                                "Submit final reel via Google Drive link within upload window"
-                            ]
-                        }
-                    ],
-                    "contact": [
-                        {
-                            "name": "Arya Sutar",
-                            "phone": "7666887603"
-                        }
-                    ],
-                    "benefits": [
-                        "Participation certificates",
-                        "Refreshments"
-                    ],
-                    "details": {
-                        "primary_overview": "Reel Rumble is a content creation competition where participants document Technotsav's atmosphere, moments, and storytelling through short-form video reels.",
-                        "what_is": "Participants create and submit an original reel that captures inauguration, activities, and closing highlights in a compelling narrative format.",
-                        "who_can_participate": [
-                            "Open to all students of any department or year",
-                            "Solo participation or group participation up to 2 members"
-                        ],
-                        "event_timeline": [
-                            "Day 1 Reporting: 8:30 AM | Shooting starts: 9:00 AM",
-                            "Day 1 shooting closes: 4:00 PM",
-                            "Day 2 Reporting: 8:30 AM | Shooting window: 9:00 AM to 2:00 PM",
-                            "Submission window opens after closing ceremony and remains active for 2 hours"
-                        ],
-                        "rules_and_regulations": [
-                            {
-                                "title": "General Rules",
-                                "points": [
-                                    "Students from diploma and undergraduate programs are eligible",
-                                    "Participants must carry valid college ID cards",
-                                    "No spot entries allowed; fees are non-refundable",
-                                    "Judges' decision is final",
-                                    "Misconduct with volunteers, judges, or peers results in disqualification"
-                                ]
-                            },
-                            {
-                                "title": "Reel Guidelines",
-                                "points": [
-                                    "Maximum reel duration: 90 seconds",
-                                    "Format: Portrait 9:16 suitable for Instagram",
-                                    "Content must be shot inside DYPCET premises during Technotsav",
-                                    "Participants must cover both inauguration and closing ceremony",
-                                    "Do not post or share reels publicly before official results"
-                                ]
-                            },
-                            {
-                                "title": "Submission Rules",
-                                "points": [
-                                    "Submission accepted only through the shared Google Drive link",
-                                    "Upload window is limited to 2 hours after closing ceremony",
-                                    "Late submissions are eliminated"
-                                ]
-                            }
-                        ],
-                        "team_structure": "Solo or group participation (maximum 2 members).",
-                        "additional_information": [
-                            "Maximum entries: 30 (solo + group combined)",
-                            "Participants must attach payment screenshot and transaction ID in registration",
-                            "For queries contact Arya Sutar at 7666887603"
-                        ]
-                    }
-                },
-                {
-                    "event_id": "CENTRAL-03",
-                    "event_name": "Clash of 3D Creators",
-                    "description": "Theme-based 3D modeling challenge to build realistic scenes using creativity, composition, and rendering skills.",
-                    "type": "competition",
-                    "is_hot": true,
-                    "schedule": {
-                        "day": "Day 1",
-                        "date": "2026-04-15",
-                        "start_time": "09:30",
-                        "end_time": "16:00"
-                    },
-                    "venue": "CSE Building Lab",
-                    "participation": {
-                        "eligibility": "All students from any department",
-                        "mode": [
-                            "individual",
-                            "team"
-                        ],
-                        "team_size": {
-                            "min": 1,
-                            "max": 2
-                        }
-                    },
-                    "fees": {
-                        "individual": 100,
-                        "team": 200
-                    },
-                    "registration": {
-                        "link": "https://forms.gle/ebqMASMonJWui2es7",
-                        "qr": null
-                    },
-                    "prizes": [
-                        {
-                            "position": "1st",
-                            "amount": 3000
-                        },
-                        {
-                            "position": "2nd",
-                            "amount": 2000
-                        },
-                        {
-                            "position": "3rd",
-                            "amount": 1000
-                        }
-                    ],
-                    "rounds": [
-                        {
-                            "name": "Theme-Based 3D Modeling",
-                            "subtitle": "One-day challenge",
-                            "description": "Participants create a visually realistic 3D scene from a theme announced at the event start.",
-                            "steps": [
-                                "Theme announced at the beginning of challenge",
-                                "Model and arrange assets creatively within time limit",
-                                "Submit project file and rendered image before deadline"
-                            ]
-                        }
-                    ],
-                    "contact": [
-                        {
-                            "name": "Rohit Harne",
-                            "phone": "8459206177"
-                        }
-                    ],
-                    "benefits": [
-                        "Certificates",
-                        "Refreshments"
-                    ],
-                    "details": {
-                        "primary_overview": "Clash of 3D Creators challenges participants to build immersive 3D scenes under a given theme while showcasing visual composition and realism.",
-                        "what_is": "A one-day 3D modeling competition where participants can use any software and online assets, but originality and presentation quality drive scoring.",
-                        "who_can_participate": [
-                            "Open to all students from any department or year"
-                        ],
-                        "event_timeline": [
-                            "Date: 15th April 2026",
-                            "Time: 9:30 AM to 4:00 PM",
-                            "Venue: CSE Building Lab"
-                        ],
-                        "rules_and_regulations": [
-                            {
-                                "title": "Participation Rules",
-                                "points": [
-                                    "Participants must carry valid college ID card",
-                                    "Participants must bring their own laptop, software setup, and mouse",
-                                    "Respectful behavior is mandatory"
-                                ]
-                            },
-                            {
-                                "title": "Competition Rules",
-                                "points": [
-                                    "Theme will be disclosed only at challenge start",
-                                    "Submissions must align with the provided theme",
-                                    "Use of online assets is allowed, but final scene composition must be original",
-                                    "Submit both source file and rendered output (PNG/JPEG)"
-                                ]
-                            },
-                            {
-                                "title": "Judging Criteria",
-                                "points": [
-                                    "Theme relevance",
-                                    "Creativity and arrangement",
-                                    "Realism and detailing",
-                                    "Overall visual impact"
-                                ]
-                            }
-                        ],
-                        "team_structure": "Individual or team participation up to 2 members.",
-                        "additional_information": [
-                            "Participation includes certificates and refreshments",
-                            "For queries contact Rohit Harne at 8459206177"
+                            "Faculty Coordinator: Santosh S. Kore (9421749956)",
+                            "Student Coordinator: Saniya Mane (8799879400)"
                         ]
                     }
                 }
@@ -756,8 +547,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "E&TC Dept. Labs",
                     "participation": {
@@ -806,7 +597,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Mrs R N Gaikwad",
+                            "phone": "9970002111"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Hardik.D.Gujar",
+                            "phone": "9404295656"
+                        }
+                    ],
                     "benefits": [
                         "Certificates"
                     ],
@@ -820,7 +622,7 @@
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Venue: E&TC Dept. Labs",
                             "Registration Fee: INR 100 (individual), INR 400 (group of 4)"
                         ],
@@ -839,7 +641,9 @@
                         ],
                         "team_structure": "Individual and team participation allowed, with up to 5 members per team.",
                         "additional_information": [
-                            "Registration link: https://forms.gle/w5Ku7kv9fKdtxBSb6"
+                            "Registration link: https://forms.gle/w5Ku7kv9fKdtxBSb6",
+                            "Faculty Coordinator: Mrs R N Gaikwad (9970002111)",
+                            "Student Coordinator: Hardik.D.Gujar (9404295656)"
                         ]
                     }
                 },
@@ -851,8 +655,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "College Lawn",
                     "participation": {
@@ -909,7 +713,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Prof. P. S. Pise",
+                            "phone": "9422516900"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Suyash Desai",
+                            "phone": "8975485090"
+                        }
+                    ],
                     "benefits": [
                         "Certificates"
                     ],
@@ -923,7 +738,7 @@
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Venue: College Lawn",
                             "Registration Fee: INR 200 (individual reference), team fee range INR 400 to INR 600"
                         ],
@@ -942,7 +757,9 @@
                         "team_structure": "Team participation only with 2 to 4 members.",
                         "additional_information": [
                             "Team fee can vary between INR 400 and INR 600 based on team format",
-                            "Registration link: https://forms.gle/7GoNhnzDiRx5kU1i6"
+                            "Registration link: https://forms.gle/7GoNhnzDiRx5kU1i6",
+                            "Faculty Coordinator: Prof. P. S. Pise (9422516900)",
+                            "Student Coordinator: Suyash Desai (8975485090)"
                         ]
                     }
                 },
@@ -954,8 +771,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "10:00",
-                        "end_time": "17:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "E&TC Dept. Labs",
                     "participation": {
@@ -1004,7 +821,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Manisha V. Bhanuse",
+                            "phone": "8668333960"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Sagar Hilal",
+                            "phone": "8999442470"
+                        }
+                    ],
                     "benefits": [
                         "Certificates"
                     ],
@@ -1018,7 +846,7 @@
                         ],
                         "event_timeline": [
                             "Date: 16 Apr 2026",
-                            "Time: 10:00 AM to 05:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Venue: E&TC Dept. Labs",
                             "Registration Fee: INR 100 (individual), INR 150 (group of 2)"
                         ],
@@ -1039,7 +867,9 @@
                         ],
                         "team_structure": "Individual and team participation allowed, with a maximum of 2 members per team.",
                         "additional_information": [
-                            "Registration link: https://forms.gle/QxBGefaSThqyVtGk8"
+                            "Registration link: https://forms.gle/QxBGefaSThqyVtGk8",
+                            "Faculty Coordinator: Dr. Manisha V. Bhanuse (8668333960)",
+                            "Student Coordinator: Sagar Hilal (8999442470)"
                         ]
                     }
                 }
@@ -1056,8 +886,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "2:00 PM"
                     },
                     "venue": "AIML Department",
                     "participation": {
@@ -1112,6 +942,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Sachin B. Takmare",
+                            "phone": "9960843406"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Ayush Mane",
                             "phone": "7798475645"
                         }
@@ -1129,7 +965,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 1 (15 Apr 2026)",
-                            "Time: 10:00 AM to 04:00 PM (including evaluation and result)",
+                            "Time: 9:00 AM to 2:00 PM",
                             "Registration Fee: INR 120 (General), INR 100 for first-year participants valid for first 36 entries",
                             "Includes: Refreshment"
                         ],
@@ -1163,20 +999,22 @@
                         "additional_information": [
                             "Refreshment break: 1:00 PM to 1:30 PM",
                             "Top 8 to 10 teams are shortlisted for final presentation",
-                            "Venue details inside DYPCET campus will be shared before event"
+                            "Venue details inside DYPCET campus will be shared before event",
+                            "Faculty Coordinator: Dr. Sachin B. Takmare (9960843406)",
+                            "Student Coordinator: Ayush Mane (7798475645)"
                         ]
                     }
                 },
                 {
                     "event_id": "AIML-02",
-                    "event_name": "Killer Mystery (Case-Solving Event)",
+                    "event_name": "KILLER MYSTERY (Case-Solving Event)",
                     "description": "Investigation-style case-solving challenge with quiz, observation, and final mystery rounds.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "AIML Department",
                     "participation": {
@@ -1243,12 +1081,14 @@
                     ],
                     "contact": [
                         {
-                            "name": "Shivani",
-                            "phone": "9096445240"
+                            "role": "Faculty Coordinator",
+                            "name": "Mrs. Shamal C. Desai",
+                            "phone": "9420290704"
                         },
                         {
-                            "name": "Devika",
-                            "phone": "7161947555"
+                            "role": "Student Coordinator",
+                            "name": "Shivani Gholap",
+                            "phone": "9096445240"
                         }
                     ],
                     "benefits": [
@@ -1264,7 +1104,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 2 (16 Apr 2026)",
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100 per participant or team",
                             "Includes: Refreshment"
                         ],
@@ -1292,7 +1132,9 @@
                         ],
                         "team_structure": "Individual participation or team of up to 2 members.",
                         "additional_information": [
-                            "Venue details inside DYPCET campus will be shared before event"
+                            "Venue details inside DYPCET campus will be shared before event",
+                            "Faculty Coordinator: Mrs. Shamal C. Desai (9420290704)",
+                            "Student Coordinator: Shivani Gholap (9096445240)"
                         ]
                     }
                 },
@@ -1304,8 +1146,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Classroom 306 and 307",
                     "participation": {
@@ -1370,12 +1212,14 @@
                     ],
                     "contact": [
                         {
-                            "name": "Kunal",
-                            "phone": "9322872759"
+                            "role": "Faculty Coordinator",
+                            "name": "Rushikesh S. Mirajkar",
+                            "phone": "8657598777"
                         },
                         {
-                            "name": "Yashraj",
-                            "phone": "9356097721"
+                            "role": "Student Coordinator",
+                            "name": "Kunal Patil",
+                            "phone": "9322872759"
                         }
                     ],
                     "benefits": [
@@ -1390,7 +1234,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 1 (15 Apr 2026)",
-                            "Time: 10:00 AM to 04:00 PM (qualifiers and finals)",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 400 per squad (Free Fire), INR 100 per head (PES)",
                             "Includes: Refreshment"
                         ],
@@ -1419,7 +1263,9 @@
                         "team_structure": "Format includes squad-based and individual participation depending on game mode.",
                         "additional_information": [
                             "Venue: Classroom 306 and 307 at DYPCET",
-                            "PES is played in knockout format"
+                            "PES is played in knockout format",
+                            "Faculty Coordinator: Rushikesh S. Mirajkar (8657598777)",
+                            "Student Coordinator: Kunal Patil (9322872759)"
                         ]
                     }
                 }
@@ -1436,8 +1282,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:30",
-                        "end_time": "14:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "2:00 PM"
                     },
                     "venue": "Geo-Technical Engineering Lab, Civil Engineering Department",
                     "participation": {
@@ -1488,11 +1334,13 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mr. Y. D. Kumbhar",
                             "phone": "9552594509"
                         },
                         {
-                            "name": "Mr. Atharva Sambhaji Mali",
+                            "role": "Student Coordinator",
+                            "name": "Atharva S Mali",
                             "phone": "9970914926"
                         }
                     ],
@@ -1507,7 +1355,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 2 (16 Apr 2026)",
-                            "Time: 09:30 AM to 02:00 PM",
+                            "Time: 9:00 AM to 2:00 PM",
                             "Entry Fee: INR 100 per participant"
                         ],
                         "rules_and_regulations": [
@@ -1527,20 +1375,22 @@
                         "team_structure": "Individual participation or team of up to 2 members.",
                         "additional_information": [
                             "Tower must reach minimum height of 600 mm",
-                            "Event is judged by efficiency ratio (load held vs structural weight)"
+                            "Event is judged by efficiency ratio (load held vs structural weight)",
+                            "Faculty Coordinator: Mr. Y. D. Kumbhar (9552594509)",
+                            "Student Coordinator: Atharva S Mali (9970914926)"
                         ]
                     }
                 },
                 {
                     "event_id": "CIV-02",
-                    "event_name": "CUBE CRUSH CHALLENGE",
+                    "event_name": "Cube Crush Challenge",
                     "description": "Concrete mix design event targeting 40 N/mm2 compressive strength after 7-day curing.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "15:30"
+                        "start_time": "9:00 AM",
+                        "end_time": "3:30 PM"
                     },
                     "venue": "Material Testing Lab, Civil Engineering Department",
                     "participation": {
@@ -1591,11 +1441,13 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mr. K. R. Patil",
                             "phone": "9604501311"
                         },
                         {
-                            "name": "Miss Rajnandini Sampat Dinde",
+                            "role": "Student Coordinator",
+                            "name": "Rajnandini S Dinde",
                             "phone": "9730352296"
                         }
                     ],
@@ -1610,7 +1462,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 1 (15 Apr 2026)",
-                            "Time: 10:00 AM to 03:30 PM",
+                            "Time: 9:00 AM to 3:30 PM",
                             "Entry Fee: INR 100 per participant"
                         ],
                         "rules_and_regulations": [
@@ -1629,20 +1481,22 @@
                         ],
                         "team_structure": "Individual participation or team of up to 2 members.",
                         "additional_information": [
-                            "Target compressive strength is checked after 7-day curing period"
+                            "Target compressive strength is checked after 7-day curing period",
+                            "Faculty Coordinator: Mr. K. R. Patil (9604501311)",
+                            "Student Coordinator: Rajnandini S Dinde (9730352296)"
                         ]
                     }
                 },
                 {
                     "event_id": "CIV-03",
-                    "event_name": "THE DESIGNER",
+                    "event_name": "The Designer (CAD)",
                     "description": "CAD competition to test digital design precision, speed, and presentation quality.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:30",
-                        "end_time": "15:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "2:00 PM"
                     },
                     "venue": "Computer Lab, Civil Engineering Department",
                     "participation": {
@@ -1710,11 +1564,13 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mr. A. R. Patil",
                             "phone": "9890908666"
                         },
                         {
-                            "name": "Mr. Kaisar Akhalakahmed Desai",
+                            "role": "Student Coordinator",
+                            "name": "Kaisar A Desai",
                             "phone": "9325268181"
                         }
                     ],
@@ -1728,7 +1584,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 1 (15 Apr 2026)",
-                            "Time: 09:30 AM to 03:00 PM",
+                            "Time: 9:00 AM to 2:00 PM",
                             "Entry Fee: INR 100 per participant"
                         ],
                         "rules_and_regulations": [
@@ -1754,7 +1610,9 @@
                         ],
                         "team_structure": "Only single-participant entries are allowed.",
                         "additional_information": [
-                            "AutoCAD round file should satisfy minimum size requirement as per event instructions"
+                            "AutoCAD round file should satisfy minimum size requirement as per event instructions",
+                            "Faculty Coordinator: Mr. A. R. Patil (9890908666)",
+                            "Student Coordinator: Kaisar A Desai (9325268181)"
                         ]
                     }
                 },
@@ -1766,8 +1624,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:30",
-                        "end_time": "15:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "3:00 PM"
                     },
                     "venue": "Computer Lab, Civil Engineering Department",
                     "participation": {
@@ -1840,11 +1698,13 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mr. S. A. Salokhe",
                             "phone": "9766167240"
                         },
                         {
-                            "name": "Ms. Sakshi",
+                            "role": "Student Coordinator",
+                            "name": "Sakshi C. Handifode",
                             "phone": "9518700297"
                         }
                     ],
@@ -1859,7 +1719,7 @@
                         ],
                         "event_timeline": [
                             "Date: Day 2 (16 Apr 2026)",
-                            "Time: 09:30 AM to 03:00 PM",
+                            "Time: 9:00 AM to 3:00 PM",
                             "Entry Fee: INR 100 per participant"
                         ],
                         "rules_and_regulations": [
@@ -1884,7 +1744,9 @@
                         ],
                         "team_structure": "Individual participation or team of up to 2 members.",
                         "additional_information": [
-                            "Civil Clash includes three rounds with qualification before final stage"
+                            "Civil Clash includes three rounds with qualification before final stage",
+                            "Faculty Coordinator: Mr. S. A. Salokhe (9766167240)",
+                            "Student Coordinator: Sakshi C. Handifode (9518700297)"
                         ]
                     }
                 }
@@ -1901,8 +1763,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "11:00",
-                        "end_time": "13:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "1:00 PM"
                     },
                     "venue": "Classroom 401, School of Architecture (4th Floor), DYPSEM, Kasba Bawada, Kolhapur",
                     "participation": {
@@ -1973,12 +1835,14 @@
                     ],
                     "contact": [
                         {
-                            "name": "Ar. Tilottama A. Padale",
+                            "role": "Faculty Coordinator",
+                            "name": "Ar. Tillottama Padle",
                             "phone": "8446301000"
                         },
                         {
-                            "name": "Dr. Madhugandha A. Mithari",
-                            "phone": "9765783199"
+                            "role": "Student Coordinator",
+                            "name": "Riddhi Gaikwad",
+                            "phone": "9067519393"
                         }
                     ],
                     "benefits": [
@@ -1995,7 +1859,7 @@
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
-                            "Time: 11:00 AM to 01:00 PM (approx)",
+                            "Time: 9:00 AM to 1:00 PM",
                             "Registration Fee: INR 100 per participant",
                             "Includes: Refreshment"
                         ],
@@ -2023,20 +1887,22 @@
                         "team_structure": "Individual participation or team of 2 members.",
                         "additional_information": [
                             "Venue block and room details may be shared again before event",
-                            "Prize winners receive cash and certificates"
+                            "Prize winners receive cash and certificates",
+                            "Faculty Coordinator: Ar. Tillottama Padle (8446301000)",
+                            "Student Coordinator: Riddhi Gaikwad (9067519393)"
                         ]
                     }
                 },
                 {
                     "event_id": "ARCH-02",
-                    "event_name": "Modular partition unit from Trash to Treasure",
+                    "event_name": "Modular Partition Unit from Trash to Treasure",
                     "description": "Sustainable design challenge to build modular partition systems from recycled or waste materials.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "13:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "1:00 PM"
                     },
                     "venue": "School of Architecture (4th Floor), DYPSEM, Kasba Bawada, Kolhapur",
                     "participation": {
@@ -2090,16 +1956,14 @@
                     ],
                     "contact": [
                         {
-                            "name": "Prof. Neela D. Jirge",
-                            "phone": "9881494969"
-                        },
-                        {
-                            "name": "Ar. Pooja P. Jirge",
+                            "role": "Faculty Coordinator",
+                            "name": "Ar. Pooja Jirge",
                             "phone": "8855865573"
                         },
                         {
-                            "name": "Ar. Manjett J. Jadhav",
-                            "phone": "9021554738"
+                            "role": "Student Coordinator",
+                            "name": "Vedantika Mohite",
+                            "phone": "8007545556"
                         }
                     ],
                     "benefits": [
@@ -2117,7 +1981,7 @@
                         ],
                         "event_timeline": [
                             "Date: Wednesday, 15 Apr 2026",
-                            "Time: 10:00 AM to 01:00 PM",
+                            "Time: 9:00 AM to 1:00 PM",
                             "Registration Fee: INR 100 per participant",
                             "Includes: Refreshment"
                         ],
@@ -2162,7 +2026,9 @@
                         "additional_information": [
                             "Recommended module frame size is 2 feet x 4 feet",
                             "Optional constraints may include max 3 waste materials and budget cap of INR 1000",
-                            "Selected designs may be displayed on campus"
+                            "Selected designs may be displayed on campus",
+                            "Faculty Coordinator: Ar. Pooja Jirge (8855865573)",
+                            "Student Coordinator: Vedantika Mohite (8007545556)"
                         ]
                     }
                 }
@@ -2173,14 +2039,14 @@
             "events": [
                 {
                     "event_id": "CHEM-01",
-                    "event_name": "Mock Placement Drive",
+                    "event_name": "MOCK PLACEMENT DRIVE",
                     "description": "A simulation of real campus recruitment procedures.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "DY Patil College of Engineering & Technology, Kolhapur",
                     "participation": {
@@ -2237,36 +2103,14 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. R. D. Mahajan",
+                            "phone": "8669116943"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Rupesh Nimbalkar",
                             "phone": "9075179696"
-                        },
-                        {
-                            "name": "Kiran Dhere",
-                            "phone": "8767979556"
-                        },
-                        {
-                            "name": "Sai Dhakate",
-                            "phone": "8208195735"
-                        },
-                        {
-                            "name": "Neha Jadhav",
-                            "phone": "8605565573"
-                        },
-                        {
-                            "name": "Shravani Powar",
-                            "phone": "8010140745"
-                        },
-                        {
-                            "name": "Kapil Pawar",
-                            "phone": "8390847253"
-                        },
-                        {
-                            "name": "Sanket Gorule",
-                            "phone": "8208157568"
-                        },
-                        {
-                            "name": "Sudharm Mali",
-                            "phone": "7709252416"
                         }
                     ],
                     "benefits": [
@@ -2280,8 +2124,8 @@
                         ],
                         "event_timeline": [
                             "Date: 16th April 2026",
-                            "Time: 10:00 AM to 4:00 PM (Tentative)",
-                            "Registration Fee: \u20b9100 per participant"
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹100 per participant"
                         ],
                         "rules_and_regulations": [
                             {
@@ -2296,20 +2140,22 @@
                         "team_structure": "Individual/Solo",
                         "additional_information": [
                             "Faculty Coordinators - Lt.(Dr.) Rahul D. Mahajan, Mrs. Poonam R. Mandale, Mr. Sumit Potdar",
-                            "Non teaching Faculty - Mr. Digvijay Bhogavkar"
+                            "Non teaching Faculty - Mr. Digvijay Bhogavkar",
+                            "Faculty Coordinator: Dr. R. D. Mahajan (8669116943)",
+                            "Student Coordinator: Rupesh Nimbalkar (9075179696)"
                         ]
                     }
                 },
                 {
                     "event_id": "CHEM-02",
-                    "event_name": "Product Development Competition",
+                    "event_name": "Product Development",
                     "description": "Design, develop, and present a novel product that addresses real-world needs.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Department of Chemical Engineering",
                     "participation": {
@@ -2358,6 +2204,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. R. A. Patil",
+                            "phone": "9823167767"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Ashish Nayar",
                             "phone": "7218657519"
                         }
@@ -2373,8 +2225,8 @@
                         ],
                         "event_timeline": [
                             "Date: 15th April 2026",
-                            "Time: 10:00 AM to 04:00 PM",
-                            "Registration Fee: \u20b9100 per participant",
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹100 per participant",
                             "Includes: Refreshment"
                         ],
                         "rules_and_regulations": [
@@ -2385,26 +2237,28 @@
                                     "Students should bring the sample of the product and has to showcase along with its information.",
                                     "Students can prepare PPT/Poster presentation to give the information about the product.",
                                     "Only original Product Development ideas allowed (no copied ideas).",
-                                    "Time limits for presentation (5\u201310 min)."
+                                    "Time limits for presentation (5–10 min)."
                                 ]
                             }
                         ],
                         "team_structure": "Minimum 3 and maximum 4 members in a team.",
                         "additional_information": [
-                            "Block/Room details will be shared before the event"
+                            "Block/Room details will be shared before the event",
+                            "Faculty Coordinator: Dr. R. A. Patil (9823167767)",
+                            "Student Coordinator: Ashish Nayar (7218657519)"
                         ]
                     }
                 },
                 {
                     "event_id": "CHEM-03",
-                    "event_name": "Project competition",
+                    "event_name": "Project Competition",
                     "description": "Showcasing your mini and mega projects in the field of Project areas Chemical, biotechnology, pharmaceutical, nanotechnology, environmental.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Project Laboratory, Chemical Engineering Department",
                     "participation": {
@@ -2453,6 +2307,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Mr. Y. A. Donolikar",
+                            "phone": "9665172338"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Salman Nadaf",
                             "phone": "7218715120"
                         }
@@ -2468,8 +2328,8 @@
                         ],
                         "event_timeline": [
                             "Date: 15th April 2026",
-                            "Time: 09:00 AM to 04:00 PM (approx)",
-                            "Registration Fee: \u20b9100 per participant",
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹100 per participant",
                             "Includes: Refreshment"
                         ],
                         "rules_and_regulations": [
@@ -2485,7 +2345,9 @@
                         ],
                         "team_structure": "Minimum 3 and maximum 5 members in a team.",
                         "additional_information": [
-                            "Block/Room details will be shared before the event"
+                            "Block/Room details will be shared before the event",
+                            "Faculty Coordinator: Mr. Y. A. Donolikar (9665172338)",
+                            "Student Coordinator: Salman Nadaf (7218715120)"
                         ]
                     }
                 }
@@ -2503,8 +2365,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:30",
-                        "end_time": "17:30"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "DYPCET Kolhapur",
                     "participation": {
@@ -2570,6 +2432,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Prashant Jagtap",
+                            "phone": "7774884400"
+                        },
+                        {
+                            "role": "Student Coordinator",
                             "name": "Abhijeet Adamuthe",
                             "phone": "7058987796"
                         }
@@ -2588,7 +2456,7 @@
                         ],
                         "event_timeline": [
                             "Date: 16 Apr 2026",
-                            "Time: 09:30 AM to 05:30 PM (approx)",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: INR 100 per participant",
                             "Team fee: INR 300 to INR 400 based on team size",
                             "Includes: Refreshment"
@@ -2635,7 +2503,9 @@
                         "additional_information": [
                             "Winner criteria: team balance, player rating, purse utilization, and rule compliance",
                             "Live animated auction setup with team management sheets",
-                            "For queries contact Abhijeet Adamuthe at 7058987796"
+                            "For queries contact Abhijeet Adamuthe at 7058987796",
+                            "Faculty Coordinator: Dr. Prashant Jagtap (7774884400)",
+                            "Student Coordinator: Abhijeet Adamuthe (7058987796)"
                         ]
                     }
                 }
@@ -2653,8 +2523,8 @@
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:30",
-                        "end_time": "14:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "2:00 PM"
                     },
                     "venue": "Class Room G-003 and G-004",
                     "participation": {
@@ -2704,7 +2574,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Amol N. Jadhav",
+                            "phone": "8208920924"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Siddhi Lokare",
+                            "phone": "8767195191"
+                        }
+                    ],
                     "benefits": [
                         "Participation certificates",
                         "Refreshments"
@@ -2718,8 +2599,8 @@
                         ],
                         "event_timeline": [
                             "Date: 16th April 2026",
-                            "Time: 9:30 AM to 2:00 PM (approx)",
-                            "Registration Fee: \u20b9100 per participant",
+                            "Time: 9:00 AM to 2:00 PM",
+                            "Registration Fee: ₹100 per participant",
                             "Includes: Refreshments"
                         ],
                         "rules_and_regulations": [
@@ -2755,8 +2636,259 @@
                         "additional_information": [
                             "The entire event will be conducted in offline mode.",
                             "Students must bring a valid college ID card for verification.",
-                            "The judges\u2019 decision will be final. No objections or disputes will be entertained.",
-                            "Acceptance will be declared by 14 April 2025(via mail)."
+                            "The judges’ decision will be final. No objections or disputes will be entertained.",
+                            "Acceptance will be declared by 14 April 2025(via mail).",
+                            "Faculty Coordinator: Dr. Amol N. Jadhav (8208920924)",
+                            "Student Coordinator: Siddhi Lokare (8767195191)"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CENTRAL-02",
+                    "event_name": "Reel Rumble",
+                    "description": "Solo and duo reel-making competition capturing the energy of Technotsav across Day 1 and Day 2.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 1 & Day 2",
+                        "date": "2026-04-15",
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
+                    },
+                    "venue": "DY Patil College of Engineering & Technology (DYPCET), Kolhapur",
+                    "participation": {
+                        "eligibility": "Open to all students of any department or year",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 200,
+                        "team": 300
+                    },
+                    "registration": {
+                        "link": "",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 5000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Round 1 - One Shot, One Reel",
+                            "subtitle": "Theme-based production",
+                            "description": "Participants conceptualize, shoot, and edit a maximum 90-second reel based on Technotsav highlights.",
+                            "steps": [
+                                "Shoot event highlights from Day 1 and Day 2 within college premises",
+                                "Edit in portrait format (9:16) with maximum duration of 90 seconds",
+                                "Submit final reel via Google Drive link within upload window"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Kapil Kadam",
+                            "phone": "9975615625"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Vaidehi Jadhav",
+                            "phone": "7559309320"
+                        }
+                    ],
+                    "benefits": [
+                        "Participation certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Reel Rumble is a content creation competition where participants document Technotsav's atmosphere, moments, and storytelling through short-form video reels.",
+                        "what_is": "Participants create and submit an original reel that captures inauguration, activities, and closing highlights in a compelling narrative format.",
+                        "who_can_participate": [
+                            "Open to all students of any department or year",
+                            "Solo participation or group participation up to 2 members"
+                        ],
+                        "event_timeline": [
+                            "Day 1 Reporting: 8:30 AM | Shooting starts: 9:00 AM",
+                            "Day 1 shooting closes: 4:00 PM",
+                            "Day 2 Reporting: 8:30 AM | Shooting window: 9:00 AM to 2:00 PM",
+                            "Submission window opens after closing ceremony and remains active for 2 hours"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "Students from diploma and undergraduate programs are eligible",
+                                    "Participants must carry valid college ID cards",
+                                    "No spot entries allowed; fees are non-refundable",
+                                    "Judges' decision is final",
+                                    "Misconduct with volunteers, judges, or peers results in disqualification"
+                                ]
+                            },
+                            {
+                                "title": "Reel Guidelines",
+                                "points": [
+                                    "Maximum reel duration: 90 seconds",
+                                    "Format: Portrait 9:16 suitable for Instagram",
+                                    "Content must be shot inside DYPCET premises during Technotsav",
+                                    "Participants must cover both inauguration and closing ceremony",
+                                    "Do not post or share reels publicly before official results"
+                                ]
+                            },
+                            {
+                                "title": "Submission Rules",
+                                "points": [
+                                    "Submission accepted only through the shared Google Drive link",
+                                    "Upload window is limited to 2 hours after closing ceremony",
+                                    "Late submissions are eliminated"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Solo or group participation (maximum 2 members).",
+                        "additional_information": [
+                            "Maximum entries: 30 (solo + group combined)",
+                            "Participants must attach payment screenshot and transaction ID in registration",
+                            "For queries contact Arya Sutar at 7666887603",
+                            "Faculty Coordinator: Dr. Kapil Kadam (9975615625)",
+                            "Student Coordinator: Vaidehi Jadhav (7559309320)"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "CENTRAL-03",
+                    "event_name": "3D Modelling Competition",
+                    "description": "Theme-based 3D modeling challenge to build realistic scenes using creativity, composition, and rendering skills.",
+                    "type": "competition",
+                    "is_hot": true,
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
+                    },
+                    "venue": "CSE Building Lab",
+                    "participation": {
+                        "eligibility": "All students from any department",
+                        "mode": [
+                            "individual",
+                            "team"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
+                    },
+                    "fees": {
+                        "individual": 100,
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/ebqMASMonJWui2es7",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Theme-Based 3D Modeling",
+                            "subtitle": "One-day challenge",
+                            "description": "Participants create a visually realistic 3D scene from a theme announced at the event start.",
+                            "steps": [
+                                "Theme announced at the beginning of challenge",
+                                "Model and arrange assets creatively within time limit",
+                                "Submit project file and rendered image before deadline"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Dr. Kapil Kadam",
+                            "phone": "9975615625"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Rohit Harne",
+                            "phone": "8459206177"
+                        }
+                    ],
+                    "benefits": [
+                        "Certificates",
+                        "Refreshments"
+                    ],
+                    "details": {
+                        "primary_overview": "Clash of 3D Creators challenges participants to build immersive 3D scenes under a given theme while showcasing visual composition and realism.",
+                        "what_is": "A one-day 3D modeling competition where participants can use any software and online assets, but originality and presentation quality drive scoring.",
+                        "who_can_participate": [
+                            "Open to all students from any department or year"
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Venue: CSE Building Lab"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "Participation Rules",
+                                "points": [
+                                    "Participants must carry valid college ID card",
+                                    "Participants must bring their own laptop, software setup, and mouse",
+                                    "Respectful behavior is mandatory"
+                                ]
+                            },
+                            {
+                                "title": "Competition Rules",
+                                "points": [
+                                    "Theme will be disclosed only at challenge start",
+                                    "Submissions must align with the provided theme",
+                                    "Use of online assets is allowed, but final scene composition must be original",
+                                    "Submit both source file and rendered output (PNG/JPEG)"
+                                ]
+                            },
+                            {
+                                "title": "Judging Criteria",
+                                "points": [
+                                    "Theme relevance",
+                                    "Creativity and arrangement",
+                                    "Realism and detailing",
+                                    "Overall visual impact"
+                                ]
+                            }
+                        ],
+                        "team_structure": "Individual or team participation up to 2 members.",
+                        "additional_information": [
+                            "Participation includes certificates and refreshments",
+                            "For queries contact Rohit Harne at 8459206177",
+                            "Faculty Coordinator: Dr. Kapil Kadam (9975615625)",
+                            "Student Coordinator: Rohit Harne (8459206177)"
                         ]
                     }
                 }
@@ -2767,14 +2899,14 @@
             "events": [
                 {
                     "event_id": "DS-01",
-                    "event_name": "AI-GameCraft",
+                    "event_name": "GameCraft",
                     "description": "Design and develop interactive games using AI-assisted development within deadline.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "First Floor Labs",
                     "participation": {
@@ -2814,7 +2946,7 @@
                             "subtitle": "Round 1",
                             "description": "AI and technology-based MCQs, game development basics, logical reasoning.",
                             "steps": [
-                                "Duration: 20\u201330 minutes",
+                                "Duration: 20–30 minutes",
                                 "Top teams qualify for the development round"
                             ]
                         },
@@ -2839,10 +2971,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mrs. S. M. Ingawale",
                             "phone": "9921958323"
                         },
                         {
+                            "role": "Student Coordinator",
                             "name": "Irfan Naikwade",
                             "phone": "8855909848"
                         }
@@ -2852,7 +2986,7 @@
                         "Refreshments"
                     ],
                     "details": {
-                        "primary_overview": "The GameCraft \u2013 AI Game Development Challenge provides a platform for students to design and develop creative, interactive, and user-friendly games using controlled AI tools.",
+                        "primary_overview": "The GameCraft – AI Game Development Challenge provides a platform for students to design and develop creative, interactive, and user-friendly games using controlled AI tools.",
                         "what_is": "The competition blends game development, AI integration, and UX design, allowing participants to showcase their technical and creative abilities.",
                         "who_can_participate": [
                             "Open to all Students of any Department or Year",
@@ -2860,8 +2994,8 @@
                         ],
                         "event_timeline": [
                             "Date: 15th April 2026",
-                            "Time: 9:00 AM to 4:00 PM (approx)",
-                            "Registration Fee: \u20b9200 per team"
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹200 per team"
                         ],
                         "rules_and_regulations": [
                             {
@@ -2883,7 +3017,9 @@
                         ],
                         "team_structure": "Minimum 2 and Maximum 3 members per team.",
                         "additional_information": [
-                            "Participants must carry their own laptops and necessary accessories"
+                            "Participants must carry their own laptops and necessary accessories",
+                            "Faculty Coordinator: Mrs. S. M. Ingawale (9921958323)",
+                            "Student Coordinator: Irfan Naikwade (8855909848)"
                         ]
                     }
                 },
@@ -2895,8 +3031,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Data Science Labs",
                     "participation": {
@@ -2946,11 +3082,13 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mrs. S. A. Dhamankar",
                             "phone": "9130585001"
                         },
                         {
-                            "name": "Namrata Belvekar",
+                            "role": "Student Coordinator",
+                            "name": "Ms.Namrata Belvekar",
                             "phone": "9604522015"
                         }
                     ],
@@ -2966,8 +3104,8 @@
                         ],
                         "event_timeline": [
                             "Date: 15th April 2026",
-                            "Time: 9:00 AM to 4:00 PM (approx)",
-                            "Registration Fee: \u20b9100 per participant"
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹100 per participant"
                         ],
                         "rules_and_regulations": [
                             {
@@ -2982,20 +3120,22 @@
                         ],
                         "team_structure": "Individuals or teams (maximum 2 member per team).",
                         "additional_information": [
-                            "For any queries, reach out to Namrata Belvekar."
+                            "For any queries, reach out to Namrata Belvekar.",
+                            "Faculty Coordinator: Mrs. S. A. Dhamankar (9130585001)",
+                            "Student Coordinator: Ms.Namrata Belvekar (9604522015)"
                         ]
                     }
                 },
                 {
                     "event_id": "DS-03",
-                    "event_name": "E-sports",
+                    "event_name": "E-Sports",
                     "description": "Competitive Battlegrounds Mobile India tournament in battle royale mode.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
                         "date": "2026-04-16",
-                        "start_time": "09:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Class Room No- 203 old building",
                     "participation": {
@@ -3038,10 +3178,12 @@
                     ],
                     "contact": [
                         {
+                            "role": "Faculty Coordinator",
                             "name": "Mrs. J. K. Mane",
                             "phone": "7387274784"
                         },
                         {
+                            "role": "Student Coordinator",
                             "name": "Raj Khurd",
                             "phone": "9322533976"
                         }
@@ -3055,8 +3197,8 @@
                         ],
                         "event_timeline": [
                             "Date: 16th April 2026",
-                            "Time: 9:00 AM to 4:00 PM (approx)",
-                            "Registration Fee: \u20b9400 per team"
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Registration Fee: ₹400 per team"
                         ],
                         "rules_and_regulations": [
                             {
@@ -3072,7 +3214,10 @@
                             }
                         ],
                         "team_structure": "4 players per team (Squad)",
-                        "additional_information": []
+                        "additional_information": [
+                            "Faculty Coordinator: Mrs. J. K. Mane (7387274784)",
+                            "Student Coordinator: Raj Khurd (9322533976)"
+                        ]
                     }
                 }
             ]
@@ -3087,9 +3232,9 @@
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1 & Day 2",
-                        "date": "2026-04-15 to 2026-04-16",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "date": "2026-04-15",
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM (Day 1), 3:00 PM (Day 2)"
                     },
                     "venue": "College lawn, DYPCET",
                     "participation": {
@@ -3136,7 +3281,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Mr. Pankaj Nandgave",
+                            "phone": "9922403201"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Kedar Jadhav",
+                            "phone": "7385371174"
+                        }
+                    ],
                     "benefits": [
                         "Participation Certificate"
                     ],
@@ -3147,7 +3303,7 @@
                             "Students from Diploma and Undergraduate (UG) programs"
                         ],
                         "event_timeline": [
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM (Day 1), 3:00 PM (Day 2)",
                             "Venue: College lawn",
                             "Registration Fee: INR 200 per participant",
                             "Spot Entry Fee: INR 250 per person"
@@ -3174,7 +3330,7 @@
                                 "title": "Robot Specifications",
                                 "points": [
                                     "Control: Manually operated (wired or wireless).",
-                                    "Size Limit: Maximum 250mm \u00d7 250mm \u00d7 250mm.",
+                                    "Size Limit: Maximum 250mm × 250mm × 250mm.",
                                     "Weight Limit: Maximum 3 kg.",
                                     "Use of Lego parts or ready-made kits is not allowed.",
                                     "Max 12V battery permitted. Teams must carry an extra battery."
@@ -3183,7 +3339,9 @@
                         ],
                         "team_structure": "Maximum of 2 members per team.",
                         "additional_information": [
-                            "Robots provided by the committee will be allotted on a first-come, first-serve basis for spot entries."
+                            "Robots provided by the committee will be allotted on a first-come, first-serve basis for spot entries.",
+                            "Faculty Coordinator: Mr. Pankaj Nandgave (9922403201)",
+                            "Student Coordinator: Kedar Jadhav (7385371174)"
                         ]
                     }
                 },
@@ -3195,8 +3353,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Classroom 139, CAD Lab 1 & 2, CIII Lab",
                     "participation": {
@@ -3259,7 +3417,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Mr. Mahesh Shinge",
+                            "phone": "9960549635"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Tanishk Dudhane",
+                            "phone": "7843077663"
+                        }
+                    ],
                     "benefits": [
                         "Participation Certificate",
                         "Refreshments"
@@ -3271,7 +3440,7 @@
                             "Students from Diploma and Undergraduate (UG) programs"
                         ],
                         "event_timeline": [
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Venue: Classroom 139, CAD Lab 1 & 2, CIII Lab",
                             "Registration Fee: INR 100 per participant"
                         ],
@@ -3296,7 +3465,9 @@
                         "team_structure": "Individual Participation",
                         "additional_information": [
                             "Refreshments will be provided.",
-                            "Every participant will receive a Participation Certificate."
+                            "Every participant will receive a Participation Certificate.",
+                            "Faculty Coordinator: Mr. Mahesh Shinge (9960549635)",
+                            "Student Coordinator: Tanishk Dudhane (7843077663)"
                         ]
                     }
                 },
@@ -3308,8 +3479,8 @@
                     "schedule": {
                         "day": "Day 1",
                         "date": "2026-04-15",
-                        "start_time": "10:00",
-                        "end_time": "16:00"
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
                     },
                     "venue": "Classroom 226",
                     "participation": {
@@ -3378,7 +3549,18 @@
                             ]
                         }
                     ],
-                    "contact": [],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Mr. Suraj Gawali",
+                            "phone": "9673094599"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Shavani Kotkar",
+                            "phone": "7262952333"
+                        }
+                    ],
                     "benefits": [],
                     "details": {
                         "primary_overview": "Tech Debate challenges participants to quickly synthesize their technical knowledge and debate impromptu on engineering topics.",
@@ -3387,7 +3569,7 @@
                             "Open for All"
                         ],
                         "event_timeline": [
-                            "Time: 10:00 AM to 04:00 PM",
+                            "Time: 9:00 AM to 4:00 PM",
                             "Venue: Classroom 226",
                             "Registration Fee: INR 100 per participant"
                         ],
@@ -3395,7 +3577,7 @@
                             {
                                 "title": "Debate Rules",
                                 "points": [
-                                    "Language of conduct \u2013 English",
+                                    "Language of conduct – English",
                                     "Topics will be given on the spot from a 'CHITS BOWL'.",
                                     "Every participant should speak during the debate.",
                                     "Abusive language and misconduct are strictly prohibited.",
@@ -3404,7 +3586,10 @@
                             }
                         ],
                         "team_structure": "Maximum allowed entries per group is 2.",
-                        "additional_information": []
+                        "additional_information": [
+                            "Faculty Coordinator: Mr. Suraj Gawali (9673094599)",
+                            "Student Coordinator: Shavani Kotkar (7262952333)"
+                        ]
                     }
                 }
             ]

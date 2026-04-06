@@ -82,7 +82,7 @@ function Layout() {
                         />
                     </div>
                     <div className="header-event-name" aria-label="Event name">
-                        TECHNOTSAV'26
+                        TECHNOTSAV 2K26
                     </div>
                 </div>
             </header>
@@ -92,9 +92,10 @@ function Layout() {
             <footer className="site-footer">
                 <div className="container footer-inner">
                     <div className="footer-brand">
-                        <div className="footer-title">TECHNOTSAV'26</div>
+                        <div className="footer-title">TECHNOTSAV 2K26</div>
                         <p className="footer-subtitle">
-                            D Y Patil College of Engineering and Technology, Kolhapur.
+                            D. Y. Patil College Of Engineering &amp; Technology, Kasaba Bawada,
+                            Kolhapur, Maharashtra 416006, India
                         </p>
                     </div>
                     <div className="footer-column">
@@ -108,20 +109,21 @@ function Layout() {
                         </div>
                     </div>
                     <div className="footer-column">
-                        <span className="footer-label">Contact</span>
-                        <div className="footer-meta">
-                            <span>techfest@dypcoet.ac.in</span>
-                            <span>+91 231 000 0000</span>
-                        </div>
-                        <div className="footer-socials">
-                            <span>Instagram</span>
-                            <span>LinkedIn</span>
-                            <span>Facebook</span>
+                        <span className="footer-label">Location</span>
+                        <div className="footer-map-wrap" aria-label="DY Patil College of Engineering and Technology location map">
+                            <iframe
+                                className="footer-map"
+                                title="DY Patil College of Engineering and Technology, Kolhapur"
+                                src="https://www.google.com/maps?q=DY+Patil+College+of+Engineering+and+Technology+Kasaba+Bawada+Kolhapur&output=embed"
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                allowFullScreen
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="container footer-bottom">
-                    <span>© 2026 Technotsav. All rights reserved.</span>
+                    <span>© 2026 TECHNOTSAV 2K26. All rights reserved.</span>
                     <span>Built for makers and innovators.</span>
                 </div>
             </footer>

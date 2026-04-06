@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 
+const MotionDiv = motion.div
+
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0 },
@@ -7,7 +9,7 @@ const fadeUp = {
 
 function SectionHead({ eyebrow, title, description }) {
     return (
-        <motion.div
+        <MotionDiv
             className="section-head"
             variants={fadeUp}
             initial="hidden"
@@ -18,7 +20,7 @@ function SectionHead({ eyebrow, title, description }) {
             <span className="eyebrow">{eyebrow}</span>
             <h2>{title}</h2>
             <p>{description}</p>
-        </motion.div>
+        </MotionDiv>
     )
 }
 

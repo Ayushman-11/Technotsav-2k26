@@ -1,61 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
 import EventCard from '../components/EventCard.jsx'
 import PixelSnow from '../components/PixelSnow.jsx'
 
-const ROADMAP = [
-    {
-        phase: '01 April · Pre-Launch',
-        title: 'Registration Opens',
-        detail:
-            'Registration portal goes live with early-bird entries and team formation support.',
-        highlights: ['Early-bird entries', 'Team formation', 'Guidelines live'],
-    },
-    {
-        phase: '10 April · Pre-Launch',
-        title: 'Registration Closes',
-        detail:
-            'Final submission window closes for entries and workshop sign-ups.',
-        highlights: ['Final submissions', 'Workshop sign-ups', 'Roster lock'],
-    },
-    {
-        phase: '15 April · Day 01',
-        title: 'Launch Window + Competitive Tracks',
-        detail:
-            'Check-in, inaugural keynote, and department-led competitions light up the runway with rapid-fire challenges.',
-        highlights: ['Inaugural keynote', 'Department contests', 'Opening briefings'],
-    },
-    {
-        phase: '16 April · Day 02',
-        title: 'Workshops, Showcases + Awards',
-        detail:
-            'Hands-on workshops, project demos, and judging panels guide the final showcases and closing ceremonies.',
-        highlights: ['Hands-on labs', 'Project expo', 'Awards + closing'],
-    },
-    {
-        phase: '17 April · Post-Event',
-        title: 'Results + Declarations',
-        detail:
-            'Final results and certificates are published with winning team announcements.',
-        highlights: ['Winner list', 'Certificates', 'Next steps'],
-    },
-]
-
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0 },
 }
 
-const stagger = {
-    hidden: {},
-    visible: {
-        transition: {
-            staggerChildren: 0.15,
-        },
-    },
-}
+const MotionDiv = motion.div
 
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
 const FLYER_URL = `${import.meta.env.BASE_URL}flyer.pdf`
@@ -112,11 +67,26 @@ function Home() {
         minutes: '00',
         seconds: '00',
     })
-    const filteredEvents = events.filter((event) =>
-        activeDepartment === TECHO_HIGHLIGHTS_FILTER
-            ? isHotEvent(event)
-            : (event.departmentCode || event.department) === activeDepartment,
-    )
+    const eventsByDepartment = useMemo(() => {
+        const departmentMap = new Map()
+        const hotEvents = []
+
+        events.forEach((event) => {
+            const departmentKey = event.departmentCode || event.department
+            const currentDepartmentEvents = departmentMap.get(departmentKey) || []
+            currentDepartmentEvents.push(event)
+            departmentMap.set(departmentKey, currentDepartmentEvents)
+
+            if (isHotEvent(event)) {
+                hotEvents.push(event)
+            }
+        })
+
+        departmentMap.set(TECHO_HIGHLIGHTS_FILTER, hotEvents)
+        return departmentMap
+    }, [])
+
+    const filteredEvents = eventsByDepartment.get(activeDepartment) || []
 
     const activeDepartmentLabel =
         activeDepartment === TECHO_HIGHLIGHTS_FILTER
@@ -225,7 +195,7 @@ function Home() {
                                         type="button"
                                         role="tab"
                                         aria-selected={activeDepartment === dept}
-                                        className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartment === dept ? ' is-active' : ''}`}
+                                        className={`dept-filter-btn${activeDepartment === dept ? ' is-active' : ''}`}
                                         onClick={() => handleDepartmentSelect(dept, 'subheader')}
                                     >
                                         {dept}
@@ -240,7 +210,7 @@ function Home() {
             <section className="hero" id="home">
                 <div className="hero-overlay" />
                 <div className="container hero-grid hero-grid--editorial">
-                    <motion.div
+                    <MotionDiv
                         className="hero-copy hero-copy--editorial"
                         variants={fadeUp}
                         initial="hidden"
@@ -296,7 +266,7 @@ function Home() {
                             </div>
                         </div>
 
-                    </motion.div>
+                    </MotionDiv>
                 </div>
             </section>
 
@@ -324,12 +294,7 @@ function Home() {
                     <div className="dept-grid dept-grid--picker" aria-label="Choose department">
                         {departmentCardOptions.map((department) => {
                             const isActive = activeDepartment === department
-                            const departmentEvents =
-                                department === TECHO_HIGHLIGHTS_FILTER
-                                    ? events.filter((event) => isHotEvent(event))
-                                    : events.filter(
-                                        (event) => (event.departmentCode || event.department) === department,
-                                    )
+                            const departmentEvents = eventsByDepartment.get(department) || []
                             const eventCount = departmentEvents.length
                             const previewTitles = departmentEvents.slice(0, 4).map((event) => event.title)
                             const departmentLabel =
@@ -373,7 +338,7 @@ function Home() {
                             )
                         })}
                     </div>
-                    <div className="events-results" aria-live="polite">
+                    <div id="events-cards" className="events-results" aria-live="polite">
                         {hasDepartmentSelection ? (
                             <div className="events-selected-dept" role="status" aria-label="Selected department">
                                 <span>Selected department:</span>

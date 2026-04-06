@@ -330,27 +330,6 @@ main {
     margin: 0;
 }
 
-.hero-title-stack {
-    margin: 12px 0 18px;
-}
-
-.decrypt-container {
-    display: block;
-    white-space: pre-line;
-}
-
-.hero-description {
-    display: block;
-    color: var(--text-muted);
-    font-size: 1rem;
-    line-height: 1.7;
-    max-width: 520px;
-}
-
-.hero-description.decrypt-container {
-    min-height: 3.4em;
-}
-
 .hero-kicker {
     display: block;
     font-size: 0.75rem;
@@ -365,19 +344,6 @@ main {
     font-family: var(--font-display);
     font-size: clamp(2.8rem, 7vw, 5.4rem);
     line-height: 1;
-}
-
-.hero-title-stack .decrypt-container {
-    line-height: 1;
-    min-height: 3.05em;
-}
-
-.decrypt-text {
-    color: var(--text-primary);
-}
-
-.decrypt-text--scramble {
-    color: rgba(255, 255, 255, 0.35);
 }
 
 .hero-copy p {
@@ -2400,6 +2366,13 @@ body.has-filter-subheader-body .site-header {
     gap: 4px;
 }
 
+.event-contact-role {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
 .event-contact-item strong {
     font-size: 0.94rem;
 }
@@ -2474,8 +2447,7 @@ body.has-filter-subheader-body .site-header {
     color: var(--text-muted);
 }
 
-.footer-links,
-.footer-meta {
+.footer-links {
     display: grid;
     gap: 10px;
     font-size: 11px;
@@ -2493,18 +2465,33 @@ body.has-filter-subheader-body .site-header {
     color: var(--text-primary);
 }
 
-.footer-meta span {
-    color: var(--text-muted);
+.footer-map-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(142, 198, 255, 0.26);
+    background:
+        radial-gradient(circle at 15% 15%, rgba(120, 188, 255, 0.16), transparent 55%),
+        rgba(4, 7, 14, 0.86);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+        0 18px 36px rgba(0, 0, 0, 0.34);
 }
 
-.footer-socials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--text-primary);
+.footer-map-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(145deg, rgba(3, 10, 24, 0.28), rgba(2, 6, 18, 0.45));
+}
+
+.footer-map {
+    display: block;
+    width: 100%;
+    height: 196px;
+    border: 0;
+    filter: saturate(0.72) contrast(1.12) brightness(0.84) hue-rotate(182deg);
 }
 
 .footer-bottom {
@@ -2546,6 +2533,10 @@ body.has-filter-subheader-body .site-header {
 
     .footer-inner {
         grid-template-columns: 1fr;
+    }
+
+    .footer-map {
+        height: 220px;
     }
 
     .footer-bottom {

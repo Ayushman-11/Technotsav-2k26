@@ -124,7 +124,7 @@ function EventDetail() {
         )
     }
 
-    const rounds = useMemo(() => normalizeRounds(event.rounds), [event.rounds])
+    const rounds = normalizeRounds(event.rounds)
     const prizes = Array.isArray(event.prizes) ? event.prizes : []
     const contacts = Array.isArray(event.contacts) ? event.contacts : []
     const benefits = Array.isArray(event.benefits) ? event.benefits : []
@@ -150,7 +150,12 @@ function EventDetail() {
     const handleTopFilterClick = (department) => {
         sessionStorage.setItem('technotsav_filter', department)
         sessionStorage.setItem('technotsav_open_events', '1')
-        navigate('/?openEvents=1#events')
+        navigate('/?openEvents=1#events-cards')
+    }
+
+    const handleBackToEventsClick = () => {
+        sessionStorage.setItem('technotsav_filter', activeDepartmentFilter)
+        sessionStorage.setItem('technotsav_open_events', '1')
     }
 
     return (
@@ -186,7 +191,11 @@ function EventDetail() {
                 <div className="event-detail-hero-bg" style={{ backgroundImage: `url(${event.image})` }} aria-hidden="true" />
                 <div className="event-detail-hero-overlay" aria-hidden="true" />
                 <div className="container event-detail-hero-content">
-                    <Link to="/#events" className="event-back">
+                    <Link
+                        to="/?openEvents=1#events-cards"
+                        className="event-back"
+                        onClick={handleBackToEventsClick}
+                    >
                         <span className="event-back-icon" aria-hidden="true">{'<'}</span>
                         <span className="event-back-text">Back to Events</span>
                     </Link>
@@ -413,6 +422,7 @@ function EventDetail() {
                             <div className="event-contact-list">
                                 {contacts.map((contact) => (
                                     <div key={`${contact.name}-${contact.phone}`} className="event-contact-item">
+                                        {contact.role ? <span className="event-contact-role">{contact.role}</span> : null}
                                         <strong>{contact.name}</strong>
                                         <a href={`tel:${String(contact.phone || '').replace(/\s+/g, '')}`}>{contact.phone}</a>
                                     </div>

@@ -35,6 +35,11 @@ const EVENT_IMAGES = {
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop'
 
 const DEPARTMENT_FILTER_ORDER = ['CSE', 'AIML', 'DS', 'MECHANICAL', 'CIVIL', 'ARCHITECTURE', 'CHEMICAL', 'ENTC']
+const DATE_FORMATTER = new Intl.DateTimeFormat('en-IN', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+})
 
 function normalizeDepartmentName(name) {
     return String(name || '')
@@ -71,11 +76,7 @@ function formatDate(isoDate) {
     const date = new Date(`${isoDate}T00:00:00`)
     if (Number.isNaN(date.getTime())) return isoDate
 
-    return new Intl.DateTimeFormat('en-IN', {
-        day: '2-digit',
-        month: 'short',
-        year: 'numeric',
-    }).format(date)
+    return DATE_FORMATTER.format(date)
 }
 
 function formatTopPrize(prizes) {
@@ -184,6 +185,8 @@ export const events = Array.isArray(rawEventData)
     ? normalizeLegacyData(rawEventData)
     : normalizeDepartmentData(rawEventData)
 
+const EVENT_BY_ID = new Map(events.map((event) => [event.id.toLowerCase(), event]))
+
 const availableDepartmentCodes = [...new Set(events.map((event) => event.departmentCode || getDepartmentCode(event.department)))]
 
 const orderedDepartmentCodes = [
@@ -196,5 +199,5 @@ export const departmentFilters = ['All', ...orderedDepartmentCodes]
 export function getEventById(eventId) {
     if (!eventId) return null
     const target = String(eventId).toLowerCase()
-    return events.find((event) => event.id.toLowerCase() === target) || null
+    return EVENT_BY_ID.get(target) || null
 }

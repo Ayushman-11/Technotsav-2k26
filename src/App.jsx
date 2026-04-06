@@ -20,10 +20,37 @@ function ScrollHandler() {
   const location = useLocation()
 
   useEffect(() => {
+    const scrollWithHeaderOffset = (target) => {
+      const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0
+      const subheaderHeight = document.querySelector('.site-subheader')?.getBoundingClientRect().height || 0
+      const spacingOffset = 12
+      const targetTop =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight -
+        subheaderHeight -
+        spacingOffset
+
+      window.scrollTo({
+        top: Math.max(0, targetTop),
+        left: 0,
+        behavior: 'smooth',
+      })
+    }
+
     if (location.hash) {
       const target = document.querySelector(location.hash)
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        scrollWithHeaderOffset(target)
+        return
+      }
+    }
+
+    const shouldOpenEvents = sessionStorage.getItem('technotsav_open_events') === '1'
+    if (location.pathname === '/' && shouldOpenEvents) {
+      const eventsCards = document.getElementById('events-cards')
+      if (eventsCards) {
+        scrollWithHeaderOffset(eventsCards)
         return
       }
     }
