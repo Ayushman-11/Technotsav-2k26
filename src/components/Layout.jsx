@@ -122,10 +122,6 @@ function Layout() {
                         </div>
                     </div>
                 </div>
-                <div className="container footer-bottom">
-                    <span>© 2026 TECHNOTSAV 2K26. All rights reserved.</span>
-                    <span>Built for makers and innovators.</span>
-                </div>
             </footer>
             <FlyerFab />
         </div>

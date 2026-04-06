@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-const FLYER_URL = `${import.meta.env.BASE_URL}flyer.pdf`
+const HOME_URL = `${import.meta.env.BASE_URL}#home`
 
-function DownloadIcon() {
+function UpArrowIcon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -16,9 +16,8 @@ function DownloadIcon() {
             strokeLinejoin="round"
             aria-hidden="true"
         >
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-            <polyline points="7 10 12 15 17 10" />
-            <line x1="12" y1="15" x2="12" y2="3" />
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
         </svg>
     )
 }
@@ -28,10 +27,9 @@ export default function FlyerFab() {
 
     return (
         <a
-            href={FLYER_URL}
-            download="Technotsav26-Flyer.pdf"
+            href={HOME_URL}
             className={`flyer-fab${isHovered ? ' flyer-fab--hovered' : ''}`}
-            aria-label="Download Technotsav'26 Flyer"
+            aria-label="Back to home"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onFocus={() => setIsHovered(true)}
@@ -43,12 +41,12 @@ export default function FlyerFab() {
 
             {/* Pill label that slides in on hover */}
             <span className="flyer-fab__label" aria-hidden="true">
-                Download Flyer
+                Back to Home
             </span>
 
             {/* Icon */}
             <span className="flyer-fab__icon">
-                <DownloadIcon />
+                <UpArrowIcon />
             </span>
         </a>
     )
