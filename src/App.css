@@ -86,17 +86,41 @@ main {
 
 .header-inner {
     position: relative;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 18px 0;
+    gap: 24px;
+    padding: 14px 0;
 }
 
 .brand {
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+
+.brand--college {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+.college-logo {
+    display: block;
+    width: auto;
+    height: 62px;
+    max-width: min(58vw, 680px);
+    object-fit: contain;
+}
+
+.header-event-name {
+    font-family: 'Space Crusaders', var(--font-display);
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    text-align: right;
+    white-space: nowrap;
 }
 
 .brand-mark {
@@ -209,6 +233,8 @@ main {
 
 .hero-grid--editorial {
     min-height: 70vh;
+    grid-template-columns: 1fr;
+    align-items: start;
 }
 
 .hero-copy h1 {
@@ -222,6 +248,39 @@ main {
 
 .hero-copy--editorial h1 {
     margin: 12px 0 18px;
+}
+
+.hero-main-title {
+    display: block;
+    font-size: clamp(2.5rem, 5.4vw, 4.9rem);
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 6px 0 10px;
+}
+
+.hero-main-title span {
+    color: var(--accent);
+}
+
+.hero-subtitle {
+    display: block;
+    color: var(--text-muted);
+    font-size: clamp(0.95rem, 2.2vw, 1.4rem);
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    margin: 0 0 12px;
+    max-width: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.hero-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 58ch;
+    margin: 0;
 }
 
 .hero-title-stack {
@@ -302,8 +361,16 @@ main {
 .hero-actions {
     display: flex;
     gap: 16px;
-    margin: 32px 0 36px;
+    margin: 24px 0 18px;
     flex-wrap: wrap;
+}
+
+.hero-cta {
+    min-width: 190px;
+}
+
+.hero-cta-secondary {
+    min-width: 176px;
 }
 
 .hero-countdown {
@@ -314,6 +381,15 @@ main {
     background: rgba(12, 14, 18, 0.75);
     backdrop-filter: blur(12px);
     border-radius: 4px;
+}
+
+.hero-countdown--hero {
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.14);
+    background: linear-gradient(160deg, rgba(16, 20, 27, 0.88), rgba(10, 12, 15, 0.72));
+    width: fit-content;
+    max-width: min(100%, 520px);
+    margin-bottom: 16px;
 }
 
 .countdown-grid {
@@ -794,6 +870,10 @@ body.has-filter-subheader-body .site-header {
     gap: 20px;
 }
 
+.dept-grid--picker {
+    margin-top: 6px;
+}
+
 .dept-bento {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -871,6 +951,23 @@ body.has-filter-subheader-body .site-header {
     min-height: 160px;
 }
 
+.dept-card--pick {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.dept-card--pick:hover,
+.dept-card--pick:focus-visible,
+.dept-card--pick.is-active {
+    border-color: rgba(164, 201, 255, 0.56);
+    background: rgba(164, 201, 255, 0.12);
+    transform: translateY(-2px);
+}
+
 .dept-card h3 {
     margin-top: 0;
     font-family: var(--font-display);
@@ -889,8 +986,8 @@ body.has-filter-subheader-body .site-header {
 
 .roadmap-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 24px;
     align-items: start;
     position: relative;
     z-index: 2;
@@ -898,14 +995,14 @@ body.has-filter-subheader-body .site-header {
 
 .roadmap-intro {
     position: sticky;
-    top: 110px;
+    top: 0;
     align-self: start;
     margin-top: 0;
 }
 
 @media (min-width: 900px) {
     .roadmap-grid {
-        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+        grid-template-columns: 1fr;
         align-items: start;
     }
 }
@@ -2198,9 +2295,16 @@ body.has-filter-subheader-body .site-header {
 
 @media (max-width: 960px) {
     .header-inner {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
+        padding: 12px 0;
+    }
+
+    .college-logo {
+        height: 52px;
+    }
+
+    .header-event-name {
+        font-size: clamp(0.95rem, 3vw, 1.2rem);
+        letter-spacing: 0.16em;
     }
 
     .nav {
@@ -2232,18 +2336,36 @@ body.has-filter-subheader-body .site-header {
         position: static;
     }
 
+    .hero-grid--editorial {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .hero-subtitle {
+        white-space: normal;
+    }
+
 }
 
 @media (max-width: 760px) {
     .header-inner {
-        grid-template-columns: 1fr auto;
-        justify-items: stretch;
-        text-align: left;
-        align-items: center;
+        padding: 10px 0;
+        gap: 14px;
     }
 
-    .brand {
-        max-width: 70%;
+    .brand--college {
+        max-width: none;
+        min-width: 0;
+    }
+
+    .college-logo {
+        height: 40px;
+        max-width: 58vw;
+    }
+
+    .header-event-name {
+        font-size: 0.85rem;
+        letter-spacing: 0.14em;
     }
 
     .header-actions {
@@ -2363,11 +2485,35 @@ body.has-filter-subheader-body .site-header {
         width: 100%;
     }
 
+    .hero-countdown--hero {
+        width: 100%;
+    }
+
     .hero {
         padding: 90px 0;
         min-height: 100vh;
         display: flex;
         align-items: center;
+    }
+
+    .hero-main-title {
+        font-size: clamp(2rem, 11vw, 3rem);
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-actions {
+        gap: 10px;
+    }
+
+    .hero-cta,
+    .hero-cta-secondary {
+        min-width: 0;
+        flex: 1;
     }
 
     .has-filter-subheader .hero {

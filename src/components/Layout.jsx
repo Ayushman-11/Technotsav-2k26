@@ -8,9 +8,10 @@ const NAV_LINKS = [
     { label: 'Events', to: '/#events' },
 ]
 
+const COLLEGE_LOGO_SRC = `${import.meta.env.BASE_URL}dypcet.png`
+
 function Layout() {
     const location = useLocation()
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isHeaderHidden, setIsHeaderHidden] = useState(false)
     const lastScrollYRef = useRef(0)
 
@@ -27,7 +28,7 @@ function Layout() {
                 return
             }
 
-            if (!isMobile || isMenuOpen) {
+            if (!isMobile) {
                 setIsHeaderHidden(false)
                 lastScrollYRef.current = window.scrollY
                 return
@@ -61,7 +62,7 @@ function Layout() {
             window.removeEventListener('scroll', handleScroll)
             window.removeEventListener('resize', handleResize)
         }
-    }, [isMenuOpen, location.pathname])
+    }, [location.pathname])
 
     return (
         <div className="app">
@@ -72,31 +73,16 @@ function Layout() {
             </div>
             <header className={`site-header${isHeaderHidden ? ' is-hidden-mobile' : ''}`}>
                 <div className="container header-inner">
-                    <div className="brand">
-                        <span className="brand-mark">TECHNOTSAV'26</span>
+                    <div className="brand brand--college">
+                        <img
+                            src={COLLEGE_LOGO_SRC}
+                            alt="D Y Patil College of Engineering and Technology"
+                            className="college-logo"
+                            loading="eager"
+                        />
                     </div>
-                    <nav className={`nav${isMenuOpen ? ' is-open' : ''}`} id="site-menu">
-                        <div className="nav-links">
-                            {NAV_LINKS.map((link) => (
-                                <Link key={link.to} to={link.to} onClick={() => setIsMenuOpen(false)}>
-                                    {link.label}
-                                </Link>
-                            ))}
-                        </div>
-                    </nav>
-                    <div className="header-actions">
-                        <button
-                            className="nav-toggle"
-                            type="button"
-                            aria-expanded={isMenuOpen}
-                            aria-controls="site-menu"
-                            onClick={() => setIsMenuOpen((open) => !open)}
-                        >
-                            <span className="sr-only">Toggle menu</span>
-                            <span className="nav-toggle-bar" />
-                            <span className="nav-toggle-bar" />
-                            <span className="nav-toggle-bar" />
-                        </button>
+                    <div className="header-event-name" aria-label="Event name">
+                        TECHNOTSAV'26
                     </div>
                 </div>
             </header>

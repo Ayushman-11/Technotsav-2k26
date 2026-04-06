@@ -4,7 +4,6 @@ import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
 import EventCard from '../components/EventCard.jsx'
 import PixelSnow from '../components/PixelSnow.jsx'
-import DecryptedText from '../components/DecryptedText.jsx'
 
 const ROADMAP = [
     {
@@ -58,10 +57,7 @@ const stagger = {
     },
 }
 
-const HERO_BADGE_SRC = `${import.meta.env.BASE_URL}dypcet.png`
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
-const HOT_PRIZE_THRESHOLD = 3000
-
 function isHotEvent(event) {
     return Boolean(event?.isHot)
 }
@@ -70,12 +66,14 @@ function Home() {
     const [activeDepartment, setActiveDepartment] = useState(() => {
         return sessionStorage.getItem('technotsav_filter') || 'All'
     })
+    const [eventsViewMode, setEventsViewMode] = useState('events')
 
     useEffect(() => {
         sessionStorage.setItem('technotsav_filter', activeDepartment)
     }, [activeDepartment])
     const isAllDepartmentsView = activeDepartment === 'All'
     const filterOptions = ['All', TECHO_HIGHLIGHTS_FILTER, ...departmentFilters.filter((f) => f !== 'All')]
+    const departmentCardOptions = ['All', ...departmentFilters.filter((department) => department !== 'All')]
     const [countdown, setCountdown] = useState({
         days: '00',
         hours: '00',
@@ -90,29 +88,58 @@ function Home() {
                 : (event.departmentCode || event.department) === activeDepartment,
     )
 
+    const eventsCountByDepartment = events.reduce((accumulator, event) => {
+        const code = event.departmentCode || event.department
+        accumulator[code] = (accumulator[code] || 0) + 1
+        return accumulator
+    }, {})
+
+    const scrollWithHeaderOffset = (target, spacingOffset = 16) => {
+        if (!target) {
+            return
+        }
+
+        const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0
+        const subheaderHeight = document.querySelector('.site-subheader')?.getBoundingClientRect().height || 0
+        const targetTop =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            headerHeight -
+            subheaderHeight -
+            spacingOffset
+
+        window.scrollTo({
+            top: Math.max(0, targetTop),
+            behavior: 'smooth',
+        })
+    }
+
     const handleDepartmentSelect = (department) => {
         setActiveDepartment(department)
+        setEventsViewMode('events')
 
-        const eventCards = document.querySelector('#events .event-scroll')
-        const eventsSection = document.getElementById('events')
-        const scrollTarget = eventCards || eventsSection
+        window.setTimeout(() => {
+            const eventCards = document.querySelector('#events .event-scroll')
+            const eventsSection = document.getElementById('events')
+            const scrollTarget = eventCards || eventsSection
+            scrollWithHeaderOffset(scrollTarget)
+        }, 0)
+    }
 
-        if (scrollTarget) {
-            const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0
-            const subheaderHeight = document.querySelector('.site-subheader')?.getBoundingClientRect().height || 0
-            const spacingOffset = 16
-            const targetTop =
-                scrollTarget.getBoundingClientRect().top +
-                window.scrollY -
-                headerHeight -
-                subheaderHeight -
-                spacingOffset
+    const handleExploreEventsClick = () => {
+        setActiveDepartment('All')
+        setEventsViewMode('departments')
 
-            window.scrollTo({
-                top: Math.max(0, targetTop),
-                behavior: 'smooth',
-            })
-        }
+        window.setTimeout(() => {
+            const departmentPicker = document.querySelector('#events .dept-grid--picker')
+            const eventsSection = document.getElementById('events')
+            scrollWithHeaderOffset(departmentPicker || eventsSection, 12)
+        }, 0)
+    }
+
+    const handleScheduleClick = () => {
+        const scheduleSection = document.getElementById('schedule')
+        scrollWithHeaderOffset(scheduleSection, 12)
     }
 
     useEffect(() => {
@@ -190,51 +217,55 @@ function Home() {
                         animate="visible"
                         transition={{ duration: 0.6 }}
                     >
-                        <img
-                            src={HERO_BADGE_SRC}
-                            alt="Technotsav"
-                            className="hero-eyebrow-image"
-                            loading="eager"
-                        />
-                        <h1 className="hero-title-stack">
-                            <DecryptedText
-                                text={`Enter the
-Next Dimension
-Of Innovation`}
-                                speed={40}
-                                maxIterations={12}
-                                sequential
-                                revealDirection="start"
-                                animateOn="view"
-                                parentClassName="hero-title"
-                                className="decrypt-text"
-                                encryptedClassName="decrypt-text decrypt-text--scramble"
-                            />
+                        <span className="hero-kicker">14-15 April 2026 · DYPCET Kolhapur</span>
+                        <h1 className="hero-main-title">
+                            Technotsav <span>2026</span>
                         </h1>
+                        <p className="hero-subtitle">Enter the Next Dimension Of Innovation</p>
+                        <p className="hero-lead">
+                            A two-day innovation festival packed with engineering competitions,
+                            hands-on challenges, and showcase moments built for creators.
+                        </p>
 
                         <div className="hero-actions">
-                            <div className="hero-countdown">
-                                <span className="meta-label">Launch in</span>
-                                <div className="countdown-grid">
-                                    <div>
-                                        <strong>{countdown.days}</strong>
-                                        <span>Days</span>
-                                    </div>
-                                    <div>
-                                        <strong>{countdown.hours}</strong>
-                                        <span>Hrs</span>
-                                    </div>
-                                    <div>
-                                        <strong>{countdown.minutes}</strong>
-                                        <span>Mins</span>
-                                    </div>
-                                    <div>
-                                        <strong>{countdown.seconds}</strong>
-                                        <span>Secs</span>
-                                    </div>
+                            <button
+                                type="button"
+                                className="btn primary hero-cta"
+                                onClick={handleExploreEventsClick}
+                            >
+                                Explore Events
+                            </button>
+                            <button
+                                type="button"
+                                className="btn ghost hero-cta-secondary"
+                                onClick={handleScheduleClick}
+                            >
+                                View Schedule
+                            </button>
+                        </div>
+
+                        <div className="hero-countdown hero-countdown--hero">
+                            <span className="meta-label">Launch in</span>
+                            <div className="countdown-grid">
+                                <div>
+                                    <strong>{countdown.days}</strong>
+                                    <span>Days</span>
+                                </div>
+                                <div>
+                                    <strong>{countdown.hours}</strong>
+                                    <span>Hrs</span>
+                                </div>
+                                <div>
+                                    <strong>{countdown.minutes}</strong>
+                                    <span>Mins</span>
+                                </div>
+                                <div>
+                                    <strong>{countdown.seconds}</strong>
+                                    <span>Secs</span>
                                 </div>
                             </div>
                         </div>
+
                     </motion.div>
                 </div>
             </section>
@@ -257,102 +288,52 @@ Of Innovation`}
                 <div className="container events-content">
                     <SectionHead
                         eyebrow="Mission Catalog"
-                        title="Upcoming Events"
-                        description="Filter by department and explore the full technical roster."
+                        title={eventsViewMode === 'departments' ? 'Choose Department' : 'Upcoming Events'}
+                        description={
+                            eventsViewMode === 'departments'
+                                ? 'Select a department to view its complete event lineup.'
+                                : 'Filter by department and explore the full technical roster.'
+                        }
                     />
-                    <div
-                        className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
-                        aria-label="Upcoming events"
-                    >
-                        <div className={`event-scroll-track${isAllDepartmentsView ? ' is-grid' : ''}`}>
-                            {filteredEvents.map((event) => (
-                                <div key={event.id}>
-                                    <EventCard event={event} />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    {eventsViewMode === 'departments' ? (
+                        <div className="dept-grid dept-grid--picker" aria-label="Choose department">
+                            {departmentCardOptions.map((department) => {
+                                const isActive = activeDepartment === department
+                                const eventCount =
+                                    department === 'All'
+                                        ? events.length
+                                        : eventsCountByDepartment[department] || 0
 
-            <section className="stats">
-                <div className="container stats-grid">
-                    <div>
-                        <span className="meta-label">Altitude</span>
-                        <h3>408 KM</h3>
-                    </div>
-                    <div>
-                        <span className="meta-label">Velocity</span>
-                        <h3>27.6K KM/H</h3>
-                    </div>
-                    <div>
-                        <span className="meta-label">Personnel</span>
-                        <h3>12,400+</h3>
-                    </div>
-                    <div>
-                        <span className="meta-label">Launch Success</span>
-                        <h3>99.8%</h3>
-                    </div>
-                </div>
-            </section>
-
-            <section className="roadmap" id="schedule">
-                <span id="about" className="anchor-target" />
-                <div className="container roadmap-grid">
-                    <div className="roadmap-intro">
-                        <span className="eyebrow">About Technotsav</span>
-                        <h2>
-                            A two-day tech fest built for <span className="accent">makers</span>
-                        </h2>
-                        <div className="roadmap-copy">
-                            <p>
-                                Technotsav'26 brings together students, mentors, and industry voices to
-                                explore, build, and compete across core engineering domains.
-                            </p>
-                            <p>
-                                Over two packed days, the festival blends hands-on challenges, keynote
-                                sessions, and showcase tracks that celebrate engineering creativity and
-                                real-world problem solving.
-                            </p>
-                            <p>
-                                Each department curates its own event lineup while a central coordination
-                                team aligns workshops, judging, and on-campus showcases for a seamless
-                                experience from opening brief to final awards.
-                            </p>
+                                return (
+                                    <button
+                                        key={department}
+                                        type="button"
+                                        className={`dept-card dept-card--pick${isActive ? ' is-active' : ''}`}
+                                        onClick={() => handleDepartmentSelect(department)}
+                                    >
+                                        <h3>{department === 'All' ? 'All Departments' : department}</h3>
+                                        <p>{eventCount} events available</p>
+                                    </button>
+                                )
+                            })}
                         </div>
-                    </div>
-                    <motion.div
-                        className="timeline"
-                        variants={stagger}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                    >
-                        {ROADMAP.map((item, index) => (
-                            <motion.article
-                                key={item.phase}
-                                className="timeline-card"
-                                variants={fadeUp}
-                            >
-                                <div className="timeline-marker" aria-hidden="true">
-                                    <span className="timeline-dot" />
-                                </div>
-                                <div className="timeline-body">
-                                    <span className="phase">{item.phase}</span>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.detail}</p>
-                                    <div className="timeline-highlights">
-                                        {item.highlights.map((point) => (
-                                            <span key={point}>{point}</span>
-                                        ))}
+                    ) : (
+                        <div
+                            className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
+                            aria-label="Upcoming events"
+                        >
+                            <div className={`event-scroll-track${isAllDepartmentsView ? ' is-grid' : ''}`}>
+                                {filteredEvents.map((event) => (
+                                    <div key={event.id}>
+                                        <EventCard event={event} />
                                     </div>
-                                </div>
-                                <span className="timeline-index">0{index + 1}</span>
-                            </motion.article>
-                        ))}
-                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
+
         </main>
     )
 }
