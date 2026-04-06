@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import FlyerFab from './FlyerFab.jsx'
 
 const NAV_LINKS = [
@@ -9,6 +9,7 @@ const NAV_LINKS = [
 ]
 
 function Layout() {
+    const location = useLocation()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isHeaderHidden, setIsHeaderHidden] = useState(false)
     const lastScrollYRef = useRef(0)
@@ -18,6 +19,13 @@ function Layout() {
 
         const handleScroll = () => {
             const isMobile = getViewportWidth() <= 760
+            const keepHeaderVisible = location.pathname === '/'
+
+            if (keepHeaderVisible) {
+                setIsHeaderHidden(false)
+                lastScrollYRef.current = window.scrollY
+                return
+            }
 
             if (!isMobile || isMenuOpen) {
                 setIsHeaderHidden(false)
@@ -53,7 +61,7 @@ function Layout() {
             window.removeEventListener('scroll', handleScroll)
             window.removeEventListener('resize', handleResize)
         }
-    }, [isMenuOpen])
+    }, [isMenuOpen, location.pathname])
 
     return (
         <div className="app">

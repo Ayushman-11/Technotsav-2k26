@@ -90,6 +90,31 @@ function Home() {
                 : (event.departmentCode || event.department) === activeDepartment,
     )
 
+    const handleDepartmentSelect = (department) => {
+        setActiveDepartment(department)
+
+        const eventCards = document.querySelector('#events .event-scroll')
+        const eventsSection = document.getElementById('events')
+        const scrollTarget = eventCards || eventsSection
+
+        if (scrollTarget) {
+            const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0
+            const subheaderHeight = document.querySelector('.site-subheader')?.getBoundingClientRect().height || 0
+            const spacingOffset = 16
+            const targetTop =
+                scrollTarget.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight -
+                subheaderHeight -
+                spacingOffset
+
+            window.scrollTo({
+                top: Math.max(0, targetTop),
+                behavior: 'smooth',
+            })
+        }
+    }
+
     useEffect(() => {
         const target = new Date('2026-04-14T10:00:00+05:30')
 
@@ -118,8 +143,43 @@ function Home() {
         return () => clearInterval(timer)
     }, [])
 
+    useEffect(() => {
+        document.body.classList.add('has-filter-subheader-body')
+        return () => {
+            document.body.classList.remove('has-filter-subheader-body')
+        }
+    }, [])
+
     return (
-        <main>
+        <main className="has-filter-subheader">
+            <div className="site-subheader" aria-label="Department filters">
+                <div className="container">
+                    <div className="events-subheader">
+                        <div className="events-subheader-inner">
+                            <span className="events-subheader-label">Departments</span>
+                            <div
+                                className="dept-filter"
+                                role="tablist"
+                                aria-label="Filter events by department"
+                            >
+                                {filterOptions.map((dept) => (
+                                    <button
+                                        key={dept}
+                                        type="button"
+                                        role="tab"
+                                        aria-selected={activeDepartment === dept}
+                                        className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartment === dept ? ' is-active' : ''}`}
+                                        onClick={() => handleDepartmentSelect(dept)}
+                                    >
+                                        {dept}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section className="hero" id="home">
                 <div className="hero-overlay" />
                 <div className="container hero-grid hero-grid--editorial">
@@ -200,24 +260,6 @@ Of Innovation`}
                         title="Upcoming Events"
                         description="Filter by department and explore the full technical roster."
                     />
-                    <div
-                        className="dept-filter"
-                        role="tablist"
-                        aria-label="Filter events by department"
-                    >
-                        {filterOptions.map((dept) => (
-                            <button
-                                key={dept}
-                                type="button"
-                                role="tab"
-                                aria-selected={activeDepartment === dept}
-                                className={`dept-filter-btn${dept === TECHO_HIGHLIGHTS_FILTER ? ' is-hot-filter' : ''}${activeDepartment === dept ? ' is-active' : ''}`}
-                                onClick={() => setActiveDepartment(dept)}
-                            >
-                                {dept}
-                            </button>
-                        ))}
-                    </div>
                     <div
                         className={`event-scroll${isAllDepartmentsView ? ' is-grid' : ''}`}
                         aria-label="Upcoming events"

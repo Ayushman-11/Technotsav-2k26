@@ -45,6 +45,18 @@ main {
     z-index: 2;
 }
 
+.has-filter-subheader .hero {
+    padding-top: 166px;
+}
+
+.has-filter-subheader #events {
+    scroll-margin-top: 154px;
+}
+
+.has-filter-subheader .anchor-target {
+    top: -128px;
+}
+
 .container {
     width: min(1200px, 92vw);
     margin: 0 auto;
@@ -490,59 +502,116 @@ main {
     justify-content: flex-start;
 }
 
+.site-subheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 21;
+    background: rgba(10, 12, 15, 0.82);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+    transition: top 0.24s ease;
+}
+
+body.has-filter-subheader-body {
+    --subheader-height: 42px;
+}
+
+body.has-filter-subheader-body .site-header {
+    top: var(--subheader-height);
+}
+
+.events-subheader {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.events-subheader-inner {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    min-height: 42px;
+    padding: 0;
+}
+
+.events-subheader-label {
+    display: none;
+}
+
 .dept-filter {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 24px;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-padding-inline: 4px;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+.dept-filter::-webkit-scrollbar {
+    display: none;
 }
 
 .dept-filter-btn {
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
     background: transparent;
     color: var(--text-muted);
-    padding: 8px 16px;
-    border-radius: 999px;
+    padding: 0 14px;
+    height: 42px;
+    border-radius: 0;
     font-size: 10px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    line-height: 1;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    flex: 0 0 auto;
+}
+
+.dept-filter-btn:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .dept-filter-btn.is-active,
 .dept-filter-btn:hover {
-    color: #071423;
-    background: var(--accent);
-    border-color: var(--accent);
+    color: var(--text-primary);
+    background: rgba(164, 201, 255, 0.14);
 }
 
 .dept-filter-btn.is-hot-filter {
     position: relative;
-    border-color: rgba(255, 128, 64, 0.9);
-    background: linear-gradient(120deg, rgba(255, 122, 24, 0.22), rgba(255, 72, 72, 0.2));
-    color: #ffd9c7;
-    box-shadow: 0 0 0 1px rgba(255, 102, 52, 0.2), 0 0 16px rgba(255, 102, 52, 0.2);
+    color: #ffd9bd;
 }
 
 .dept-filter-btn.is-hot-filter::after {
-    content: 'HOT';
-    margin-left: 8px;
-    padding: 2px 6px;
+    content: '';
+    margin-left: 7px;
+    width: 6px;
+    height: 6px;
     border-radius: 999px;
-    background: rgba(255, 66, 66, 0.9);
-    color: #fff;
-    font-size: 8px;
-    letter-spacing: 0.18em;
-    vertical-align: middle;
+    background: #ff8f5a;
+    display: inline-block;
+    vertical-align: 1px;
 }
 
 .dept-filter-btn.is-hot-filter:hover,
 .dept-filter-btn.is-hot-filter.is-active {
-    color: #ffffff;
-    border-color: rgba(255, 173, 88, 0.95);
-    background: linear-gradient(120deg, rgba(255, 108, 34, 0.86), rgba(255, 72, 72, 0.78));
-    box-shadow: 0 0 24px rgba(255, 102, 52, 0.38);
+    color: #fff4ea;
+    background: rgba(255, 108, 34, 0.18);
 }
 
 .events,
@@ -2162,6 +2231,7 @@ main {
     .event-detail-side {
         position: static;
     }
+
 }
 
 @media (max-width: 760px) {
@@ -2250,20 +2320,21 @@ main {
         transform: translateY(-120%);
     }
 
+    body.has-filter-subheader-body {
+        --subheader-height: 40px;
+    }
+
+    .events-subheader-inner {
+        min-height: 40px;
+    }
+
+    .events-subheader-label {
+        display: none;
+    }
+
     .dept-filter {
-        position: sticky;
-        top: 0;
-        z-index: 8;
-        margin-bottom: 20px;
-        padding: 10px 12px 12px;
-        background: rgba(11, 15, 20, 0.78);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 0;
-        backdrop-filter: blur(16px);
-        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
         overflow-x: auto;
         overflow-y: hidden;
-        flex-wrap: nowrap;
         scroll-padding-inline: 12px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
@@ -2277,12 +2348,15 @@ main {
     .dept-filter-btn {
         flex: 0 0 auto;
         white-space: nowrap;
-        background: rgba(255, 255, 255, 0.03);
-        border-color: rgba(255, 255, 255, 0.2);
+        height: 40px;
+        padding: 0 12px;
+        font-size: 10px;
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.12);
     }
 
     .dept-filter-btn.is-hot-filter {
-        box-shadow: 0 0 0 1px rgba(255, 102, 52, 0.22);
+        box-shadow: none;
     }
 
     .hero-countdown {
@@ -2294,6 +2368,14 @@ main {
         min-height: 100vh;
         display: flex;
         align-items: center;
+    }
+
+    .has-filter-subheader .hero {
+        padding-top: 142px;
+    }
+
+    .has-filter-subheader #events {
+        scroll-margin-top: 130px;
     }
 
     .panel-grid {
