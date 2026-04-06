@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const HOME_URL = `${import.meta.env.BASE_URL}#home`
 
-function UpArrowIcon() {
+function HomeIcon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -16,8 +16,9 @@ function UpArrowIcon() {
             strokeLinejoin="round"
             aria-hidden="true"
         >
-            <line x1="12" y1="19" x2="12" y2="5" />
-            <polyline points="5 12 12 5 19 12" />
+            <path d="M3 10.5 12 3l9 7.5" />
+            <path d="M5 9.5V20h14V9.5" />
+            <path d="M9.5 20v-6h5v6" />
         </svg>
     )
 }
@@ -46,7 +47,7 @@ export default function FlyerFab() {
 
             {/* Icon */}
             <span className="flyer-fab__icon">
-                <UpArrowIcon />
+                <HomeIcon />
             </span>
         </a>
     )
