@@ -79,6 +79,10 @@ function normalizeRounds(rounds) {
         const description = typeof round?.description === 'string' && round.description.trim().length > 0
             ? round.description
             : `This round focuses on ${round?.name || `Round ${index + 1}`} and its evaluation flow.`
+        const isUndeclared = /to be announced|on the spot|suspense/i.test(
+            `${round?.name || ''} ${subtitle} ${description}`,
+        )
+        const isGameBased = /^game\s*\d+/i.test(String(round?.name || ''))
 
         return {
             key: `${round?.name || 'round'}-${index}`,
@@ -86,6 +90,8 @@ function normalizeRounds(rounds) {
             subtitle,
             description,
             steps,
+            isUndeclared,
+            isGameBased,
         }
     })
 }
@@ -125,6 +131,7 @@ function EventDetail() {
     }
 
     const rounds = normalizeRounds(event.rounds)
+    const showGamesHeading = rounds.length > 0 && rounds.every((round) => round.isGameBased)
     const prizes = Array.isArray(event.prizes) ? event.prizes : []
     const contacts = Array.isArray(event.contacts) ? event.contacts : []
     const benefits = Array.isArray(event.benefits) ? event.benefits : []
@@ -279,16 +286,20 @@ function EventDetail() {
                         )}
 
                         <article className="event-detail-panel">
-                            <h2>Rounds</h2>
+                            <h2>{showGamesHeading ? 'Games' : 'Rounds'}</h2>
                             <div className="event-round-list">
                                 {rounds.map((round, index) => (
                                     <section key={round.key} className="event-round-card">
                                         <header className="event-round-card-top">
-                                            <span className="event-round-card-number">Round {index + 1}</span>
+                                            {!round.isUndeclared && !round.isGameBased && (
+                                                <span className="event-round-card-number">Round {index + 1}</span>
+                                            )}
                                             <span className="event-round-card-meta">
-                                                {round.steps.length > 0
-                                                    ? `${round.steps.length} Step${round.steps.length > 1 ? 's' : ''}`
-                                                    : 'Overview'}
+                                                {round.isUndeclared
+                                                    ? 'Announcement'
+                                                    : round.steps.length > 0
+                                                        ? `${round.steps.length} Step${round.steps.length > 1 ? 's' : ''}`
+                                                        : 'Overview'}
                                             </span>
                                         </header>
                                         <h3 className="event-round-card-title">{round.title}</h3>

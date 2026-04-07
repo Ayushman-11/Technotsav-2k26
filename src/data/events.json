@@ -18,17 +18,16 @@
                     "participation": {
                         "eligibility": "All students from any department or year",
                         "mode": [
-                            "individual",
                             "team"
                         ],
                         "team_size": {
-                            "min": 1,
-                            "max": 2
+                            "min": 2,
+                            "max": 4
                         }
                     },
                     "fees": {
                         "individual": 100,
-                        "team": 200
+                        "team": 400
                     },
                     "registration": {
                         "link": "https://forms.gle/ZDk7saKFrxWFt9o5A",
@@ -82,20 +81,20 @@
                         "what_is": "The Webathon gives aspiring web developers a stage to design and build innovative website solutions. Participants work in a time-bound environment and present their ideas and implementations before judges.",
                         "who_can_participate": [
                             "Open to all students from any department and year",
-                            "Individual or team participation allowed",
-                            "Team size: 1 to 2 members"
+                            "Team participation only",
+                            "Team size: 2 to 4 members"
                         ],
                         "event_timeline": [
                             "Date: 15 Apr 2026",
                             "Time: 9:00 AM to 4:00 PM",
-                            "Registration Fee: INR 100 per participant (team fee INR 200)",
+                            "Registration Fee: INR 100 per person (INR 400 for a team of 4)",
                             "Includes: Refreshment and participation certificate"
                         ],
                         "rules_and_regulations": [
                             {
                                 "title": "Participation Guidelines",
                                 "points": [
-                                    "Participants can compete individually or in teams",
+                                    "Participants can compete only in teams",
                                     "All team members must be registered before the event begins",
                                     "Participants must carry their own laptops and required accessories"
                                 ]
@@ -146,7 +145,7 @@
                                 ]
                             }
                         ],
-                        "team_structure": "The competition is open to individuals or teams consisting of up to two members.",
+                        "team_structure": "The competition is open to teams of two to four members.",
                         "additional_information": [
                             "Participation includes certificates and refreshments",
                             "Faculty Coordinator: Mrs. Ranjita Jadhav (9096282252)",
@@ -157,7 +156,7 @@
                 {
                     "event_id": "CSE-02",
                     "event_name": "Idea Carnival",
-                    "description": "Innovation and idea pitching competition",
+                    "description": "Idea Carnival provides a platform for students to present innovative solutions while demonstrating technical skills, creativity, and business acumen before a panel of industry experts. Participants are invited to propose practical solutions to real-world problems across themes including Artificial Intelligence and Automation, Cybersecurity, Sustainability and Social Impact, Entertainment and Fun Technology, and Open Innovation.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
@@ -187,11 +186,15 @@
                     "prizes": [
                         {
                             "position": "1st",
-                            "amount": 5000
+                            "amount": 3000
                         },
                         {
                             "position": "2nd",
-                            "amount": 3000
+                            "amount": 2000
+                        },
+                        {
+                            "position": "3rd",
+                            "amount": 1000
                         }
                     ],
                     "rounds": [
@@ -223,7 +226,7 @@
                         "Refreshments"
                     ],
                     "details": {
-                        "primary_overview": "Idea Carnival provides a platform for students to present innovative mobile application solutions while demonstrating technical skills, creativity, and business acumen in front of experts.",
+                        "primary_overview": "Idea Carnival provides a platform for students to present innovative solutions while demonstrating technical skills, creativity, and business acumen before a panel of industry experts. Participants are invited to propose practical solutions to real-world problems across themes including Artificial Intelligence and Automation, Cybersecurity, Sustainability and Social Impact, Entertainment and Fun Technology, and Open Innovation.",
                         "what_is": "Open Innovation Ideathon Carnival allows students to propose practical solutions to real-world problems and showcase structured problem-solving and innovation thinking.",
                         "who_can_participate": [
                             "Open to all students from any department and year",
@@ -437,21 +440,21 @@
                         "individual": 100
                     },
                     "registration": {
-                        "link": null,
+                        "link": "https://hackerrank-place-x.vercel.app",
                         "qr": null
                     },
                     "prizes": [
                         {
                             "position": "1st",
-                            "reward": "Trophy + HackerRank Infinity Plan"
+                            "amount": 3000
                         },
                         {
                             "position": "2nd",
-                            "reward": "Trophy + HackerRank Infinity Plan"
+                            "amount": 2000
                         },
                         {
                             "position": "3rd",
-                            "reward": "Trophy + HackerRank Infinity Plan"
+                            "amount": 1000
                         }
                     ],
                     "rounds": [
@@ -889,14 +892,17 @@
                         "start_time": "9:00 AM",
                         "end_time": "2:00 PM"
                     },
-                    "venue": "AIML Department",
+                    "venue": "AIML Lab 1 and 2",
                     "participation": {
                         "eligibility": "Students from all departments (Diploma and UG)",
                         "mode": [
                             "individual",
                             "team"
                         ],
-                        "team_size": {}
+                        "team_size": {
+                            "min": 1,
+                            "max": 2
+                        }
                     },
                     "fees": {
                         "individual": 120,
@@ -909,7 +915,7 @@
                     "prizes": [
                         {
                             "position": "1st",
-                            "amount": 4000
+                            "amount": 3000
                         },
                         {
                             "position": "2nd",
@@ -931,9 +937,10 @@
                         {
                             "name": "Evaluation and Presentation",
                             "subtitle": "Round 2",
-                            "description": "Shortlisted teams present and demo their solution with AI usage and real-world relevance.",
+                            "description": "Shortlisted teams must deploy and present their solution with AI usage and real-world relevance.",
                             "steps": [
                                 "Top 8 to 10 teams shortlisted",
+                                "Deployment is compulsory for Round 2",
                                 "5 to 7 minute presentation",
                                 "Live prototype demonstration",
                                 "Result declaration at 4:00 PM"
@@ -995,11 +1002,11 @@
                                 ]
                             }
                         ],
-                        "team_structure": "Participation format can be individual or team as per event flow.",
+                        "team_structure": "Participation is allowed individually or in teams of up to 2 members.",
                         "additional_information": [
                             "Refreshment break: 1:00 PM to 1:30 PM",
                             "Top 8 to 10 teams are shortlisted for final presentation",
-                            "Venue details inside DYPCET campus will be shared before event",
+                            "Venue: AIML Lab 1 and 2",
                             "Faculty Coordinator: Dr. Sachin B. Takmare (9960843406)",
                             "Student Coordinator: Ayush Mane (7798475645)"
                         ]
@@ -1008,7 +1015,7 @@
                 {
                     "event_id": "AIML-02",
                     "event_name": "KILLER MYSTERY (Case-Solving Event)",
-                    "description": "Investigation-style case-solving challenge with quiz, observation, and final mystery rounds.",
+                    "description": "Investigation-style case-solving challenge with suspense-based mystery flow.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
@@ -1044,38 +1051,15 @@
                         {
                             "position": "2nd",
                             "amount": 2000
-                        },
-                        {
-                            "position": "3rd",
-                            "amount": 1000
                         }
                     ],
                     "rounds": [
                         {
-                            "name": "Quiz Round",
-                            "subtitle": "Round 1",
-                            "description": "Offline quiz to test logical reasoning and general awareness.",
+                            "name": "Round Details",
+                            "subtitle": "To be announced on the spot",
+                            "description": "All rounds are suspense and will be displayed on the spot.",
                             "steps": [
-                                "Offline quiz challenge",
-                                "Top 80 teams qualify"
-                            ]
-                        },
-                        {
-                            "name": "Observation Round",
-                            "subtitle": "Round 2",
-                            "description": "Teams analyze images, clues, and scenarios for two hours.",
-                            "steps": [
-                                "Duration: 2 hours",
-                                "Top 10 teams qualify"
-                            ]
-                        },
-                        {
-                            "name": "Final Case-Solving Round",
-                            "subtitle": "Round 3",
-                            "description": "Teams solve a complete mystery case using provided clues.",
-                            "steps": [
-                                "Duration: 2 hours",
-                                "Top 3 teams declared winners"
+                                "Rounds will be displayed on the spot"
                             ]
                         }
                     ],
@@ -1092,11 +1076,12 @@
                         }
                     ],
                     "benefits": [
-                        "Refreshments"
+                        "Refreshments",
+                        "Certificates"
                     ],
                     "details": {
-                        "primary_overview": "Killer Mystery is a team-based problem-solving event that tests observation, logic, and decision-making through progressive investigative rounds.",
-                        "what_is": "Participants move through quiz and clue-analysis stages before solving a final complete mystery case.",
+                        "primary_overview": "Killer Mystery is a team-based problem-solving event that tests observation, logic, and decision-making through a suspense-based format.",
+                        "what_is": "Round flow and mystery structure will be announced on the spot during the event.",
                         "who_can_participate": [
                             "Open to all undergraduate and diploma students",
                             "Individual or team participation allowed",
@@ -1110,12 +1095,11 @@
                         ],
                         "rules_and_regulations": [
                             {
-                                "title": "Event Structure and Workflow",
+                                "title": "Event Structure",
                                 "points": [
-                                    "Workflow: Registration -> Round 1 -> Refreshment Break -> Round 2 -> Round 3 -> Result Declaration",
-                                    "Screening is based on performance in each round",
-                                    "Accuracy and speed are key evaluation factors",
-                                    "Top teams are shortlisted after each stage"
+                                    "All rounds are suspense",
+                                    "Round details will be displayed on the spot",
+                                    "Participants must follow instructions announced at the venue"
                                 ]
                             },
                             {
@@ -1171,26 +1155,14 @@
                     },
                     "prizes": [
                         {
-                            "position": "1st",
-                            "amount": 5000
-                        },
-                        {
-                            "position": "2nd",
-                            "amount": 3000
-                        },
-                        {
-                            "position": "3rd",
-                            "amount": 1000
-                        },
-                        {
-                            "position": "MVP",
-                            "amount": 1000
+                            "position": "Prize Pool",
+                            "reward": "INR 10,000"
                         }
                     ],
                     "rounds": [
                         {
-                            "name": "Free Fire Competitive Round",
-                            "subtitle": "Points-based stage",
+                            "name": "Game 1",
+                            "subtitle": "Free Fire",
                             "description": "Teams compete in Free Fire rounds with placement points and kill points.",
                             "steps": [
                                 "Custom lobby instructions shared on WhatsApp group",
@@ -1200,8 +1172,8 @@
                             ]
                         },
                         {
-                            "name": "PES / eFootball Knockout",
-                            "subtitle": "Elimination stage",
+                            "name": "Game 2",
+                            "subtitle": "PES / eFootball",
                             "description": "PES / eFootball participants compete in knockout matches.",
                             "steps": [
                                 "Knockout bracket setup",
@@ -1227,7 +1199,7 @@
                     ],
                     "details": {
                         "primary_overview": "Dare to Battle 3.0 is an esports event testing reflexes, strategy, and teamwork through Free Fire and PES / eFootball matches.",
-                        "what_is": "Participants battle through ranked and knockout formats for cash prizes, MVP recognition, and event glory.",
+                        "what_is": "Participants battle through ranked and knockout formats for a total prize pool of INR 10,000.",
                         "who_can_participate": [
                             "Students from Diploma and Undergraduate programs",
                             "Open to all college students"
@@ -2709,8 +2681,8 @@
                         },
                         {
                             "role": "Student Coordinator",
-                            "name": "Vaidehi Jadhav",
-                            "phone": "7559309320"
+                            "name": "Arya Sutar",
+                            "phone": "7666887603"
                         }
                     ],
                     "benefits": [
@@ -2766,7 +2738,7 @@
                             "Participants must attach payment screenshot and transaction ID in registration",
                             "For queries contact Arya Sutar at 7666887603",
                             "Faculty Coordinator: Dr. Kapil Kadam (9975615625)",
-                            "Student Coordinator: Vaidehi Jadhav (7559309320)"
+                            "Student Coordinator: Arya Sutar (7666887603)"
                         ]
                     }
                 },
@@ -2777,8 +2749,8 @@
                     "type": "competition",
                     "is_hot": true,
                     "schedule": {
-                        "day": "Day 2",
-                        "date": "2026-04-16",
+                        "day": "Day 1",
+                        "date": "2026-04-15",
                         "start_time": "9:00 AM",
                         "end_time": "4:00 PM"
                     },
@@ -2908,7 +2880,7 @@
                         "start_time": "9:00 AM",
                         "end_time": "4:00 PM"
                     },
-                    "venue": "First Floor Labs",
+                    "venue": "DS Labs",
                     "participation": {
                         "eligibility": "All students from any Department",
                         "mode": [
@@ -3029,12 +3001,12 @@
                     "description": "A fast-paced data analytics competition where participants design and develop interactive dashboards.",
                     "type": "competition",
                     "schedule": {
-                        "day": "Day 1",
-                        "date": "2026-04-15",
+                        "day": "Day 2",
+                        "date": "2026-04-16",
                         "start_time": "9:00 AM",
                         "end_time": "4:00 PM"
                     },
-                    "venue": "Data Science Labs",
+                    "venue": "DS Labs",
                     "participation": {
                         "eligibility": "All students from any Department",
                         "mode": [
@@ -3103,7 +3075,7 @@
                             "Open to all Students of any Department or Year"
                         ],
                         "event_timeline": [
-                            "Date: 15th April 2026",
+                            "Date: 16th April 2026",
                             "Time: 9:00 AM to 4:00 PM",
                             "Registration Fee: ₹100 per participant"
                         ],
@@ -3128,8 +3100,108 @@
                 },
                 {
                     "event_id": "DS-03",
-                    "event_name": "E-Sports",
-                    "description": "Competitive Battlegrounds Mobile India tournament in battle royale mode.",
+                    "event_name": "E-Sports (E-Football)",
+                    "description": "Competitive E-Football tournament with single-entry format.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 1",
+                        "date": "2026-04-15",
+                        "start_time": "9:00 AM",
+                        "end_time": "4:00 PM"
+                    },
+                    "venue": "CL 203",
+                    "participation": {
+                        "eligibility": "All students from any Department",
+                        "mode": [
+                            "individual"
+                        ],
+                        "team_size": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    },
+                    "fees": {
+                        "individual": 100
+                    },
+                    "registration": {
+                        "link": "https://forms.gle/o9W4P6dpwzq16mm39",
+                        "qr": "QR"
+                    },
+                    "prizes": [
+                        {
+                            "position": "1st",
+                            "amount": 3000
+                        },
+                        {
+                            "position": "2nd",
+                            "amount": 2000
+                        }
+                    ],
+                    "rounds": [
+                        {
+                            "name": "E-Football",
+                            "subtitle": "Single-entry format",
+                            "description": "Players compete in fair-play E-Football matches in 1v1 or team-based brackets as declared by organizers.",
+                            "steps": [
+                                "Player check-in and fixture confirmation",
+                                "Match execution as per announced bracket format",
+                                "Result submission and next-round advancement"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "role": "Faculty Coordinator",
+                            "name": "Mrs. J. K. Mane",
+                            "phone": "7387274784"
+                        },
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Raj Khurd",
+                            "phone": "9322533976"
+                        }
+                    ],
+                    "benefits": [],
+                    "details": {
+                        "primary_overview": "E-Sports (E-Football) is a Day 1 competitive event focused on fair play and match performance in single-entry format.",
+                        "what_is": "Participants compete in E-Football matches for top standings and prize money.",
+                        "who_can_participate": [
+                            "All students from any Department",
+                            "E-Football: Single-entry participation"
+                        ],
+                        "event_timeline": [
+                            "Date: 15th April 2026",
+                            "Time: 9:00 AM to 4:00 PM",
+                            "Venue: CL 203",
+                            "Entry Fee: INR 100 (single entry for E-Football)"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "E-Football Rules",
+                                "points": [
+                                    "Fair Play: No cheating, hacks, or exploits",
+                                    "Match Format: 1v1 or team matches (depends on tournament)",
+                                    "Time: Standard match duration (6–9 minute halves)",
+                                    "Controls: Only allowed controllers/devices",
+                                    "Connection: Stable internet required (no intentional disconnect)",
+                                    "Behavior: No abuse or unsportsmanlike conduct",
+                                    "Pause Rules: Limited pauses allowed during match",
+                                    "Penalty: Rule violation leads to warning, match loss, or disqualification"
+                                ]
+                            }
+                        ],
+                        "team_structure": "E-Football supports single-entry format.",
+                        "additional_information": [
+                            "Prize Pool: Up to INR 5,000 (1st: INR 3,000, 2nd: INR 2,000)",
+                            "Faculty Coordinator: Mrs. J. K. Mane (7387274784)",
+                            "Student Coordinator: Raj Khurd (9322533976)"
+                        ]
+                    }
+                },
+                {
+                    "event_id": "DS-04",
+                    "event_name": "E-Sports (Free Fire)",
+                    "description": "Competitive Free Fire squad tournament in battle royale mode.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 2",
@@ -3137,7 +3209,7 @@
                         "start_time": "9:00 AM",
                         "end_time": "4:00 PM"
                     },
-                    "venue": "Class Room No- 203 old building",
+                    "venue": "CL 203",
                     "participation": {
                         "eligibility": "All students from any Department",
                         "mode": [
@@ -3152,8 +3224,8 @@
                         "team": 400
                     },
                     "registration": {
-                        "link": "https://forms.gle/mcy3112FL5T7Q6uS7",
-                        "qr": null
+                        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeW7KjqHpdPKJq-HGxH2FAmgVTsZWU2u7PgqYhNRJ4ZyaQDkA/viewform",
+                        "qr": "QR"
                     },
                     "prizes": [
                         {
@@ -3167,11 +3239,12 @@
                     ],
                     "rounds": [
                         {
-                            "name": "Battle Royale Match",
-                            "subtitle": "Round 1",
-                            "description": "Teams fight in battle royale matches.",
+                            "name": "Free Fire Competitive Round",
+                            "subtitle": "Squad format",
+                            "description": "Teams compete in Free Fire rounds with placement points and kill points.",
                             "steps": [
-                                "Join matches on time",
+                                "Each team has 4 players (squad)",
+                                "Matches are played in battle royale mode",
                                 "Scoring based on kills and final ranking"
                             ]
                         }
@@ -3190,31 +3263,34 @@
                     ],
                     "benefits": [],
                     "details": {
-                        "primary_overview": "The E-sports is a 4-hour fast-paced competition where participants compete in Battlegrounds Mobile India tournaments for prize money.",
-                        "what_is": "A squad-based mobile gaming tournament.",
+                        "primary_overview": "E-Sports (Free Fire) is a Day 2 squad battle event focused on team coordination and match performance.",
+                        "what_is": "Teams participate in Free Fire battle royale matches to compete for top standings and prize money.",
                         "who_can_participate": [
-                            "All students from any Department"
+                            "All students from any Department",
+                            "Free Fire: Team participation (4 players)"
                         ],
                         "event_timeline": [
                             "Date: 16th April 2026",
                             "Time: 9:00 AM to 4:00 PM",
-                            "Registration Fee: ₹400 per team"
+                            "Venue: CL 203",
+                            "Registration Fee: INR 400 per team of 4"
                         ],
                         "rules_and_regulations": [
                             {
-                                "title": "Rules",
+                                "title": "Free Fire Rules",
                                 "points": [
-                                    "Each team has 4 players (squad).",
-                                    "Matches are played in battle royale mode.",
-                                    "Points based on Kills + Final position (ranking).",
-                                    "Fair Play: No hacking or cheating, no external tools.",
-                                    "Communication: Only team members allowed.",
-                                    "No abusive language or toxic behavior."
+                                    "Each team has 4 players (squad)",
+                                    "Matches are played in battle royale mode",
+                                    "Points based on Kills + Final position (ranking)",
+                                    "Fair Play: No hacking or cheating, no external tools",
+                                    "Communication: Only team members allowed",
+                                    "No abusive language or toxic behavior"
                                 ]
                             }
                         ],
-                        "team_structure": "4 players per team (Squad)",
+                        "team_structure": "Free Fire is played in teams of 4.",
                         "additional_information": [
+                            "Prize Pool: Up to INR 5,000 (1st: INR 3,000, 2nd: INR 2,000)",
                             "Faculty Coordinator: Mrs. J. K. Mane (7387274784)",
                             "Student Coordinator: Raj Khurd (9322533976)"
                         ]

@@ -219,7 +219,7 @@ function Home() {
                     >
                         <span className="hero-kicker">15th-16th April 2026 · DYPCET Kolhapur</span>
                         <h1 className="hero-main-title">
-                            Technotsav <span>2026</span>
+                            Technotsav <span>2K26</span>
                         </h1>
                         <p className="hero-subtitle">Enter the Next Dimension Of Innovation</p>
                         <p className="hero-lead">
