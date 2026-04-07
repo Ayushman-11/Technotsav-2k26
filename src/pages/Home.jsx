@@ -13,7 +13,7 @@ const fadeUp = {
 const MotionDiv = motion.div
 
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
-const FLYER_URL = `${import.meta.env.BASE_URL}flyer.pdf`
+const FLYER_URL = `${import.meta.env.BASE_URL}Technotsav26.pdf`
 
 function isHotEvent(event) {
     return Boolean(event?.isHot)
