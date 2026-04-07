@@ -422,9 +422,6 @@ function EventDetail() {
                                         Open Registration Form
                                     </a>
                                 )}
-                                <button type="button" className="btn ghost no-print" onClick={() => window.print()}>
-                                    Print Brochure
-                                </button>
                             </div>
                         </article>
 
