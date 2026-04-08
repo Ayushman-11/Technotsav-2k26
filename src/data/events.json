@@ -1356,7 +1356,7 @@
                 {
                     "event_id": "CIV-02",
                     "event_name": "Cube Crush Challenge",
-                    "description": "Concrete mix design event targeting 40 N/mm2 compressive strength after 7-day curing.",
+                    "description": "Concrete mix design event targeting 20 N/mm2 compressive strength after 3-day curing.",
                     "type": "competition",
                     "schedule": {
                         "day": "Day 1",
@@ -1402,11 +1402,11 @@
                         {
                             "name": "Mix Design and Casting",
                             "subtitle": "Single practical round",
-                            "description": "Participants prepare one concrete cube and target compressive strength close to 40 N/mm2 at 7 days.",
+                            "description": "Participants prepare one concrete cube and target compressive strength close to 20 N/mm2 at 3 days.",
                             "steps": [
                                 "Submit HOD-signed mix design report",
                                 "Prepare one concrete cube of size 150 mm x 150 mm x 150 mm",
-                                "Allow 7-day curing period",
+                                "Allow 3-day curing period",
                                 "Evaluate compressive strength and ratio criteria"
                             ]
                         }
@@ -1441,19 +1441,19 @@
                             {
                                 "title": "Cube Crush Rules",
                                 "points": [
-                                    "Prepare only one concrete cube targeting 40 N/mm2 at 7-day curing",
+                                    "Prepare only one concrete cube targeting 20 N/mm2 at 3-day curing",
                                     "Mix design report must be signed by HOD of respective institute",
                                     "Cube size must be 150 mm x 150 mm x 150 mm",
                                     "Use of chemical admixture is allowed",
                                     "Use of fiber, mesh, or reinforcement is not allowed",
-                                    "Cube strength nearest to plus or minus 40 N/mm2 will be preferred",
+                                    "Cube strength nearest to plus or minus 20 N/mm2 will be preferred",
                                     "Strength-to-weight ratio will be considered for final result"
                                 ]
                             }
                         ],
                         "team_structure": "Individual participation or team of up to 2 members.",
                         "additional_information": [
-                            "Target compressive strength is checked after 7-day curing period",
+                            "Target compressive strength is checked after 3-day curing period",
                             "Faculty Coordinator: Mr. K. R. Patil (9604501311)",
                             "Student Coordinator: Rajnandini S Dinde (9730352296)"
                         ]
@@ -2514,7 +2514,7 @@
                         "team": 400
                     },
                     "registration": {
-                        "link": "",
+                        "link": "https://forms.gle/BCYMao7XcBxAWWnx6",
                         "qr": null
                     },
                     "prizes": [
