@@ -4,6 +4,7 @@ import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
 import EventCard from '../components/EventCard.jsx'
 import PixelSnow from '../components/PixelSnow.jsx'
+import VisitorCount from '../components/VisitorCount.jsx'
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
@@ -13,7 +14,7 @@ const fadeUp = {
 const MotionDiv = motion.div
 
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
-const FLYER_URL = `${import.meta.env.BASE_URL}Technotsav26.pdf`
+const FLYER_URL = `${import.meta.env.BASE_URL}Technotsav-26.jpeg`
 
 function isHotEvent(event) {
     return Boolean(event?.isHot)
@@ -237,33 +238,37 @@ function Home() {
                             </button>
                             <a
                                 href={FLYER_URL}
-                                download="Technotsav26-Flyer.pdf"
+                                download="Technotsav26-Flyer.jpeg"
                                 className="btn ghost hero-cta-secondary"
                             >
                                 Download Flyer
                             </a>
                         </div>
 
-                        <div className="hero-countdown hero-countdown--hero">
-                            <span className="meta-label">Launch in</span>
-                            <div className="countdown-grid">
-                                <div>
-                                    <strong>{countdown.days}</strong>
-                                    <span>Days</span>
-                                </div>
-                                <div>
-                                    <strong>{countdown.hours}</strong>
-                                    <span>Hrs</span>
-                                </div>
-                                <div>
-                                    <strong>{countdown.minutes}</strong>
-                                    <span>Mins</span>
-                                </div>
-                                <div>
-                                    <strong>{countdown.seconds}</strong>
-                                    <span>Secs</span>
+                        <div className="hero-insight-row">
+                            <div className="hero-countdown hero-countdown--hero">
+                                <span className="meta-label">Launch in</span>
+                                <div className="countdown-grid">
+                                    <div>
+                                        <strong>{countdown.days}</strong>
+                                        <span>Days</span>
+                                    </div>
+                                    <div>
+                                        <strong>{countdown.hours}</strong>
+                                        <span>Hrs</span>
+                                    </div>
+                                    <div>
+                                        <strong>{countdown.minutes}</strong>
+                                        <span>Mins</span>
+                                    </div>
+                                    <div>
+                                        <strong>{countdown.seconds}</strong>
+                                        <span>Secs</span>
+                                    </div>
                                 </div>
                             </div>
+
+                            <VisitorCount />
                         </div>
 
                     </MotionDiv>

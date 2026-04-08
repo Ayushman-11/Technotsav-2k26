@@ -405,6 +405,159 @@ main {
     margin-bottom: 16px;
 }
 
+.hero-insight-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 14px;
+    width: min(100%, 860px);
+    margin-bottom: 16px;
+    align-items: stretch;
+}
+
+.hero-insight-row .hero-countdown--hero,
+.hero-insight-row .visitor-counter {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.visitor-counter {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    width: fit-content;
+    max-width: min(100%, 520px);
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(164, 201, 255, 0.3);
+    background:
+        radial-gradient(circle at 10% 20%, rgba(164, 201, 255, 0.16), transparent 45%),
+        linear-gradient(155deg, rgba(16, 22, 32, 0.88), rgba(8, 10, 14, 0.78));
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 18px 44px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+}
+
+.visitor-counter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -34%;
+    width: 34%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: visitor-counter-sheen 7s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.visitor-counter-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.visitor-counter-label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.visitor-counter-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border: 1px solid rgba(164, 201, 255, 0.32);
+    color: var(--text-primary);
+    background: rgba(164, 201, 255, 0.12);
+}
+
+.visitor-counter-badge.is-live {
+    border-color: rgba(110, 255, 196, 0.42);
+    background: rgba(110, 255, 196, 0.14);
+    color: #ddfff2;
+}
+
+.visitor-counter-badge.is-estimated {
+    border-color: rgba(255, 214, 158, 0.4);
+    background: rgba(255, 214, 158, 0.14);
+    color: #fff3e3;
+}
+
+.visitor-counter-number {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 4.4vw, 2.6rem);
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: var(--text-primary);
+}
+
+.visitor-counter-copy {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.visitor-counter-footnote {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(238, 242, 248, 0.88);
+}
+
+.visitor-counter-pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #6effc4;
+    box-shadow: 0 0 0 rgba(110, 255, 196, 0.8);
+    animation: visitor-counter-pulse 1.8s infinite;
+}
+
+@keyframes visitor-counter-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(110, 255, 196, 0.75);
+    }
+
+    70% {
+        box-shadow: 0 0 0 9px rgba(110, 255, 196, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(110, 255, 196, 0);
+    }
+}
+
+@keyframes visitor-counter-sheen {
+
+    0%,
+    55% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateX(420%);
+        opacity: 0;
+    }
+}
+
 .countdown-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(60px, 1fr));
@@ -2709,6 +2862,27 @@ body.has-filter-subheader-body .site-header {
 
     .hero-countdown--hero {
         width: 100%;
+    }
+
+    .hero-insight-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .visitor-counter {
+        width: 100%;
+    }
+
+    .visitor-counter-head {
+        flex-wrap: wrap;
+    }
+
+    .visitor-counter-number {
+        font-size: clamp(1.6rem, 9vw, 2.3rem);
+    }
+
+    .visitor-counter-footnote {
+        letter-spacing: 0.18em;
     }
 
     .hero {

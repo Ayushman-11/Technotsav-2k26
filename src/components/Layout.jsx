@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import FlyerFab from './FlyerFab.jsx'
 
 const NAV_LINKS = [
@@ -124,6 +125,7 @@ function Layout() {
                 </div>
             </footer>
             <FlyerFab />
+            <Analytics />
         </div>
     )
 }
