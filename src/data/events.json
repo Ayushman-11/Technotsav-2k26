@@ -2520,18 +2520,18 @@
                     "prizes": [
                         {
                             "position": "1st Prize",
-                            "amount": 7000,
-                            "reward": "INR 7000 + Certificates"
-                        },
-                        {
-                            "position": "2nd Prize",
                             "amount": 5000,
                             "reward": "INR 5000 + Certificates"
                         },
                         {
-                            "position": "3rd Prize",
+                            "position": "2nd Prize",
                             "amount": 3000,
                             "reward": "INR 3000 + Certificates"
+                        },
+                        {
+                            "position": "3rd Prize",
+                            "amount": 2000,
+                            "reward": "INR 2000 + Certificates"
                         }
                     ],
                     "rounds": [
