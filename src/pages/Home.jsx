@@ -4,7 +4,6 @@ import { events, departmentFilters } from '../lib/events.js'
 import SectionHead from '../components/SectionHead.jsx'
 import EventCard from '../components/EventCard.jsx'
 import PixelSnow from '../components/PixelSnow.jsx'
-import VisitorCount from '../components/VisitorCount.jsx'
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
@@ -267,8 +266,6 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-
-                            <VisitorCount />
                         </div>
 
                     </MotionDiv>
