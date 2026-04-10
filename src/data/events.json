@@ -2322,6 +2322,95 @@
                             "Student Coordinator: Salman Nadaf (7218715120)"
                         ]
                     }
+                },
+                {
+                    "event_id": "CHEM-04",
+                    "event_name": "Technical Treasure Hunt",
+                    "description": "A fun, brain-based competition where participants solve technical clues, puzzles, or riddles related to engineering, coding, chemistry, or general aptitude to reach the final 'treasure'.",
+                    "type": "competition",
+                    "schedule": {
+                        "day": "Day 2",
+                        "date": "2026-04-16",
+                        "start_time": "12:00 AM",
+                        "end_time": "4:00 PM"
+                    },
+                    "venue": "Department of Chemical Engineering",
+                    "participation": {
+                        "eligibility": "All Diploma & UG Students",
+                        "mode": ["team"],
+                        "team_size": {
+                            "min": 4,
+                            "max": 4
+                        }
+                    },
+                    "fees": {
+                        "team": 200
+                    },
+                    "registration": {
+                        "link": "https://docs.google.com/forms/d/172m80LkTf_HjraId1F2yrY8HD50bjvTjpKFmgT8sD1c/edit?chromeless=1",
+                        "qr": null
+                    },
+                    "prizes": [
+                        {"position": "1st", "amount": 3000},
+                        {"position": "2nd", "amount": 2000},
+                        {"position": "3rd", "amount": 1000}
+                    ],
+                    "rounds": [
+                        {
+                            "name": "Treasure Hunt Stages",
+                            "subtitle": "6 Clue Stages",
+                            "description": "Event is divided into 6 stages (6 clues). First clue is given at the starting point. Solve the clue and get the next clue. Continue solving all clues step-by-step. Final clue leads to the treasure or winning point.",
+                            "steps": [
+                                "Clue 1: Starting point",
+                                "Clue 2: Solve and proceed",
+                                "Clue 3: Solve and proceed",
+                                "Clue 4: Solve and proceed",
+                                "Clue 5: Solve and proceed",
+                                "Clue 6: Final clue to treasure"
+                            ]
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "role": "Student Coordinator",
+                            "name": "Ashish Nayar",
+                            "phone": "7218657519"
+                        }
+                    ],
+                    "benefits": [
+                        "Refreshment"
+                    ],
+                    "details": {
+                        "primary_overview": "A technical treasure hunt is a fun, brain-based competition where participants solve technical clues, puzzles, or riddles related to engineering, coding, chemistry, or general aptitude to reach the final 'treasure'.",
+                        "what_is": "A step-by-step clue-solving event testing technical and logical skills.",
+                        "who_can_participate": [
+                            "Students from Diploma and Undergraduate (UG) programs are eligible to participate.",
+                            "Team participation only (4 per team)"
+                        ],
+                        "event_timeline": [
+                            "Date: 16th April, 2026",
+                            "Time: 12:00 AM to 4:00 PM",
+                            "Registration Fee: ₹200 per group of 4",
+                            "Includes: Refreshment"
+                        ],
+                        "rules_and_regulations": [
+                            {
+                                "title": "General Rules",
+                                "points": [
+                                    "All clues must be solved in order.",
+                                    "Each correct answer reveals the next clue.",
+                                    "The team completing all clues in minimum time wins.",
+                                    "No mobile is allowed."
+                                ]
+                            }
+                        ],
+                        "team_structure": "Teams of 4 participants only.",
+                        "additional_information": [
+                            "Venue: Department of Chemical Engineering, D. Y. Patil College of Engineering and Technology, Kolhapur.",
+                            "Block/Room details will be shared before the event.",
+                            "Contact: Ashish Nayar - 7218657519"
+                        ]
+                    }
                 }
             ]
         },

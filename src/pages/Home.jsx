@@ -13,7 +13,7 @@ const fadeUp = {
 const MotionDiv = motion.div
 
 const TECHO_HIGHLIGHTS_FILTER = 'TECHO-HIGHLIGHTS'
-const FLYER_URL = `${import.meta.env.BASE_URL}Technotsav-26.jpeg`
+const FLYER_URL = `${import.meta.env.BASE_URL}Technotsav-26 flyer.pdf`
 
 function isHotEvent(event) {
     return Boolean(event?.isHot)
@@ -237,7 +237,7 @@ function Home() {
                             </button>
                             <a
                                 href={FLYER_URL}
-                                download="Technotsav26-Flyer.jpeg"
+                                download="Technostav-26 flyer.pdf"
                                 className="btn ghost hero-cta-secondary"
                             >
                                 Download Flyer
