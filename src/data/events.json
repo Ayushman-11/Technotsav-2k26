@@ -2344,7 +2344,7 @@
                         }
                     },
                     "fees": {
-                        "team": 200
+                        "team": 400
                     },
                     "registration": {
                         "link": "https://docs.google.com/forms/d/172m80LkTf_HjraId1F2yrY8HD50bjvTjpKFmgT8sD1c/edit?chromeless=1",
@@ -2390,7 +2390,7 @@
                         "event_timeline": [
                             "Date: 16th April, 2026",
                             "Time: 12:00 AM to 4:00 PM",
-                            "Registration Fee: ₹200 per group of 4",
+                            "Registration Fee: ₹400 per group of 4",
                             "Includes: Refreshment"
                         ],
                         "rules_and_regulations": [
