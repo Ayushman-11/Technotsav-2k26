@@ -10,10 +10,27 @@ const NAV_LINKS = [
 ]
 
 const COLLEGE_LOGO_SRC = `${import.meta.env.BASE_URL}dypcet.png`
+const BACKGROUND_VIDEO_SRC = `${import.meta.env.BASE_URL}13442856_1920_1080_60fps.mp4`
+
+function canUseBackgroundVideo() {
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+        return false
+    }
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const isDesktop = window.matchMedia('(min-width: 961px)').matches
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+    const saveData = Boolean(connection?.saveData)
+    const effectiveType = String(connection?.effectiveType || '').toLowerCase()
+    const lowBandwidth = effectiveType.includes('2g') || effectiveType.includes('3g')
+
+    return isDesktop && !prefersReducedMotion && !saveData && !lowBandwidth
+}
 
 function Layout() {
     const location = useLocation()
     const [isHeaderHidden, setIsHeaderHidden] = useState(false)
+    const [shouldRenderBackgroundVideo, setShouldRenderBackgroundVideo] = useState(false)
     const lastScrollYRef = useRef(0)
 
     useEffect(() => {
@@ -65,12 +82,31 @@ function Layout() {
         }
     }, [location.pathname])
 
+    useEffect(() => {
+        const updateBackgroundVideoPreference = () => {
+            setShouldRenderBackgroundVideo(canUseBackgroundVideo())
+        }
+
+        const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+
+        updateBackgroundVideoPreference()
+        window.addEventListener('resize', updateBackgroundVideoPreference)
+        connection?.addEventListener?.('change', updateBackgroundVideoPreference)
+
+        return () => {
+            window.removeEventListener('resize', updateBackgroundVideoPreference)
+            connection?.removeEventListener?.('change', updateBackgroundVideoPreference)
+        }
+    }, [])
+
     return (
         <div className="app">
             <div className="combined-video-bg" aria-hidden="true">
-                <video className="combined-video" autoPlay loop muted playsInline>
-                    <source src="/11892851-hd_1280_720_24fps.mp4" type="video/mp4" />
-                </video>
+                {shouldRenderBackgroundVideo ? (
+                    <video className="combined-video" autoPlay loop muted playsInline preload="metadata">
+                        <source src={BACKGROUND_VIDEO_SRC} type="video/mp4" />
+                    </video>
+                ) : null}
             </div>
             <header className={`site-header${isHeaderHidden ? ' is-hidden-mobile' : ''}`}>
                 <div className="container header-inner">

@@ -146,6 +146,7 @@ function EventDetail() {
         : false
     const schedule = event.schedule || {}
     const hasRegistrationLink = Boolean(event.registrationInfo?.link)
+    const heroImage = event.heroImage || event.image
     const heroAboutParagraphs = [details.primary_overview, details.what_is].filter(
         (item) => typeof item === 'string' && item.trim().length > 0,
     )
@@ -195,7 +196,7 @@ function EventDetail() {
                 </div>
             </div>
             <section className="event-detail-hero">
-                <div className="event-detail-hero-bg" style={{ backgroundImage: `url(${event.image})` }} aria-hidden="true" />
+                <div className="event-detail-hero-bg" style={heroImage ? { backgroundImage: `url(${heroImage})` } : undefined} aria-hidden="true" />
                 <div className="event-detail-hero-overlay" aria-hidden="true" />
                 <div className="container event-detail-hero-content">
                     <Link

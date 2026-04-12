@@ -9,8 +9,6 @@ const fadeUp = {
 }
 
 function EventCard({ event }) {
-    const imageStyle = event.image ? { backgroundImage: `url(${event.image})` } : undefined
-
     const handleViewDetailsClick = () => {
         sessionStorage.setItem('technotsav_open_events', '1')
     }
@@ -24,7 +22,18 @@ function EventCard({ event }) {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.45 }}
         >
-            <div className="event-image" style={imageStyle} />
+            {event.image ? (
+                <img
+                    className="event-image"
+                    src={event.image}
+                    alt={`${event.title} event preview`}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                />
+            ) : (
+                <div className="event-image event-image--empty" aria-hidden="true" />
+            )}
             <div className="event-card-body">
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>

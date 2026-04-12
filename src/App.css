@@ -1002,10 +1002,17 @@ body.has-filter-subheader-body .site-header {
 
 
 .event-image {
+    display: block;
+    width: 100%;
     min-height: 180px;
-    background-size: cover;
-    background-position: center;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
     position: relative;
+}
+
+.event-image--empty {
+    background: linear-gradient(150deg, rgba(21, 26, 34, 0.95), rgba(10, 12, 15, 0.92));
 }
 
 .event-card-body {

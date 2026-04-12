@@ -26,14 +26,19 @@ const EVENT_IMAGES = {
     'CENTRAL-03': 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?q=80&w=1400&auto=format&fit=crop',
     'DS-01': 'https://images.unsplash.com/photo-1647320293733-92affa4fa39c?q=80&w=1400&auto=format&fit=crop',
     'DS-02': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop',
-    'DS-03': 'https://wallpapercave.com/wp/wp15783723.jpg',
-    'DS-04': 'https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/1e84951ea4e43a94485c30851c151ad2.jpg',
+    'DS-03': 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3',
+    'DS-04': 'https://images.unsplash.com/photo-1618477371303-b2a56f422d9e',
     'MECH-01': 'https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?q=80&w=1400&auto=format&fit=crop',
     'MECH-02': 'https://images.unsplash.com/photo-1711199694531-e982a79ea381?q=80&w=1400&auto=format&fit=crop',
     'MECH-03': 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1400&auto=format&fit=crop',
 }
 
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop'
+const UNSPLASH_HOSTS = new Set(['images.unsplash.com', 'plus.unsplash.com'])
+const IMAGE_PRESETS = {
+    card: { width: 720, quality: 58 },
+    hero: { width: 1440, quality: 64 },
+}
 
 const DEPARTMENT_FILTER_ORDER = ['CSE', 'AIML', 'DS', 'MECHANICAL', 'CIVIL', 'ARCHITECTURE', 'CHEMICAL', 'ENTC']
 const DATE_FORMATTER = new Intl.DateTimeFormat('en-IN', {
@@ -99,6 +104,28 @@ function formatTeamSize(participation) {
     return `${min}-${max} members`
 }
 
+function optimizeImageUrl(rawUrl, preset = 'card') {
+    if (!rawUrl || typeof rawUrl !== 'string') return rawUrl
+
+    try {
+        const parsedUrl = new URL(rawUrl)
+        if (!UNSPLASH_HOSTS.has(parsedUrl.hostname)) {
+            return rawUrl
+        }
+
+        const { width, quality } = IMAGE_PRESETS[preset] || IMAGE_PRESETS.card
+        parsedUrl.searchParams.set('w', String(width))
+        parsedUrl.searchParams.set('q', String(quality))
+        parsedUrl.searchParams.set('fit', 'crop')
+        parsedUrl.searchParams.set('auto', 'format')
+        parsedUrl.searchParams.set('fm', 'webp')
+
+        return parsedUrl.toString()
+    } catch {
+        return rawUrl
+    }
+}
+
 function normalizeDepartmentData(source) {
     const departments = source?.departments || []
 
@@ -108,6 +135,7 @@ function normalizeDepartmentData(source) {
         const events = Array.isArray(department.events) ? department.events : []
 
         return events.map((event) => {
+            const eventImage = event.image || EVENT_IMAGES[event.event_id] || DEFAULT_IMAGE
             const normalizedId = (event.event_id || event.event_name || '').toLowerCase().replace(/\s+/g, '-')
             const scheduleDate = event.schedule?.date
             const startTime = event.schedule?.start_time
@@ -140,7 +168,8 @@ function normalizeDepartmentData(source) {
                 prize: formatTopPrize(event.prizes),
                 department: departmentName,
                 departmentCode,
-                image: event.image || EVENT_IMAGES[event.event_id] || DEFAULT_IMAGE,
+                image: optimizeImageUrl(eventImage, 'card'),
+                heroImage: optimizeImageUrl(eventImage, 'hero'),
                 location: event.venue || 'Venue TBA',
                 teamSize: formatTeamSize(event.participation),
                 duration: startTime && endTime ? `${startTime} - ${endTime}` : 'TBA',
@@ -175,11 +204,16 @@ function normalizeDepartmentData(source) {
 
 function normalizeLegacyData(source) {
     if (!Array.isArray(source)) return []
-    return source.map((event) => ({
-        ...event,
-        departmentCode: event.departmentCode || getDepartmentCode(event.department),
-        isHot: Boolean(event.isHot || event.is_hot),
-    }))
+    return source.map((event) => {
+        const eventImage = event.image || EVENT_IMAGES[event.eventId] || EVENT_IMAGES[event.event_id] || DEFAULT_IMAGE
+        return {
+            ...event,
+            image: optimizeImageUrl(eventImage, 'card'),
+            heroImage: optimizeImageUrl(eventImage, 'hero'),
+            departmentCode: event.departmentCode || getDepartmentCode(event.department),
+            isHot: Boolean(event.isHot || event.is_hot),
+        }
+    })
 }
 
 export const events = Array.isArray(rawEventData)
